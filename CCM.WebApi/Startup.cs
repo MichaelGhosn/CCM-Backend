@@ -36,6 +36,8 @@ namespace CCM.WebApi
             services.AddMediatRServices();
             
             services.AddOptions();
+            
+            services.AddCcmDbContext(Configuration);
 
         }
 

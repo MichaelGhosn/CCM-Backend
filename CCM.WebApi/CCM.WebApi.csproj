@@ -14,6 +14,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\CCM.Application\CCM.Application.csproj" />
+      <ProjectReference Include="..\CCM.Domain\CCM.Domain.csproj" />
     </ItemGroup>
 
 </Project>

@@ -76,6 +76,7 @@
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
         <e p="extensions" t="Include">
+          <e p="DBContextService.cs" t="Include" />
           <e p="MediatRServices.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">

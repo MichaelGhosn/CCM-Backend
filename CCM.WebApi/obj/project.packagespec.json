@@ -21,6 +21,9 @@
         "projectReferences": {
           "E:\\dotnetProjects\\CCM-Backend\\CCM.Application\\CCM.Application.csproj": {
             "projectPath": "E:\\dotnetProjects\\CCM-Backend\\CCM.Application\\CCM.Application.csproj"
+          },
+          "E:\\dotnetProjects\\CCM-Backend\\CCM.Domain\\CCM.Domain.csproj": {
+            "projectPath": "E:\\dotnetProjects\\CCM-Backend\\CCM.Domain\\CCM.Domain.csproj"
           }
         }
       }

@@ -34,28 +34,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85ff229f-32fb-4c1e-bd8d-36230b3795a7" name="Default Changelist" comment="Add MediatR service">
-      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Common/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Common/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/CCM.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/CCM.Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/obj/CCM.Domain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/obj/CCM.Domain.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/obj/CCM.Domain.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/obj/CCM.Domain.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/obj/Debug/netcoreapp3.1/CCM.Domain.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/obj/Debug/netcoreapp3.1/CCM.Domain.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/CCM.WebApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/CCM.WebApi.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/CCM.WebApi.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/CCM.WebApi.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/CCM.WebApi.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/CCM.WebApi.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/rider.project.restore.info" afterDir="false" />
+    <list default="true" id="85ff229f-32fb-4c1e-bd8d-36230b3795a7" name="Default Changelist" comment="Scaffold Database">
+      <change afterPath="$PROJECT_DIR$/CCM.WebApi/Extensions/DBContextService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +52,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F680C866-D120-4163-9634-EBD842255BE9/10/ActionResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E3741DF5-E582-492A-B330-EA9E7E3D8C84/1/OptionsServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AD61CA47-F8B7-4CC6-93A0-BA44CC73B5C7/D0/TimeSpan.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/FAF91EAF-0C6A-4596-962E-C1044229D107/2/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -88,6 +72,9 @@
         <option value="$PROJECT_DIR$/CCM.WebApi/Extensions/MediatRServices.cs" />
         <option value="$PROJECT_DIR$/CCM.WebApi/Controllers/WeatherForecastController.cs" />
         <option value="$PROJECT_DIR$/CCM.WebApi/Startup.cs" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/Extensions/DBContextService.cs" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/appsettings.Development.json" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/appsettings.json" />
       </list>
     </option>
   </component>
@@ -167,7 +154,7 @@
       <workItem from="1605454588325" duration="700000" />
       <workItem from="1605455309077" duration="115000" />
       <workItem from="1605455443271" duration="7684000" />
-      <workItem from="1605467565017" duration="2873000" />
+      <workItem from="1605467565017" duration="3149000" />
     </task>
     <task id="LOCAL-00001" summary="Setup architecture">
       <created>1605455784726</created>
@@ -190,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605467259567</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Scaffold Database">
+      <created>1605472054468</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605472054468</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +209,8 @@
     <MESSAGE value="Setup architecture" />
     <MESSAGE value="Add swagger" />
     <MESSAGE value="Add MediatR service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add MediatR service" />
+    <MESSAGE value="Scaffold Database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Scaffold Database" />
   </component>
   <component name="WindowStateProjectService">
     <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1605466722557">
