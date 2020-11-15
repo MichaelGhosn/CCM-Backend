@@ -25,7 +25,7 @@ namespace CCM.Application.Role.Command.Add
                 return new ResponseModel<AddRoleResponseModel>()
                 {
                     Success = false,
-                    ErrorDescription = "Role name already exists"
+                    ErrorDescription = "Role name " + request.Name + " already exists"
                 };
             }
 

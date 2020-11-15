@@ -21,6 +21,32 @@
             </e>
           </e>
         </e>
+        <e p="Organisation" t="Include">
+          <e p="Command" t="Include">
+            <e p="Add" t="Include">
+              <e p="AddOrganisationHandler.cs" t="Include" />
+              <e p="AddOrganisationResponseModel.cs" t="Include" />
+              <e p="IAddOrganisation.cs" t="Include" />
+            </e>
+            <e p="Delete" t="Include">
+              <e p="DeleteOrganisationHandler.cs" t="Include" />
+              <e p="DeleteOrganisationViewModel.cs" t="Include" />
+              <e p="IDeleteOrganisation.cs" t="Include" />
+            </e>
+            <e p="Update" t="Include">
+              <e p="IUpdateOrganisation.cs" t="Include" />
+              <e p="UpdateOrganisationHandler.cs" t="Include" />
+              <e p="UpdateOrganisationResponseModel.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Query" t="Include">
+            <e p="GetAll" t="Include">
+              <e p="GetAllOrganisationsHandler.cs" t="Include" />
+              <e p="GetAllOrganisationsResponseModel.cs" t="Include" />
+              <e p="IGetAllOrganisations.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Role" t="Include">
           <e p="Command" t="Include">
             <e p="Add" t="Include">
@@ -102,6 +128,8 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="CCM.WebApi.csproj" t="IncludeRecursive" />
         <e p="Controllers" t="Include">
+          <e p="BaseController.cs" t="Include" />
+          <e p="OrganisationController.cs" t="Include" />
           <e p="RolesController.cs" t="Include" />
         </e>
         <e p="extensions" t="Include">

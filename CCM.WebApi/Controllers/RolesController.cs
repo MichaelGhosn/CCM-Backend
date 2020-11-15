@@ -5,16 +5,13 @@ using CCM.Application.Role.Command.Update;
 using CCM.Application.Role.Query.GetAll;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace CCM.WebApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class RolesController : ControllerBase
+    public class RolesController : BaseController
     {
-        private IMediator _mediator;
-        protected IMediator Mediator => _mediator ?? (_mediator = HttpContext.RequestServices.GetService<IMediator>());
 
         // GET
         [HttpGet()]
