@@ -27,6 +27,12 @@ namespace CCM.WebApi.Controllers
             return Ok(await Mediator.Send(request));
         }
         
+        // UPDATE
+        [HttpPut]
+        public async Task<ActionResult> Update([FromBody] IUpdateOrganisation request)
+        {
+            return Ok(await Mediator.Send(request));
+        }
         
         // DELETE
         [HttpDelete("{id}")]
@@ -38,11 +44,6 @@ namespace CCM.WebApi.Controllers
             }));
         }
         
-        // UPDATE
-        [HttpPut]
-        public async Task<ActionResult> Update([FromBody] IUpdateOrganisation request)
-        {
-            return Ok(await Mediator.Send(request));
-        }
+        
     }
 }

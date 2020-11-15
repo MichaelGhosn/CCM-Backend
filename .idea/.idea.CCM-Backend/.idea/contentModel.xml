@@ -73,6 +73,36 @@
             </e>
           </e>
         </e>
+        <e p="User" t="Include">
+          <e p="Command" t="Include">
+            <e p="Add" t="Include">
+              <e p="AddUserHandler.cs" t="Include" />
+              <e p="AddUserResponseModel.cs" t="Include" />
+              <e p="IAddUser.cs" t="Include" />
+            </e>
+            <e p="Delete" t="Include">
+              <e p="DeleteUserHandler.cs" t="Include" />
+              <e p="DeleteUserResponseModel.cs" t="Include" />
+              <e p="IDeleteUser.cs" t="Include" />
+            </e>
+            <e p="Update" t="Include">
+              <e p="IUpdateUser.cs" t="Include" />
+              <e p="UpdateUserHandler.cs" t="Include" />
+              <e p="UpdateUserResponseModel.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Query" t="Include">
+            <e p="GetAll" t="Include">
+              <e p="GetAllUsersHandler.cs" t="Include" />
+              <e p="GetAllUsersResponseModel.cs" t="Include" />
+              <e p="IGetAllUsers.cs" t="Include" />
+              <e p="Models" t="Include">
+                <e p="UserOrganisationResponseModel.cs" t="Include" />
+                <e p="UserRoleResponseModel.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
       </e>
       <e p="CCM.Common" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
@@ -82,6 +112,12 @@
             <e p="netcoreapp3.1" t="Include">
               <e p="CCM.Common.AssemblyInfo.cs" t="Include" />
             </e>
+          </e>
+        </e>
+        <e p="Security" t="Include">
+          <e p="Encryption" t="Include">
+            <e p="IEncryption.cs" t="Include" />
+            <e p="Pbkdf2Encryption.cs" t="Include" />
           </e>
         </e>
       </e>
@@ -130,10 +166,12 @@
         <e p="Controllers" t="Include">
           <e p="BaseController.cs" t="Include" />
           <e p="OrganisationController.cs" t="Include" />
-          <e p="RolesController.cs" t="Include" />
+          <e p="RoleController.cs" t="Include" />
+          <e p="UserController.cs" t="Include" />
         </e>
         <e p="extensions" t="Include">
           <e p="DBContextService.cs" t="Include" />
+          <e p="HelpersServices.cs" t="Include" />
           <e p="MediatRServices.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">

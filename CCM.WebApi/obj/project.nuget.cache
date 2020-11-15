@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZG0bbPKMbLswQN/DH5KJ3qFHczWUjdkWXjzGU+Vp91wh+HeZg2/ETtDBVRGQExUvOCf3AIAIqSF7hDBQgTGTiQ==",
+  "dgSpecHash": "LeuB8yPnkgxuqf+rT4RUEbBEOj8Mc9uuNhgjB7SlgY5bqQ5IEI+C3mGqO6QoBWvOLErA4GzFO2Aa7g1oErQw1g==",
   "success": true,
   "projectFilePath": "E:\\dotnetProjects\\CCM-Backend\\CCM.WebApi\\CCM.WebApi.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,8 @@
     "C:\\Users\\michael\\.nuget\\packages\\k4os.hash.xxhash\\1.0.6\\k4os.hash.xxhash.1.0.6.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
+    "C:\\Users\\michael\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.0\\microsoft.aspnetcore.cryptography.internal.5.0.0.nupkg.sha512",
+    "C:\\Users\\michael\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.0\\microsoft.aspnetcore.cryptography.keyderivation.5.0.0.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

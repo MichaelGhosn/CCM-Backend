@@ -61,3 +61,7 @@ E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\System.Xml.XPat
 E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\CCM.Domain.dll
 E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\CCM.Domain.pdb
+E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\CCM.Common.dll
+E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\CCM.Common.pdb

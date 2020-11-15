@@ -10,6 +10,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\CCM.Common\CCM.Common.csproj" />
       <ProjectReference Include="..\CCM.Domain\CCM.Domain.csproj" />
     </ItemGroup>
 

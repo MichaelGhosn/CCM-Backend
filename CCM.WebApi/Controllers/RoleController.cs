@@ -10,7 +10,7 @@ namespace CCM.WebApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class RolesController : BaseController
+    public class RoleController : BaseController
     {
 
         // GET
@@ -27,6 +27,13 @@ namespace CCM.WebApi.Controllers
             return Ok(await Mediator.Send(request));
         }
         
+        // UPDATE
+        [HttpPut]
+        public async Task<IActionResult> Update([FromBody] IUpdateRole request)
+        {
+            return Ok(await Mediator.Send(request));
+        }
+        
         // DELETE
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete([FromRoute] int id)
@@ -37,12 +44,7 @@ namespace CCM.WebApi.Controllers
             }));
         }
         
-        // UPDATE
-        [HttpPut]
-        public async Task<IActionResult> Update([FromBody] IUpdateRole request)
-        {
-            return Ok(await Mediator.Send(request));
-        }
+    
         
     }
 }

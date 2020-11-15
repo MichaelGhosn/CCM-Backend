@@ -39,6 +39,8 @@ namespace CCM.WebApi
             
             services.AddCcmDbContext(Configuration);
 
+            services.AddHelpersServices();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -10,3 +10,5 @@ E:\dotnetProjects\CCM-Backend\CCM.Application\obj\Debug\netcoreapp3.1\CCM.Applic
 E:\dotnetProjects\CCM-Backend\CCM.Application\bin\Debug\netcoreapp3.1\CCM.Domain.dll
 E:\dotnetProjects\CCM-Backend\CCM.Application\bin\Debug\netcoreapp3.1\CCM.Domain.pdb
 E:\dotnetProjects\CCM-Backend\CCM.Application\obj\Debug\netcoreapp3.1\CCM.Application.csproj.CopyComplete
+E:\dotnetProjects\CCM-Backend\CCM.Application\bin\Debug\netcoreapp3.1\CCM.Common.dll
+E:\dotnetProjects\CCM-Backend\CCM.Application\bin\Debug\netcoreapp3.1\CCM.Common.pdb
