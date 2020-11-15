@@ -1,14 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "1unhMntuipy9j03uRIMglOePYVH/XSYf6JHrFDk53mjIAJMNb5icx71PS49MJW2MnuQpcttr1vV6H6PGihk02Q==",
+  "dgSpecHash": "lsXw2Pe5Y393moFNUgRt3yO3a31sNXs137shemhGVGp+Ebi69rGN875uPLvIRmUyzdcFw31RVXsqxqah9O8ojQ==",
   "success": true,
   "projectFilePath": "E:\\dotnetProjects\\CCM-Backend\\CCM.WebApi\\CCM.WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\michael\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\michael\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\microsoft.aspnetcore.authentication.azuread.ui\\3.1.8\\microsoft.aspnetcore.authentication.azuread.ui.3.1.8.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.8\\microsoft.aspnetcore.authentication.jwtbearer.3.1.8.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\3.1.8\\microsoft.aspnetcore.authentication.openidconnect.3.1.8.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\michael\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\5.5.0\\microsoft.identitymodel.jsonwebtokens.5.5.0.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\microsoft.identitymodel.logging\\5.5.0\\microsoft.identitymodel.logging.5.5.0.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\microsoft.identitymodel.protocols\\5.5.0\\microsoft.identitymodel.protocols.5.5.0.nupkg.sha512",

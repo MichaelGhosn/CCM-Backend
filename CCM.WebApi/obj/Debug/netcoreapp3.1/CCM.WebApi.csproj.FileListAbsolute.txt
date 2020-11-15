@@ -35,3 +35,7 @@ E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\Microsoft.OpenA
 E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\MediatR.dll
+E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
+E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\CCM.Application.dll
+E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\CCM.Application.pdb

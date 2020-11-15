@@ -1,0 +1,5 @@
+﻿https://maestralsolutions.com/how-cqrs-and-mediatr-found-love-in-dotnet/
+
+https://medium.com/swlh/dependency-injection-v-mediatr-a-simple-c-benchmark-32630ff864ea
+
+https://www.roundthecode.com/dotnet/how-the-mediator-design-pattern-simplifies-an-application

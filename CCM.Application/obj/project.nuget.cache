@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ymeIfDWuQIUoue1uTE0F+LzY/CAENh2rsioViDIjhIon0gHVSXs2jlGdtSUTwEszNuXbv8HWXVlxM/z/ITcrEA==",
+  "dgSpecHash": "yXb+ZrIiK1+xFp7J6rWJ7hje324yAEWeKp5xJlACYa2XE8a6sELHohWsgnY1eiONeY4XKb4ftHAdOKqFF+RGfg==",
   "success": true,
   "projectFilePath": "E:\\dotnetProjects\\CCM-Backend\\CCM.Application\\CCM.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\michael\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\michael\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
+    "C:\\Users\\michael\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
