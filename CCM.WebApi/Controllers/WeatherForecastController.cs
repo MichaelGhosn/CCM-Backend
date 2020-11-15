@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 
 namespace CCM.WebApi.Controllers
 {
-    [Authorize]
+
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
