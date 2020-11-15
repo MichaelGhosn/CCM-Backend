@@ -1,0 +1,12 @@
+E:\dotnetProjects\CCM-Backend\CCM.Domain\bin\Debug\netcoreapp3.1\CCM.Domain.deps.json
+E:\dotnetProjects\CCM-Backend\CCM.Domain\bin\Debug\netcoreapp3.1\CCM.Domain.runtimeconfig.json
+E:\dotnetProjects\CCM-Backend\CCM.Domain\bin\Debug\netcoreapp3.1\CCM.Domain.runtimeconfig.dev.json
+E:\dotnetProjects\CCM-Backend\CCM.Domain\bin\Debug\netcoreapp3.1\CCM.Domain.dll
+E:\dotnetProjects\CCM-Backend\CCM.Domain\bin\Debug\netcoreapp3.1\CCM.Domain.pdb
+E:\dotnetProjects\CCM-Backend\CCM.Domain\obj\Debug\netcoreapp3.1\CCM.Domain.csprojAssemblyReference.cache
+E:\dotnetProjects\CCM-Backend\CCM.Domain\obj\Debug\netcoreapp3.1\CCM.Domain.AssemblyInfoInputs.cache
+E:\dotnetProjects\CCM-Backend\CCM.Domain\obj\Debug\netcoreapp3.1\CCM.Domain.AssemblyInfo.cs
+E:\dotnetProjects\CCM-Backend\CCM.Domain\obj\Debug\netcoreapp3.1\CCM.Domain.csproj.CoreCompileInputs.cache
+E:\dotnetProjects\CCM-Backend\CCM.Domain\obj\Debug\netcoreapp3.1\CCM.Domain.dll
+E:\dotnetProjects\CCM-Backend\CCM.Domain\obj\Debug\netcoreapp3.1\CCM.Domain.pdb
+E:\dotnetProjects\CCM-Backend\CCM.Domain\obj\Debug\netcoreapp3.1\CCM.Domain.genruntimeconfig.cache

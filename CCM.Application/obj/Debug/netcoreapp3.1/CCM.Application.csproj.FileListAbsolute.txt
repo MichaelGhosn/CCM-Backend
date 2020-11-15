@@ -1,0 +1,9 @@
+E:\dotnetProjects\CCM-Backend\CCM.Application\bin\Debug\netcoreapp3.1\CCM.Application.deps.json
+E:\dotnetProjects\CCM-Backend\CCM.Application\bin\Debug\netcoreapp3.1\CCM.Application.dll
+E:\dotnetProjects\CCM-Backend\CCM.Application\bin\Debug\netcoreapp3.1\CCM.Application.pdb
+E:\dotnetProjects\CCM-Backend\CCM.Application\obj\Debug\netcoreapp3.1\CCM.Application.csprojAssemblyReference.cache
+E:\dotnetProjects\CCM-Backend\CCM.Application\obj\Debug\netcoreapp3.1\CCM.Application.AssemblyInfoInputs.cache
+E:\dotnetProjects\CCM-Backend\CCM.Application\obj\Debug\netcoreapp3.1\CCM.Application.AssemblyInfo.cs
+E:\dotnetProjects\CCM-Backend\CCM.Application\obj\Debug\netcoreapp3.1\CCM.Application.csproj.CoreCompileInputs.cache
+E:\dotnetProjects\CCM-Backend\CCM.Application\obj\Debug\netcoreapp3.1\CCM.Application.dll
+E:\dotnetProjects\CCM-Backend\CCM.Application\obj\Debug\netcoreapp3.1\CCM.Application.pdb
