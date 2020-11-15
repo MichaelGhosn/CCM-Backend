@@ -29,7 +29,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "E:\\dotnetProjects\\CCM-Backend\\CCM.Domain\\CCM.Domain.csproj": {
+                "projectPath": "E:\\dotnetProjects\\CCM-Backend\\CCM.Domain\\CCM.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

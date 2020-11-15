@@ -11,10 +11,39 @@
       <e p="CCM.Application" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="CCM.Application.csproj" t="IncludeRecursive" />
+        <e p="Models" t="Include">
+          <e p="ResponseModel.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
               <e p="CCM.Application.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Role" t="Include">
+          <e p="Command" t="Include">
+            <e p="Add" t="Include">
+              <e p="AddRoleHandler.cs" t="Include" />
+              <e p="AddRoleResponseModel.cs" t="Include" />
+              <e p="IAddRole.cs" t="Include" />
+            </e>
+            <e p="Delete" t="Include">
+              <e p="DeleteRoleHandler.cs" t="Include" />
+              <e p="DeleteRoleResponseModel.cs" t="Include" />
+              <e p="IDeleteRole.cs" t="Include" />
+            </e>
+            <e p="Update" t="Include">
+              <e p="IUpdateRole.cs" t="Include" />
+              <e p="UpdateRoleHandler.cs" t="Include" />
+              <e p="UpdateRoleResponseModel.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Query" t="Include">
+            <e p="GetAll" t="Include">
+              <e p="GetAllRolesHandler.cs" t="Include" />
+              <e p="GetAllRolesResponseModel.cs" t="Include" />
+              <e p="IGetAllRoles.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -73,7 +102,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="CCM.WebApi.csproj" t="IncludeRecursive" />
         <e p="Controllers" t="Include">
-          <e p="WeatherForecastController.cs" t="Include" />
+          <e p="RolesController.cs" t="Include" />
         </e>
         <e p="extensions" t="Include">
           <e p="DBContextService.cs" t="Include" />
@@ -92,7 +121,6 @@
         </e>
         <e p="references.txt" t="Include" />
         <e p="Startup.cs" t="Include" />
-        <e p="WeatherForecast.cs" t="Include" />
       </e>
       <e p="Core" t="Include" />
       <e p="Domain" t="Include" />

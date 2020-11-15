@@ -34,11 +34,74 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85ff229f-32fb-4c1e-bd8d-36230b3795a7" name="Default Changelist" comment="Scaffold Database">
-      <change afterPath="$PROJECT_DIR$/CCM.WebApi/Extensions/DBContextService.cs" afterDir="false" />
+    <list default="true" id="85ff229f-32fb-4c1e-bd8d-36230b3795a7" name="Default Changelist" comment="Adjust DBcontext configuration and injection">
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Models/ResponseModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Role/Command/Add/AddRoleHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Role/Command/Add/AddRoleResponseModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Role/Command/Add/IAddRole.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Role/Command/Delete/DeleteRoleHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Role/Command/Delete/DeleteRoleResponseModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Role/Command/Delete/IDeleteRole.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Role/Command/Update/IUpdateRole.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Role/Command/Update/UpdateRoleHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Role/Command/Update/UpdateRoleResponseModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Role/Query/GetAll/GetAllRolesHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Role/Query/GetAll/GetAllRolesResponseModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Role/Query/GetAll/IGetAllRoles.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CCM.WebApi/Controllers/RolesController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/CCM.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/CCM.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/CCM.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/CCM.Application.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Domain/bin/Debug/netcoreapp3.1/CCM.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/bin/Debug/netcoreapp3.1/CCM.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Domain/bin/Debug/netcoreapp3.1/CCM.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/bin/Debug/netcoreapp3.1/CCM.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Domain/obj/Debug/netcoreapp3.1/CCM.Domain.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/obj/Debug/netcoreapp3.1/CCM.Domain.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Domain/obj/Debug/netcoreapp3.1/CCM.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/obj/Debug/netcoreapp3.1/CCM.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Domain/obj/Debug/netcoreapp3.1/CCM.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/obj/Debug/netcoreapp3.1/CCM.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/Extensions/MediatRServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/Extensions/MediatRServices.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.AzureAD.UI.Views.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.AzureAD.UI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/CCM.WebApi.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/CCM.WebApi.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +114,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F680C866-D120-4163-9634-EBD842255BE9/10/ActionResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AD61CA47-F8B7-4CC6-93A0-BA44CC73B5C7/147/CancellationToken.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E3741DF5-E582-492A-B330-EA9E7E3D8C84/1/OptionsServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AD61CA47-F8B7-4CC6-93A0-BA44CC73B5C7/D0/TimeSpan.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/C83C0E82-2F21-48FC-A29F-AB1AE23A0655/12/DbSet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/FAF91EAF-0C6A-4596-962E-C1044229D107/2/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -69,12 +134,27 @@
         <option value="$PROJECT_DIR$/CCM.Application/Get.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/Get2.cs" />
         <option value="$PROJECT_DIR$/CCM.WebApi/references.txt" />
-        <option value="$PROJECT_DIR$/CCM.WebApi/Extensions/MediatRServices.cs" />
         <option value="$PROJECT_DIR$/CCM.WebApi/Controllers/WeatherForecastController.cs" />
-        <option value="$PROJECT_DIR$/CCM.WebApi/Startup.cs" />
-        <option value="$PROJECT_DIR$/CCM.WebApi/Extensions/DBContextService.cs" />
         <option value="$PROJECT_DIR$/CCM.WebApi/appsettings.Development.json" />
         <option value="$PROJECT_DIR$/CCM.WebApi/appsettings.json" />
+        <option value="$PROJECT_DIR$/CCM.Domain/CCM.Database/Context/ccmContext.cs" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/Extensions/DBContextService.cs" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/Startup.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Role/Query/GetAll/GetAllRolesResponseModel.cs" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/Extensions/MediatRServices.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Role/Query/GetAll/IGetAllRoles.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Role/Query/GetAll/GetAllRolesHandler.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Models/ResponseModel.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Role/Command/Add/IAddRole.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Role/Command/Add/AddRoleHandler.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Role/Command/Add/AddRoleResponseModel.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Role/Command/Delete/DeleteRoleResponseModel.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Role/Command/Delete/IDeleteRole.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Role/Command/Delete/DeleteRoleHandler.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Role/Command/Update/UpdateRoleResponseModel.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Role/Command/Update/IUpdateRole.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Role/Command/Update/UpdateRoleHandler.cs" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/Controllers/RolesController.cs" />
       </list>
     </option>
   </component>
@@ -154,7 +234,7 @@
       <workItem from="1605454588325" duration="700000" />
       <workItem from="1605455309077" duration="115000" />
       <workItem from="1605455443271" duration="7684000" />
-      <workItem from="1605467565017" duration="3149000" />
+      <workItem from="1605467565017" duration="6930000" />
     </task>
     <task id="LOCAL-00001" summary="Setup architecture">
       <created>1605455784726</created>
@@ -184,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605472054468</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adjust DBcontext configuration and injection">
+      <created>1605472339036</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605472339036</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,32 +297,33 @@
     <MESSAGE value="Add swagger" />
     <MESSAGE value="Add MediatR service" />
     <MESSAGE value="Scaffold Database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Scaffold Database" />
+    <MESSAGE value="Adjust DBcontext configuration and injection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjust DBcontext configuration and injection" />
   </component>
   <component name="WindowStateProjectService">
     <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1605466722557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605466722557" />
-    <state width="1493" height="139" key="GridCell.Tab.0.bottom" timestamp="1605467273388">
+    <state width="1493" height="139" key="GridCell.Tab.0.bottom" timestamp="1605475608635">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="139" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605467273388" />
+    <state width="1493" height="139" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605475608635" />
     <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605457241793" />
-    <state width="1493" height="139" key="GridCell.Tab.0.center" timestamp="1605467273388">
+    <state width="1493" height="139" key="GridCell.Tab.0.center" timestamp="1605475608635">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="139" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605467273388" />
+    <state width="1493" height="139" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605475608635" />
     <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605457241792" />
-    <state width="1493" height="139" key="GridCell.Tab.0.left" timestamp="1605467273388">
+    <state width="1493" height="139" key="GridCell.Tab.0.left" timestamp="1605475608635">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="139" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605467273388" />
+    <state width="1493" height="139" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605475608635" />
     <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605457241792" />
-    <state width="1493" height="139" key="GridCell.Tab.0.right" timestamp="1605467273388">
+    <state width="1493" height="139" key="GridCell.Tab.0.right" timestamp="1605475608635">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="139" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605467273388" />
+    <state width="1493" height="139" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605475608635" />
     <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605457241793" />
     <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size" timestamp="1605458002703">
       <screen x="0" y="0" width="1536" height="824" />
