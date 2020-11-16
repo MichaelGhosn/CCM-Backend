@@ -28,7 +28,7 @@ namespace CCM.Application.User.Command.Add
                 return new ResponseModel<AddUserResponseModel>()
                 {
                     Success = false,
-                    ErrorDescription = "Role does not exists"
+                    Description = "Role does not exists"
                 };    
             }
 
@@ -40,7 +40,7 @@ namespace CCM.Application.User.Command.Add
                 return new ResponseModel<AddUserResponseModel>()
                 {
                     Success = false,
-                    ErrorDescription = "Organisation does not exists"
+                    Description = "Organisation does not exists"
                 };    
             }
 
@@ -51,7 +51,7 @@ namespace CCM.Application.User.Command.Add
                 return new ResponseModel<AddUserResponseModel>()
                 {
                     Success = false,
-                    ErrorDescription = "Email already exists"
+                    Description = "Email already exists"
                 };  
             }
 
@@ -70,6 +70,7 @@ namespace CCM.Application.User.Command.Add
             return new ResponseModel<AddUserResponseModel>()
             {
                 Success = true,
+                Description = "Successfully added user"
             };  
         }
     }

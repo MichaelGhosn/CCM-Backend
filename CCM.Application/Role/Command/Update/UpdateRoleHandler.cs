@@ -25,7 +25,7 @@ namespace CCM.Application.Role.Command.Update
                 return new ResponseModel<UpdateRoleResponseModel>()
                 {
                     Success = false,
-                    ErrorDescription = "Role does not exists"
+                    Description = "Role does not exists"
                 };
             }
 
@@ -36,7 +36,8 @@ namespace CCM.Application.Role.Command.Update
             
             return new ResponseModel<UpdateRoleResponseModel>()
             {
-                Success = true
+                Success = true,
+                Description = "Successfully updated role"
             };
         }
     }

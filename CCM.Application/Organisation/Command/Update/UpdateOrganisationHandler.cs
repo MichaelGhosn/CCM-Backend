@@ -27,7 +27,7 @@ namespace CCM.Application.Organisation.Command.Update
                 return new ResponseModel<UpdateOrganisationResponseModel>()
                 {
                     Success = false,
-                    ErrorDescription = "Organisation does not exists"
+                    Description = "Organisation does not exists"
                 };
             }
 
@@ -38,7 +38,8 @@ namespace CCM.Application.Organisation.Command.Update
             
             return new ResponseModel<UpdateOrganisationResponseModel>()
             {
-                Success = true
+                Success = true,
+                Description = "Successfully updated organisation"
             };
             
         }

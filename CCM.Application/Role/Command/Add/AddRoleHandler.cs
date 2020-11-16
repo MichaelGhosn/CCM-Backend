@@ -25,7 +25,7 @@ namespace CCM.Application.Role.Command.Add
                 return new ResponseModel<AddRoleResponseModel>()
                 {
                     Success = false,
-                    ErrorDescription = "Role name " + request.Name + " already exists"
+                    Description = "Role name " + request.Name + " already exists"
                 };
             }
 
@@ -39,6 +39,7 @@ namespace CCM.Application.Role.Command.Add
             return new ResponseModel<AddRoleResponseModel>()
             {
                 Success = true,
+                Description = "Successfully added role"
             };
             
         }

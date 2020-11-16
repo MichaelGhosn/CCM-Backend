@@ -25,7 +25,7 @@ namespace CCM.Application.Day.Command.Update
                 return new ResponseModel<UpdateDayResponseModel>()
                 {
                     Success = false,
-                    ErrorDescription = "Day does not exists"
+                    Description = "Day does not exists"
                 };
             }
 
@@ -37,7 +37,8 @@ namespace CCM.Application.Day.Command.Update
             
             return new ResponseModel<UpdateDayResponseModel>()
             {
-                Success = true
+                Success = true,
+                Description = "Successfully updated day"
             };
         }
     }

@@ -25,7 +25,7 @@ namespace CCM.Application.Day.Command.Delete
                 return new ResponseModel<DeleteDayResponseModel>()
                 {
                     Success = false,
-                    ErrorDescription = "Day does not exists"
+                    Description = "Day does not exists"
                 };
             }
 
@@ -34,8 +34,8 @@ namespace CCM.Application.Day.Command.Delete
             
             return new ResponseModel<DeleteDayResponseModel>()
             {
-                Success = true
-                
+                Success = true,
+                Description = "Successfully deleted day"
             };
             
         }

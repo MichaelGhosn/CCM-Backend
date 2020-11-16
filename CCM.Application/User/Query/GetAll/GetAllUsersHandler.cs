@@ -42,7 +42,8 @@ namespace CCM.Application.User.Query.GetAll
                            Id = user.Role.Id,
                            Name = user.Role.Name
                        }
-                   }).ToList()
+                   }).ToList(),
+               Description = "Successfully fetched data"
            };
         }
     }

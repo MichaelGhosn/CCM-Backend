@@ -26,7 +26,8 @@ namespace CCM.Application.Day.Query.GetAll
                 {
                     Id = day.Id,
                     Name = day.Name
-                }).ToList()
+                }).ToList(),
+                Description = "Successfully fetched data"
             };
         }
     }

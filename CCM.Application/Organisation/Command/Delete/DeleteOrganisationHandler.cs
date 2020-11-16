@@ -26,7 +26,7 @@ namespace CCM.Application.Organisation.Command.Delete
                 return new ResponseModel<DeleteOrganisationViewModel>()
                 {
                     Success = false,
-                    ErrorDescription = "Organisation does not exists"
+                    Description = "Organisation does not exists"
                 };
             }
 
@@ -36,7 +36,8 @@ namespace CCM.Application.Organisation.Command.Delete
             
             return new ResponseModel<DeleteOrganisationViewModel>()
             {
-                Success = true
+                Success = true,
+                Description = "Successfully deleted organisation"
             };
         }
     }

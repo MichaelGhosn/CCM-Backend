@@ -25,7 +25,7 @@ namespace CCM.Application.Day.Command.Add
                 return new ResponseModel<AddDayResponseModel>()
                 {
                     Success = false,
-                    ErrorDescription = "Day already exists"
+                    Description = "Day already exists"
                 };
             }
 
@@ -38,7 +38,8 @@ namespace CCM.Application.Day.Command.Add
             
             return new ResponseModel<AddDayResponseModel>()
             {
-                Success = true
+                Success = true,
+                Description = "Successfully added day"
             };
             
         }

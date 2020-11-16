@@ -25,7 +25,7 @@ namespace CCM.Application.User.Command.Delete
                 return new ResponseModel<DeleteUserResponseModel>()
                 {
                     Success = false,
-                    ErrorDescription = "User does not exists"
+                    Description = "User does not exists"
                 };
             }
 
@@ -34,7 +34,8 @@ namespace CCM.Application.User.Command.Delete
             
            return new ResponseModel<DeleteUserResponseModel>()
            {
-               Success = true
+               Success = true,
+               Description = "Successfully deleted user"
            };
         }
     }

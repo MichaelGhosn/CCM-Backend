@@ -26,7 +26,7 @@ namespace CCM.Application.Organisation.Command.Add
                 return new ResponseModel<AddOrganisationResponseModel>()
                 {
                     Success = false,
-                    ErrorDescription = "Already existing organisation with name " + request.Name
+                    Description = "Already existing organisation with name " + request.Name
                 };
             }
 
@@ -39,7 +39,8 @@ namespace CCM.Application.Organisation.Command.Add
             
             return new ResponseModel<AddOrganisationResponseModel>()
             {
-                Success = true
+                Success = true,
+                Description = "Successfully added organisation"
             };
         }
     }

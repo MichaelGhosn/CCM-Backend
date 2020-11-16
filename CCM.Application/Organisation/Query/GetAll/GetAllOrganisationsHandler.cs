@@ -26,7 +26,8 @@ namespace CCM.Application.Organisation.Query.GetAll
                 {
                     Id = organisation.Id,
                     Name = organisation.Name
-                }).ToList()
+                }).ToList(),
+                Description = "Successfully fetched data"
             };
         }
     }

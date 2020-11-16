@@ -25,7 +25,7 @@ namespace CCM.Application.Role.Command.Delete
                 return new ResponseModel<DeleteRoleResponseModel>()
                 {
                     Success = false,
-                    ErrorDescription = "Role does not exist to be deleted"
+                    Description = "Role does not exist to be deleted"
                 };
             }
 
@@ -34,7 +34,8 @@ namespace CCM.Application.Role.Command.Delete
             
             return new ResponseModel<DeleteRoleResponseModel>()
             {
-                Success = true
+                Success = true,
+                Description = "Successfully deleted role"
             };
         }
     }

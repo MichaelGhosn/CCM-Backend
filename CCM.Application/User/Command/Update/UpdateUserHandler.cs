@@ -29,7 +29,7 @@ namespace CCM.Application.User.Command.Update
                 return new ResponseModel<UpdateUserResponseModel>()
                 {
                     Success = false,
-                    ErrorDescription = "No user found"
+                    Description = "No user found"
                 };
             }
 
@@ -41,7 +41,7 @@ namespace CCM.Application.User.Command.Update
                 return new ResponseModel<UpdateUserResponseModel>()
                 {
                     Success = false,
-                    ErrorDescription = "Email already exists"
+                    Description = "Email already exists"
                 };
             }
 
@@ -51,7 +51,7 @@ namespace CCM.Application.User.Command.Update
                 return new ResponseModel<UpdateUserResponseModel>()
                 {
                     Success = false,
-                    ErrorDescription = "Invalid organisation"
+                    Description = "Invalid organisation"
                 };
             }
             
@@ -61,7 +61,7 @@ namespace CCM.Application.User.Command.Update
                 return new ResponseModel<UpdateUserResponseModel>()
                 {
                     Success = false,
-                    ErrorDescription = "Invalid role"
+                    Description = "Invalid role"
                 };
             }
             
@@ -78,7 +78,8 @@ namespace CCM.Application.User.Command.Update
             
             return new ResponseModel<UpdateUserResponseModel>()
             {
-                Success = true
+                Success = true,
+                Description = "Successfully updated user"
             };
         }
     }
