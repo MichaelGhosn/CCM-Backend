@@ -41,9 +41,9 @@ namespace CCM.Domain
 
                 entity.Property(e => e.Id).HasColumnType("int(11)");
 
-                entity.Property(e => e.Day1)
+                entity.Property(e => e.Name)
                     .IsRequired()
-                    .HasColumnName("Day")
+                    .HasColumnName("Name")
                     .HasMaxLength(20);
             });
 

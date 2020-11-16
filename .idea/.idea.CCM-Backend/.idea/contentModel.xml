@@ -11,6 +11,32 @@
       <e p="CCM.Application" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="CCM.Application.csproj" t="IncludeRecursive" />
+        <e p="Day" t="Include">
+          <e p="Command" t="Include">
+            <e p="Add" t="Include">
+              <e p="AddDayHandler.cs" t="Include" />
+              <e p="AddDayResponseModel.cs" t="Include" />
+              <e p="IAddDay.cs" t="Include" />
+            </e>
+            <e p="Delete" t="Include">
+              <e p="DeleteDayHandler.cs" t="Include" />
+              <e p="DeleteDayResponseModel.cs" t="Include" />
+              <e p="IDeleteDay.cs" t="Include" />
+            </e>
+            <e p="Update" t="Include">
+              <e p="IUpdateDay.cs" t="Include" />
+              <e p="UpdateDayHandler.cs" t="Include" />
+              <e p="UpdateDayResponseModel.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Query" t="Include">
+            <e p="GetAll" t="Include">
+              <e p="GetAllDaysHandler.cs" t="Include" />
+              <e p="GetAllDaysResponseModel.cs" t="Include" />
+              <e p="IGetAllDays.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Models" t="Include">
           <e p="ResponseModel.cs" t="Include" />
         </e>
@@ -165,6 +191,7 @@
         <e p="CCM.WebApi.csproj" t="IncludeRecursive" />
         <e p="Controllers" t="Include">
           <e p="BaseController.cs" t="Include" />
+          <e p="DayController.cs" t="Include" />
           <e p="OrganisationController.cs" t="Include" />
           <e p="RoleController.cs" t="Include" />
           <e p="UserController.cs" t="Include" />

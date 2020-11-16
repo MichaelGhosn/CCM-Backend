@@ -1,5 +1,9 @@
 ﻿using System;
 using System.Reflection;
+using CCM.Application.Day.Command.Add;
+using CCM.Application.Day.Command.Delete;
+using CCM.Application.Day.Command.Update;
+using CCM.Application.Day.Query.GetAll;
 using CCM.Application.Organisation.Command.Add;
 using CCM.Application.Organisation.Command.Delete;
 using CCM.Application.Organisation.Command.Update;
@@ -36,6 +40,12 @@ namespace CCM.WebApi.Extensions
             services.AddMediatR(typeof(IGetAllUsers).GetTypeInfo().Assembly);
             services.AddMediatR(typeof(IDeleteUser).GetTypeInfo().Assembly);
             services.AddMediatR(typeof(IUpdateUser).GetTypeInfo().Assembly);
+            
+            
+            services.AddMediatR(typeof(IGetAllDays).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(IAddDay).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(IDeleteDay).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(IUpdateDay).GetTypeInfo().Assembly);
 
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
             // services.AddMediatR(Assembly.GetExecutingAssembly());
