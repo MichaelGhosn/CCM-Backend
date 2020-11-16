@@ -4,6 +4,6 @@ namespace CCM.Common.Security.Encryption
 {
     public interface IEncryption
     {
-        public String Encrypt(string password);
+        public String Encrypt(String password);
     }
 }

@@ -7,7 +7,7 @@ namespace CCM.Common.Security
 {
     public class Pbkdf2Encryption: IEncryption
     {
-        public string Encrypt(string password)
+        public String Encrypt(String password)
         {
             byte[] salt = new byte[128 / 8];
             using (var rng = RandomNumberGenerator.Create())
@@ -22,5 +22,6 @@ namespace CCM.Common.Security
                 iterationCount: 10000,
                 numBytesRequested: 256 / 8));
         }
+        
     }
 }

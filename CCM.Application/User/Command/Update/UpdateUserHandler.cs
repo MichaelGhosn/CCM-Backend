@@ -68,11 +68,10 @@ namespace CCM.Application.User.Command.Update
             user.FirstName = String.IsNullOrEmpty(request.FirstName) ? user.FirstName : request.FirstName;
             user.LastName = String.IsNullOrEmpty(request.LastName) ? user.LastName : request.LastName;
             user.Email = String.IsNullOrEmpty(request.Email) ? user.Email : request.Email;
-            user.Password = String.IsNullOrEmpty(request.Email) ? user.Password : _encryption.Encrypt(request.Password);
+            user.Password = String.IsNullOrEmpty(request.Password) ? user.Password : _encryption.Encrypt(request.Password);
             user.OrganisationId = request.OrganisationId == 0 ? user.OrganisationId : request.OrganisationId;
             user.RoleId = request.RoleId == 0 ? user.RoleId : request.RoleId;
-
-
+            
             _context.User.Update(user);
 
             _context.SaveChangesAsync();
