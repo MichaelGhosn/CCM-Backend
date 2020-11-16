@@ -37,6 +37,16 @@
             </e>
           </e>
         </e>
+        <e p="Map" t="Include">
+          <e p="Command" t="Include">
+            <e p="Add" t="Include">
+              <e p="AddMapHandler.cs" t="Include" />
+              <e p="AddMapResponseModel.cs" t="Include" />
+              <e p="IAddMap.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Query" t="Include" />
+        </e>
         <e p="Models" t="Include">
           <e p="ResponseModel.cs" t="Include" />
         </e>
@@ -192,6 +202,7 @@
         <e p="Controllers" t="Include">
           <e p="BaseController.cs" t="Include" />
           <e p="DayController.cs" t="Include" />
+          <e p="MapController.cs" t="Include" />
           <e p="OrganisationController.cs" t="Include" />
           <e p="RoleController.cs" t="Include" />
           <e p="UserController.cs" t="Include" />
@@ -215,8 +226,13 @@
         <e p="references.txt" t="Include" />
         <e p="Startup.cs" t="Include" />
         <e p="wwwroot" t="Include">
-          <e p="MapsImages" t="Include">
-            <e p="pcr.jpg" t="Include" />
+          <e p="images" t="Include">
+            <e p="maps" t="Include">
+              <e p="dummy_map.png" t="Include" />
+              <e p="sddasdasdas_1_dummy_map.png" t="Include" />
+              <e p="Test Map_1_dummy_map.png" t="Include" />
+              <e p="TestMap_1_dummy_map.png" t="Include" />
+            </e>
           </e>
         </e>
       </e>

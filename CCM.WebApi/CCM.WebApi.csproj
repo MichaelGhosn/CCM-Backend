@@ -19,7 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="wwwroot\MapsImages" />
+      <Folder Include="wwwroot\images\maps" />
     </ItemGroup>
 
 </Project>

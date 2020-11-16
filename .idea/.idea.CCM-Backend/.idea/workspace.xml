@@ -34,22 +34,48 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85ff229f-32fb-4c1e-bd8d-36230b3795a7" name="Default Changelist" comment="Add description to responses">
-      <change afterPath="$PROJECT_DIR$/CCM.WebApi/wwwroot/MapsImages/pcr.jpg" afterDir="false" />
+    <list default="true" id="85ff229f-32fb-4c1e-bd8d-36230b3795a7" name="Default Changelist" comment="Add file serving">
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Map/Command/Add/AddMapHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Map/Command/Add/AddMapResponseModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Map/Command/Add/IAddMap.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CCM.WebApi/Controllers/MapController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/CCM.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/CCM.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/CCM.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/CCM.Application.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Common/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Common/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Domain/obj/Debug/netcoreapp3.1/CCM.Domain.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/obj/Debug/netcoreapp3.1/CCM.Domain.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Infrastructure/obj/Debug/netcoreapp3.1/CCM.Infrastructure.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Infrastructure/obj/Debug/netcoreapp3.1/CCM.Infrastructure.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/CCM.WebApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/CCM.WebApi.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/Extensions/MediatRServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/Extensions/MediatRServices.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/CCM.WebApi.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/CCM.WebApi.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,8 +87,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F680C866-D120-4163-9634-EBD842255BE9/10/ActionResult.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/dotnetProjects/CCM-Backend/CCM.Application/User/Command/Update/UpdateUserHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/dotnetProjects/CCM-Backend/CCM.Application/User/Command/Update/UpdateUserHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AD61CA47-F8B7-4CC6-93A0-BA44CC73B5C7/147/CancellationToken.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E3741DF5-E582-492A-B330-EA9E7E3D8C84/1/OptionsServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
@@ -74,11 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CCM.WebApi/Extensions/HelpersServices.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/User/Query/GetAll/UserRoleResponseModel.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/User/Query/GetAll/GetAllUsersResponseModel.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/User/Query/GetAll/UserOrganisationResponseModel.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/User/Query/GetAll/Models.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/User/Query/GetAll/IGetAllUsers.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/User/Command/Delete/DeleteUserResponseModel.cs" />
         <option value="$PROJECT_DIR$/CCM.WebApi/Controllers/RoleController.cs" />
@@ -104,7 +123,6 @@
         <option value="$PROJECT_DIR$/CCM.Application/Organisation/Command/Add/IAddOrganisation.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/User/Command/Add/IAddUser.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/Day/Command/Update/UpdateDayResponseModel.cs" />
-        <option value="$PROJECT_DIR$/CCM.WebApi/Extensions/MediatRServices.cs" />
         <option value="$PROJECT_DIR$/CCM.WebApi/Controllers/DayController.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/Day/Command/Update/IUpdateDay.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/Models/ResponseModel.cs" />
@@ -125,6 +143,12 @@
         <option value="$PROJECT_DIR$/CCM.Application/User/Command/Update/UpdateUserHandler.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/User/Query/GetAll/GetAllUsersHandler.cs" />
         <option value="$PROJECT_DIR$/CCM.WebApi/Startup.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Map/Command/Add/AddMapResponseModel.cs" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/Extensions/MediatRServices.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Map/Command/Add/Models/MapSeat.cs" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/Controllers/MapController.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Map/Command/Add/IAddMap.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Map/Command/Add/AddMapHandler.cs" />
       </list>
     </option>
   </component>
@@ -206,7 +230,8 @@
       <workItem from="1605454588325" duration="700000" />
       <workItem from="1605455309077" duration="115000" />
       <workItem from="1605455443271" duration="7684000" />
-      <workItem from="1605467565017" duration="19564000" />
+      <workItem from="1605467565017" duration="20202000" />
+      <workItem from="1605566370780" duration="3904000" />
     </task>
     <task id="LOCAL-00001" summary="Setup architecture">
       <created>1605455784726</created>
@@ -285,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605487856450</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add file serving">
+      <created>1605488639033</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1605488639033</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,97 +350,114 @@
     <MESSAGE value="Adjust update user handler" />
     <MESSAGE value="Add Day CRUD operations" />
     <MESSAGE value="Add description to responses" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add description to responses" />
+    <MESSAGE value="Add file serving" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add file serving" />
   </component>
   <component name="WindowStateProjectService">
     <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1605466722557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605466722557" />
-    <state width="1877" height="194" key="GridCell.Tab.0.bottom" timestamp="1605488551178">
+    <state width="1877" height="233" key="GridCell.Tab.0.bottom" timestamp="1605569943327">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="194" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605485451138" />
-    <state width="1877" height="194" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605488551178" />
-    <state width="1877" height="194" key="GridCell.Tab.0.center" timestamp="1605488551178">
+    <state width="1877" height="233" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605569943327" />
+    <state width="1877" height="233" key="GridCell.Tab.0.center" timestamp="1605569943327">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="194" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605485451138" />
-    <state width="1877" height="194" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605488551178" />
-    <state width="1877" height="194" key="GridCell.Tab.0.left" timestamp="1605488551178">
+    <state width="1877" height="233" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605569943327" />
+    <state width="1877" height="233" key="GridCell.Tab.0.left" timestamp="1605569943327">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="194" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605485451138" />
-    <state width="1877" height="194" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605488551178" />
-    <state width="1877" height="194" key="GridCell.Tab.0.right" timestamp="1605488551178">
+    <state width="1877" height="233" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605569943327" />
+    <state width="1877" height="233" key="GridCell.Tab.0.right" timestamp="1605569943327">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="194" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605485451138" />
-    <state width="1877" height="194" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605488551178" />
-    <state width="1493" height="288" key="GridCell.Tab.1.bottom" timestamp="1605484500872">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="233" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605569943327" />
+    <state width="1493" height="288" key="GridCell.Tab.1.bottom" timestamp="1605489238818">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.1.center" timestamp="1605484500872">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="288" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
+    <state width="1493" height="288" key="GridCell.Tab.1.center" timestamp="1605489238818">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.1.left" timestamp="1605484500872">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="288" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
+    <state width="1493" height="288" key="GridCell.Tab.1.left" timestamp="1605489238818">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.1.right" timestamp="1605484500872">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="288" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
+    <state width="1493" height="288" key="GridCell.Tab.1.right" timestamp="1605489238818">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.2.bottom" timestamp="1605484500872">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="288" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
+    <state width="1493" height="288" key="GridCell.Tab.2.bottom" timestamp="1605489238818">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.2.center" timestamp="1605484500872">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="288" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
+    <state width="1493" height="288" key="GridCell.Tab.2.center" timestamp="1605489238818">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.2.left" timestamp="1605484500872">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="288" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
+    <state width="1493" height="288" key="GridCell.Tab.2.left" timestamp="1605489238818">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.2.right" timestamp="1605484500872">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="288" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
+    <state width="1493" height="288" key="GridCell.Tab.2.right" timestamp="1605489238818">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.3.bottom" timestamp="1605484500872">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="288" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
+    <state width="1493" height="288" key="GridCell.Tab.3.bottom" timestamp="1605489238818">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.3.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.3.center" timestamp="1605484500872">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="288" key="GridCell.Tab.3.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
+    <state width="1493" height="288" key="GridCell.Tab.3.center" timestamp="1605489238818">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.3.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.3.left" timestamp="1605484500872">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="288" key="GridCell.Tab.3.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
+    <state width="1493" height="288" key="GridCell.Tab.3.left" timestamp="1605489238818">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.3.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.3.right" timestamp="1605484500872">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="288" key="GridCell.Tab.3.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
+    <state width="1493" height="288" key="GridCell.Tab.3.right" timestamp="1605489238818">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.3.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.4.bottom" timestamp="1605484500872">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="288" key="GridCell.Tab.3.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
+    <state width="1493" height="288" key="GridCell.Tab.4.bottom" timestamp="1605489238818">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.4.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.4.center" timestamp="1605484500872">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="288" key="GridCell.Tab.4.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
+    <state width="1493" height="288" key="GridCell.Tab.4.center" timestamp="1605489238818">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.4.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.4.left" timestamp="1605484500872">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="288" key="GridCell.Tab.4.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
+    <state width="1493" height="288" key="GridCell.Tab.4.left" timestamp="1605489238818">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.4.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.4.right" timestamp="1605484500872">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="288" key="GridCell.Tab.4.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
+    <state width="1493" height="288" key="GridCell.Tab.4.right" timestamp="1605489238818">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.4.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
+    <state width="1493" height="288" key="GridCell.Tab.4.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
     <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size" timestamp="1605458002703">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -421,11 +470,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605457904297" />
-    <state x="2371" y="183" key="Vcs.Push.Dialog.v2" timestamp="1605487870355">
+    <state x="2371" y="183" key="Vcs.Push.Dialog.v2" timestamp="1605488651256">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605485443318" />
-    <state x="2371" y="183" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605487870355" />
+    <state x="2371" y="183" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605488651256" />
     <state width="776" height="420" key="XDebugger.FullValuePopup" timestamp="1605484472859">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
