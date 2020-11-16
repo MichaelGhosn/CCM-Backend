@@ -214,6 +214,11 @@
         </e>
         <e p="references.txt" t="Include" />
         <e p="Startup.cs" t="Include" />
+        <e p="wwwroot" t="Include">
+          <e p="MapsImages" t="Include">
+            <e p="pcr.jpg" t="Include" />
+          </e>
+        </e>
       </e>
       <e p="Core" t="Include" />
       <e p="Domain" t="Include" />

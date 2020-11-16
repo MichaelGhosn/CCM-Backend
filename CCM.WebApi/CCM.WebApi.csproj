@@ -18,4 +18,8 @@
       <ProjectReference Include="..\CCM.Domain\CCM.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="wwwroot\MapsImages" />
+    </ItemGroup>
+
 </Project>
