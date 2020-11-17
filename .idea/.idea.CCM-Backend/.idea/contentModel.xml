@@ -44,8 +44,20 @@
               <e p="AddMapResponseModel.cs" t="Include" />
               <e p="IAddMap.cs" t="Include" />
             </e>
+            <e p="Delete" t="Include">
+              <e p="DeleteMapHandler.cs" t="Include" />
+              <e p="DeleteMapResponseModel.cs" t="Include" />
+              <e p="IDeleteMap.cs" t="Include" />
+            </e>
+            <e p="Update" t="Include" />
           </e>
-          <e p="Query" t="Include" />
+          <e p="Query" t="Include">
+            <e p="GetAll" t="Include">
+              <e p="GetAllMapsByOrganisationHandler.cs" t="Include" />
+              <e p="GetAllMapsByOrganisationResponseModel.cs" t="Include" />
+              <e p="IGetAllMapsByOrganisation.cs" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="Models" t="Include">
           <e p="ResponseModel.cs" t="Include" />
@@ -229,6 +241,7 @@
           <e p="images" t="Include">
             <e p="maps" t="Include">
               <e p="dummy_map.png" t="Include" />
+              <e p="Map2_1_dummy_map.png" t="Include" />
               <e p="sddasdasdas_1_dummy_map.png" t="Include" />
               <e p="Test Map_1_dummy_map.png" t="Include" />
               <e p="TestMap_1_dummy_map.png" t="Include" />

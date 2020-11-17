@@ -34,48 +34,32 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85ff229f-32fb-4c1e-bd8d-36230b3795a7" name="Default Changelist" comment="Add file serving">
-      <change afterPath="$PROJECT_DIR$/CCM.Application/Map/Command/Add/AddMapHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CCM.Application/Map/Command/Add/AddMapResponseModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CCM.Application/Map/Command/Add/IAddMap.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CCM.WebApi/Controllers/MapController.cs" afterDir="false" />
+    <list default="true" id="85ff229f-32fb-4c1e-bd8d-36230b3795a7" name="Default Changelist" comment="Add Map request">
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Map/Command/Delete/DeleteMapHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Map/Command/Delete/DeleteMapResponseModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Map/Command/Delete/IDeleteMap.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Map/Query/GetAll/GetAllMapsByOrganisationHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Map/Query/GetAll/GetAllMapsByOrganisationResponseModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CCM.Application/Map/Query/GetAll/IGetAllMapsByOrganisation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/CCM.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/CCM.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/CCM.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/CCM.Application.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Common/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Common/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Domain/obj/Debug/netcoreapp3.1/CCM.Domain.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/obj/Debug/netcoreapp3.1/CCM.Domain.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Infrastructure/obj/Debug/netcoreapp3.1/CCM.Infrastructure.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Infrastructure/obj/Debug/netcoreapp3.1/CCM.Infrastructure.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/CCM.WebApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/CCM.WebApi.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/Controllers/MapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/Controllers/MapController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/Extensions/MediatRServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/Extensions/MediatRServices.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/CCM.WebApi.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/CCM.WebApi.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,15 +82,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CCM.Application/User/Query/GetAll/IGetAllUsers.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/User/Command/Delete/DeleteUserResponseModel.cs" />
-        <option value="$PROJECT_DIR$/CCM.WebApi/Controllers/RoleController.cs" />
-        <option value="$PROJECT_DIR$/CCM.WebApi/Controllers/OrganisationController.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/User/Command/Update/UpdateUserResponseModel.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/User/Command/Update/IUpdateUser.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/User/Command/Delete/IDeleteUser.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Role/Command/Update/IUpdateRole.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Role/Command/Delete/IDeleteRole.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/Organisation/Command/Delete/IDeleteOrganisation.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/Organisation/Command/Update/IUpdateOrganisation.cs" />
         <option value="$PROJECT_DIR$/CCM.WebApi/Controllers/UserController.cs" />
@@ -144,11 +119,20 @@
         <option value="$PROJECT_DIR$/CCM.Application/User/Query/GetAll/GetAllUsersHandler.cs" />
         <option value="$PROJECT_DIR$/CCM.WebApi/Startup.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/Map/Command/Add/AddMapResponseModel.cs" />
-        <option value="$PROJECT_DIR$/CCM.WebApi/Extensions/MediatRServices.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/Map/Command/Add/Models/MapSeat.cs" />
-        <option value="$PROJECT_DIR$/CCM.WebApi/Controllers/MapController.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/Map/Command/Add/IAddMap.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/Map/Command/Add/AddMapHandler.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Map/Query/GetAll/IGetAllMaps.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Map/Query/GetAll/GetAllMapsHandler.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Map/Query/GetAll/GetAllMapsResponseModel.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Map/Query/GetAll/IGetAllMapsByOrganisation.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Map/Query/GetAll/GetAllMapsByOrganisationResponseModel.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Map/Query/GetAll/GetAllMapsByOrganisationHandler.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Map/Command/Delete/DeleteMapResponseModel.cs" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/Extensions/MediatRServices.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Map/Command/Delete/IDeleteMap.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Map/Command/Delete/DeleteMapHandler.cs" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/Controllers/MapController.cs" />
       </list>
     </option>
   </component>
@@ -231,7 +215,7 @@
       <workItem from="1605455309077" duration="115000" />
       <workItem from="1605455443271" duration="7684000" />
       <workItem from="1605467565017" duration="20202000" />
-      <workItem from="1605566370780" duration="3904000" />
+      <workItem from="1605566370780" duration="6023000" />
     </task>
     <task id="LOCAL-00001" summary="Setup architecture">
       <created>1605455784726</created>
@@ -317,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605488639033</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add Map request">
+      <created>1605570549430</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1605570549430</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,33 +342,34 @@
     <MESSAGE value="Add Day CRUD operations" />
     <MESSAGE value="Add description to responses" />
     <MESSAGE value="Add file serving" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add file serving" />
+    <MESSAGE value="Add Map request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Map request" />
   </component>
   <component name="WindowStateProjectService">
     <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1605466722557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605466722557" />
-    <state width="1877" height="233" key="GridCell.Tab.0.bottom" timestamp="1605569943327">
+    <state width="1877" height="233" key="GridCell.Tab.0.bottom" timestamp="1605572310322">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="194" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605485451138" />
-    <state width="1877" height="233" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605569943327" />
-    <state width="1877" height="233" key="GridCell.Tab.0.center" timestamp="1605569943327">
+    <state width="1877" height="233" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605572310322" />
+    <state width="1877" height="233" key="GridCell.Tab.0.center" timestamp="1605572310322">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="194" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605485451138" />
-    <state width="1877" height="233" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605569943327" />
-    <state width="1877" height="233" key="GridCell.Tab.0.left" timestamp="1605569943327">
+    <state width="1877" height="233" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605572310322" />
+    <state width="1877" height="233" key="GridCell.Tab.0.left" timestamp="1605572310322">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="194" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605485451138" />
-    <state width="1877" height="233" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605569943327" />
-    <state width="1877" height="233" key="GridCell.Tab.0.right" timestamp="1605569943327">
+    <state width="1877" height="233" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605572310322" />
+    <state width="1877" height="233" key="GridCell.Tab.0.right" timestamp="1605572310322">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="194" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605485451138" />
-    <state width="1877" height="233" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605569943327" />
+    <state width="1877" height="233" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605572310322" />
     <state width="1493" height="288" key="GridCell.Tab.1.bottom" timestamp="1605489238818">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
