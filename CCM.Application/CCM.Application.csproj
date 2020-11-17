@@ -15,8 +15,4 @@
       <ProjectReference Include="..\CCM.Domain\CCM.Domain.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Map\Command\Update" />
-    </ItemGroup>
-
 </Project>

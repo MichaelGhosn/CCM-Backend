@@ -6,6 +6,7 @@ using CCM.Application.Day.Command.Update;
 using CCM.Application.Day.Query.GetAll;
 using CCM.Application.Map.Command.Add;
 using CCM.Application.Map.Command.Delete;
+using CCM.Application.Map.Command.Update;
 using CCM.Application.Map.Query.GetAll;
 using CCM.Application.Organisation.Command.Add;
 using CCM.Application.Organisation.Command.Delete;
@@ -54,6 +55,7 @@ namespace CCM.WebApi.Extensions
             services.AddMediatR(typeof(IAddMap).GetTypeInfo().Assembly);
             services.AddMediatR(typeof(IGetAllMapsByOrganisation).GetTypeInfo().Assembly);
             services.AddMediatR(typeof(IDeleteMap).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(IUpdateMap).GetTypeInfo().Assembly);
 
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
             // services.AddMediatR(Assembly.GetExecutingAssembly());

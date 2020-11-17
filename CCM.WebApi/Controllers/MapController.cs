@@ -2,6 +2,7 @@ using System;
 using System.Threading.Tasks;
 using CCM.Application.Map.Command.Add;
 using CCM.Application.Map.Command.Delete;
+using CCM.Application.Map.Command.Update;
 using CCM.Application.Map.Query.GetAll;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CCM.WebApi.Controllers
 {
     [ApiController]
-    [Route("api/controller")]
+    [Route("api/[controller]")]
     public class MapController : BaseController
     {
         // GET
@@ -37,6 +38,13 @@ namespace CCM.WebApi.Controllers
             {
                 MapId = mapId
             }));
+        }
+        
+        // UPDATE
+        [HttpPut]
+        public async Task<IActionResult> Update([FromForm] IUpdateMap request)
+        {
+            return Ok(await Mediator.Send(request));
         }
         
     }
