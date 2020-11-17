@@ -19,6 +19,18 @@ namespace CCM.Application.Map.Query.GetAll
         
         public async Task<ResponseModel<List<GetAllMapsByOrganisationResponseModel>>> Handle(IGetAllMapsByOrganisation request, CancellationToken cancellationToken)
         {
+            bool doesOrganisationExists =
+                _context.Organisation.Any(organisation => organisation.Id == request.OrganisationId);
+
+            if (!doesOrganisationExists)
+            {
+                return new ResponseModel<List<GetAllMapsByOrganisationResponseModel>>()
+                {
+                    Success = false,
+                    Description = "Organisation does not exists"
+                };
+            }
+            
             return new ResponseModel<List<GetAllMapsByOrganisationResponseModel>>()
             {
                 Success = true,

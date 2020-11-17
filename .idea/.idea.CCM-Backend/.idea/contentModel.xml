@@ -125,6 +125,27 @@
             </e>
           </e>
         </e>
+        <e p="Seat" t="Include">
+          <e p="Command" t="Include">
+            <e p="Add" t="Include">
+              <e p="AddSeatToMapHandler.cs" t="Include" />
+              <e p="AddSeatToMapResponseModel.cs" t="Include" />
+              <e p="IAddSeatToMap.cs" t="Include" />
+            </e>
+            <e p="Delete" t="Include">
+              <e p="DeleteSeatHandler.cs" t="Include" />
+              <e p="DeleteSeatResponseModel.cs" t="Include" />
+              <e p="IDeleteSeat.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Query" t="Include">
+            <e p="GetAll" t="Include">
+              <e p="GetAllSeatsByMapIdHandler.cs" t="Include" />
+              <e p="GetAllSeatsByMapIdResponseModel.cs" t="Include" />
+              <e p="IGetAllSeatsByMapId.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="User" t="Include">
           <e p="Command" t="Include">
             <e p="Add" t="Include">
@@ -221,6 +242,7 @@
           <e p="MapController.cs" t="Include" />
           <e p="OrganisationController.cs" t="Include" />
           <e p="RoleController.cs" t="Include" />
+          <e p="SeatController.cs" t="Include" />
           <e p="UserController.cs" t="Include" />
         </e>
         <e p="extensions" t="Include">
@@ -246,6 +268,7 @@
             <e p="maps" t="Include">
               <e p="dummy_map.png" t="Include" />
               <e p="Map2_1_dummy_map.png" t="Include" />
+              <e p="MapTest_1_dolly.png" t="Include" />
               <e p="sddasdasdas_1_dummy_map.png" t="Include" />
               <e p="Test Map_1_dummy_map.png" t="Include" />
               <e p="TestMap_1_dummy_map.png" t="Include" />

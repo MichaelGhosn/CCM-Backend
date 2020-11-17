@@ -16,6 +16,9 @@ using CCM.Application.Role.Command.Add;
 using CCM.Application.Role.Command.Delete;
 using CCM.Application.Role.Command.Update;
 using CCM.Application.Role.Query.GetAll;
+using CCM.Application.Seat.Command.Add;
+using CCM.Application.Seat.Command.Delete;
+using CCM.Application.Seat.Query.GetAll;
 using CCM.Application.User.Command.Add;
 using CCM.Application.User.Command.Delete;
 using CCM.Application.User.Command.Update;
@@ -56,6 +59,11 @@ namespace CCM.WebApi.Extensions
             services.AddMediatR(typeof(IGetAllMapsByOrganisation).GetTypeInfo().Assembly);
             services.AddMediatR(typeof(IDeleteMap).GetTypeInfo().Assembly);
             services.AddMediatR(typeof(IUpdateMap).GetTypeInfo().Assembly);
+            
+            
+            services.AddMediatR(typeof(IAddSeatToMap).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(IGetAllSeatsByMapId).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(IDeleteSeat).GetTypeInfo().Assembly);
 
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
             // services.AddMediatR(Assembly.GetExecutingAssembly());
