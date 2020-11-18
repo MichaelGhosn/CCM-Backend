@@ -17,6 +17,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="OpeningTime\Query" />
       <Folder Include="Reservation\Query" />
     </ItemGroup>
 

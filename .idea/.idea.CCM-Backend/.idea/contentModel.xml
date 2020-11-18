@@ -73,6 +73,16 @@
             </e>
           </e>
         </e>
+        <e p="OpeningTime" t="Include">
+          <e p="Command" t="Include">
+            <e p="Add" t="Include">
+              <e p="AddOpeningTimeToMapHandler.cs" t="Include" />
+              <e p="AddOpeningTimeToMapResponseModel.cs" t="Include" />
+              <e p="IAddOpeningTimeToMap.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Query" t="Include" />
+        </e>
         <e p="Organisation" t="Include">
           <e p="Command" t="Include">
             <e p="Add" t="Include">
@@ -253,6 +263,7 @@
           <e p="BaseController.cs" t="Include" />
           <e p="DayController.cs" t="Include" />
           <e p="MapController.cs" t="Include" />
+          <e p="OpeningTimeController.cs" t="Include" />
           <e p="OrganisationController.cs" t="Include" />
           <e p="ReservationController.cs" t="Include" />
           <e p="RoleController.cs" t="Include" />

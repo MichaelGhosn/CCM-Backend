@@ -8,6 +8,7 @@ using CCM.Application.Map.Command.Add;
 using CCM.Application.Map.Command.Delete;
 using CCM.Application.Map.Command.Update;
 using CCM.Application.Map.Query.GetAll;
+using CCM.Application.OpeningTime.Command.Add;
 using CCM.Application.Organisation.Command.Add;
 using CCM.Application.Organisation.Command.Delete;
 using CCM.Application.Organisation.Command.Update;
@@ -68,6 +69,9 @@ namespace CCM.WebApi.Extensions
             
             
             services.AddMediatR(typeof(IAddReservation).GetTypeInfo().Assembly);
+            
+            
+            services.AddMediatR(typeof(IAddOpeningTimeToMap).GetTypeInfo().Assembly);
 
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
             // services.AddMediatR(Assembly.GetExecutingAssembly());
