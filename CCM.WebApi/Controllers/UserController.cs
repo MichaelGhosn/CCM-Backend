@@ -2,6 +2,7 @@ using System.Threading.Tasks;
 using CCM.Application.User.Command.Add;
 using CCM.Application.User.Command.Delete;
 using CCM.Application.User.Command.Update;
+using CCM.Application.User.Query.AuthenticateUser;
 using CCM.Application.User.Query.GetAll;
 using Microsoft.AspNetCore.Mvc;
 
@@ -38,6 +39,14 @@ namespace CCM.WebApi.Controllers
         // UPDATE
         [HttpPut]
         public async Task<ActionResult> Update([FromBody] IUpdateUser request)
+        {
+            return Ok(await Mediator.Send(request));
+        }
+        
+        
+        // Authenticate
+        [HttpPost("authenticate")]
+        public async Task<IActionResult> Authenticate([FromBody] IAuthenticateUser request)
         {
             return Ok(await Mediator.Send(request));
         }

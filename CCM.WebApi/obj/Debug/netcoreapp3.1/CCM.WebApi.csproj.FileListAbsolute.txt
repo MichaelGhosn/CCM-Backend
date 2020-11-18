@@ -67,3 +67,7 @@ E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\CCM.Common.dll
 E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\CCM.Common.pdb
 E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\BCrypt.Net-Next.dll
+E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll

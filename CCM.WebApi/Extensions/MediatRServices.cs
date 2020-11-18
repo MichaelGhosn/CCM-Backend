@@ -24,6 +24,7 @@ using CCM.Application.Seat.Query.GetAll;
 using CCM.Application.User.Command.Add;
 using CCM.Application.User.Command.Delete;
 using CCM.Application.User.Command.Update;
+using CCM.Application.User.Query.AuthenticateUser;
 using CCM.Application.User.Query.GetAll;
 using MediatR;
 using MediatR.Pipeline;
@@ -72,6 +73,10 @@ namespace CCM.WebApi.Extensions
             
             
             services.AddMediatR(typeof(IAddOpeningTimeToMap).GetTypeInfo().Assembly);
+            
+            
+            
+            services.AddMediatR(typeof(IAuthenticateUser).GetTypeInfo().Assembly);
 
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
             // services.AddMediatR(Assembly.GetExecutingAssembly());

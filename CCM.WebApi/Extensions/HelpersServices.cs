@@ -1,5 +1,6 @@
 using CCM.Common.Security;
 using CCM.Common.Security.Encryption;
+using CCM.Common.Security.Tokenizer;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CCM.WebApi.Extensions
@@ -9,6 +10,7 @@ namespace CCM.WebApi.Extensions
         internal static void AddHelpersServices(this IServiceCollection services)
         {
             services.AddTransient<IHash, BCryptHash>();
+            services.AddSingleton<ITokenGenerator, JWTTokenGenerator>();
         }
     }
 }

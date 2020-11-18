@@ -11,7 +11,7 @@ namespace CCM.Application.User.Command.Add
     public class AddUserHandler: IRequestHandler<IAddUser, ResponseModel<AddUserResponseModel>>
     {
         private readonly ccmContext _context;
-        private IHash _hash;
+        private readonly IHash _hash;
 
         public AddUserHandler(ccmContext context, IHash hash)
         {

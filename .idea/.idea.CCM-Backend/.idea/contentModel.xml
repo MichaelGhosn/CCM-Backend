@@ -185,6 +185,11 @@
             </e>
           </e>
           <e p="Query" t="Include">
+            <e p="AuthenticateUser" t="Include">
+              <e p="AuthenticateUserHandler.cs" t="Include" />
+              <e p="AuthenticateUserResponseModel.cs" t="Include" />
+              <e p="IAuthenticateUser.cs" t="Include" />
+            </e>
             <e p="GetAll" t="Include">
               <e p="GetAllUsersHandler.cs" t="Include" />
               <e p="GetAllUsersResponseModel.cs" t="Include" />
@@ -214,6 +219,11 @@
           <e p="Hash" t="Include">
             <e p="BCryptHash.cs" t="Include" />
             <e p="IHash.cs" t="Include" />
+          </e>
+          <e p="Tokenizer" t="Include">
+            <e p="ITokenGenerator.cs" t="Include" />
+            <e p="JWTTokenGenerator.cs" t="Include" />
+            <e p="TokenModel.cs" t="Include" />
           </e>
         </e>
       </e>
