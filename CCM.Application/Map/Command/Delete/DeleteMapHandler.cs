@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using CCM.Application.Models;
 using CCM.Domain;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 namespace CCM.Application.Map.Command.Delete
 {
@@ -18,7 +19,7 @@ namespace CCM.Application.Map.Command.Delete
         
         public async Task<ResponseModel<DeleteMapResponseModel>> Handle(IDeleteMap request, CancellationToken cancellationToken)
         {
-            Domain.Map map = _context.Map.FirstOrDefault(m => m.Id == request.MapId);
+            Domain.Map map = _context.Map.Include(map => map.Seat).ThenInclude(seat => seat.Reservation).Include(map => map.Openingtime).FirstOrDefault(m => m.Id == request.MapId);
 
             if (map == null)
             {
@@ -28,7 +29,14 @@ namespace CCM.Application.Map.Command.Delete
                     Description = "Map does not exist"
                 };
             }
-
+            
+            foreach (var seat in map.Seat)
+            {
+                _context.Reservation.RemoveRange(seat.Reservation);
+            }
+            _context.Seat.RemoveRange(map.Seat);
+            
+            
             _context.Map.Remove(map);
             _context.SaveChangesAsync();
             

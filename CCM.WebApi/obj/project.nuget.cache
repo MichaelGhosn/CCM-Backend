@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gdz+oLSdeVSpQmOAY+Bps2Jrwzo/NGCBareptWBxz+UTo2C7+4EEPdMVwb1EDBpaOjMYP2O+FnoPi2mppjIM0A==",
+  "dgSpecHash": "H4xVxKWSkKeVlb/6kFZTQ6oCus+1RaaMN1O5VccltNVwBFJWzgjok2ViLuE8txrCeyhKtViXAFHBNp4x4abh1Q==",
   "success": true,
   "projectFilePath": "E:\\dotnetProjects\\CCM-Backend\\CCM.WebApi\\CCM.WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\michael\\.nuget\\packages\\bcrypt.net-next\\4.0.0\\bcrypt.net-next.4.0.0.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\k4os.compression.lz4\\1.1.11\\k4os.compression.lz4.1.1.11.nupkg.sha512",

@@ -12,12 +12,12 @@ namespace CCM.Application.User.Command.Update
     public class UpdateUserHandler: IRequestHandler<IUpdateUser, ResponseModel<UpdateUserResponseModel>>
     {
         private readonly ccmContext _context;
-        private IEncryption _encryption;
+        private IHash _hash;
 
-        public UpdateUserHandler(ccmContext context, IEncryption encryption)
+        public UpdateUserHandler(ccmContext context, IHash hash)
         {
             _context = context;
-            _encryption = encryption;
+            _hash = hash;
         }
 
         public async Task<ResponseModel<UpdateUserResponseModel>> Handle(IUpdateUser request, CancellationToken cancellationToken)
@@ -68,7 +68,7 @@ namespace CCM.Application.User.Command.Update
             user.FirstName = String.IsNullOrEmpty(request.FirstName) ? user.FirstName : request.FirstName;
             user.LastName = String.IsNullOrEmpty(request.LastName) ? user.LastName : request.LastName;
             user.Email = String.IsNullOrEmpty(request.Email) ? user.Email : request.Email;
-            user.Password = String.IsNullOrEmpty(request.Password) ? user.Password : _encryption.Encrypt(request.Password);
+            user.Password = String.IsNullOrEmpty(request.Password) ? user.Password : _hash.Hash(request.Password);
             user.OrganisationId = request.OrganisationId == 0 ? user.OrganisationId : request.OrganisationId;
             user.RoleId = request.RoleId == 0 ? user.RoleId : request.RoleId;
             

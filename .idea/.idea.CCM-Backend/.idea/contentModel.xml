@@ -211,9 +211,9 @@
           </e>
         </e>
         <e p="Security" t="Include">
-          <e p="Encryption" t="Include">
-            <e p="IEncryption.cs" t="Include" />
-            <e p="Pbkdf2Encryption.cs" t="Include" />
+          <e p="Hash" t="Include">
+            <e p="BCryptHash.cs" t="Include" />
+            <e p="IHash.cs" t="Include" />
           </e>
         </e>
       </e>

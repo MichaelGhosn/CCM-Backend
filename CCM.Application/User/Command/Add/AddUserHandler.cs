@@ -11,12 +11,12 @@ namespace CCM.Application.User.Command.Add
     public class AddUserHandler: IRequestHandler<IAddUser, ResponseModel<AddUserResponseModel>>
     {
         private readonly ccmContext _context;
-        private IEncryption _encryption;
+        private IHash _hash;
 
-        public AddUserHandler(ccmContext context, IEncryption encryption)
+        public AddUserHandler(ccmContext context, IHash hash)
         {
             _context = context;
-            _encryption = encryption;
+            _hash = hash;
         }
         
         public async Task<ResponseModel<AddUserResponseModel>> Handle(IAddUser request, CancellationToken cancellationToken)
@@ -60,7 +60,7 @@ namespace CCM.Application.User.Command.Add
                 FirstName = request.FirstName,
                 LastName = request.LastName,
                 Email = request.Email,
-                Password = _encryption.Encrypt(request.Password),
+                Password = _hash.Hash(request.Password),
                 RoleId = request.RoleId,
                 OrganisationId = request.OrganisationId
             });

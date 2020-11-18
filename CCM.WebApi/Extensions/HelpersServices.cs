@@ -8,7 +8,7 @@ namespace CCM.WebApi.Extensions
     {
         internal static void AddHelpersServices(this IServiceCollection services)
         {
-            services.AddTransient<IEncryption, Pbkdf2Encryption>();
+            services.AddTransient<IHash, BCryptHash>();
         }
     }
 }

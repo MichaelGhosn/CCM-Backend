@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using CCM.Application.Models;
 using CCM.Domain;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 namespace CCM.Application.User.Command.Delete
 {
@@ -18,7 +19,7 @@ namespace CCM.Application.User.Command.Delete
         
         public async Task<ResponseModel<DeleteUserResponseModel>> Handle(IDeleteUser request, CancellationToken cancellationToken)
         {
-            Domain.User user = _context.User.FirstOrDefault(user => user.Id == request.Id);
+            Domain.User user = _context.User.Include(user => user.Reservation).FirstOrDefault(user => user.Id == request.Id);
 
             if (user == null)
             {
@@ -28,7 +29,10 @@ namespace CCM.Application.User.Command.Delete
                     Description = "User does not exists"
                 };
             }
-
+            
+       
+            _context.Reservation.RemoveRange(user.Reservation);
+            
             _context.User.Remove(user);
             _context.SaveChangesAsync();
             

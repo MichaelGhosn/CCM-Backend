@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "fSMddeDQ1ldc17/HpuBDcdBnxfNMt9Bm6vNvPyKLindNvKlYttm3DRCIKiUYYD34iBB7LYntBTvNzDZym+Yw+A==",
+  "dgSpecHash": "5fpKhSFZdsWoRjVBDSfNz5XUpm+XwEcPGRN8s8FMlIRmuPEVe3N/IdpSdFV7QB5qV1/hOyM0AmN/giBQyO5hUg==",
   "success": true,
   "projectFilePath": "E:\\dotnetProjects\\CCM-Backend\\CCM.Common\\CCM.Common.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\michael\\.nuget\\packages\\bcrypt.net-next\\4.0.0\\bcrypt.net-next.4.0.0.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.0\\microsoft.aspnetcore.cryptography.internal.5.0.0.nupkg.sha512",
