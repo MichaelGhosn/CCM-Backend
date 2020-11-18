@@ -133,7 +133,7 @@ namespace CCM.Application.Reservation.Command.Add
             return new ResponseModel<AddReservationResponseModel>()
             {
                 Success = true,
-                Description = (alreadyBookedSeatsDuringThatTime + 1) + " of " + mapTotalCapacity
+                Description = "Revervation was successfull, " + (alreadyBookedSeatsDuringThatTime + 1) + " booked of " + mapTotalCapacity + " available during that time"
                 
             };
             
