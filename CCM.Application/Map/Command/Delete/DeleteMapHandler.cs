@@ -9,7 +9,7 @@ namespace CCM.Application.Map.Command.Delete
 {
     public class DeleteMapHandler: IRequestHandler<IDeleteMap, ResponseModel<DeleteMapResponseModel>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
 
         public DeleteMapHandler(ccmContext context)
         {

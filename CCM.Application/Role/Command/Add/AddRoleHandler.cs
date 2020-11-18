@@ -9,7 +9,7 @@ namespace CCM.Application.Role.Command.Add
 {
     public class AddRoleHandler: IRequestHandler<IAddRole, ResponseModel<AddRoleResponseModel>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
 
         public AddRoleHandler(ccmContext context)
         {

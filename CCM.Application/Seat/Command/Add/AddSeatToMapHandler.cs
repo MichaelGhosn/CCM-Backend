@@ -9,7 +9,7 @@ namespace CCM.Application.Seat.Command.Add
 {
     public class AddSeatToMapHandler: IRequestHandler<IAddSeatToMap, ResponseModel<AddSeatToMapResponseModel>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
 
         public AddSeatToMapHandler(ccmContext context)
         {

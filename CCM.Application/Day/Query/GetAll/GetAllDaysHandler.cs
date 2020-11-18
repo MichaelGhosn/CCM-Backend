@@ -10,7 +10,7 @@ namespace CCM.Application.Day.Query.GetAll
 {
     public class GetAllDaysHandler: IRequestHandler<IGetAllDays, ResponseModel<List<GetAllDaysResponseModel>>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
 
         public GetAllDaysHandler(ccmContext context)
         {

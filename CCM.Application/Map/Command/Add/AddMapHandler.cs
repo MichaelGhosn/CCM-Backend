@@ -11,7 +11,7 @@ namespace CCM.Application.Map.Command.Add
 {
     public class AddMapHandler: IRequestHandler<IAddMap, ResponseModel<AddMapResponseModel>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
 
         public AddMapHandler(ccmContext context)
         {

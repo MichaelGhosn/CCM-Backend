@@ -11,7 +11,7 @@ namespace CCM.Application.User.Command.Update
 {
     public class UpdateUserHandler: IRequestHandler<IUpdateUser, ResponseModel<UpdateUserResponseModel>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
         private IEncryption _encryption;
 
         public UpdateUserHandler(ccmContext context, IEncryption encryption)

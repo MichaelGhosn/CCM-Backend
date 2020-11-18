@@ -9,7 +9,7 @@ namespace CCM.Application.Day.Command.Update
 {
     public class UpdateDayHandler: IRequestHandler<IUpdateDay, ResponseModel<UpdateDayResponseModel>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
 
         public UpdateDayHandler(ccmContext context)
         {

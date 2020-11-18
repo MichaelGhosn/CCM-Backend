@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XYWPcbGDcMNmEYsrMzzpjk4RxdUZOJCAD43J0EjdbXN0U9ERfF/zmeeT6GJrJea3yUnjQRdo09NuxHu9PrHBew==",
+  "dgSpecHash": "97AupbinhzYgmI+Hgkb8RXgiia+jGix44gAyJVFSnMqXnMBJwBXUIjcDMmkj9ESBClCNLB0MzCSZ6Ba32o0QoA==",
   "success": true,
   "projectFilePath": "E:\\dotnetProjects\\CCM-Backend\\CCM.Application\\CCM.Application.csproj",
   "expectedPackageFiles": [
@@ -44,6 +44,7 @@
     "C:\\Users\\michael\\.nuget\\packages\\mysql.data\\8.0.22\\mysql.data.8.0.22.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\mysql.data.entityframeworkcore\\8.0.22\\mysql.data.entityframeworkcore.8.0.22.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\1.6.0\\netstandard.library.1.6.0.nupkg.sha512",
+    "C:\\Users\\michael\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system\\4.0.0\\runtime.native.system.4.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system.io.compression\\4.1.0\\runtime.native.system.io.compression.4.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system.net.http\\4.0.1\\runtime.native.system.net.http.4.0.1.nupkg.sha512",

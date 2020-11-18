@@ -10,7 +10,7 @@ namespace CCM.Application.Map.Query.GetAll
 {
     public class GetAllMapsByOrganisationHandler: IRequestHandler<IGetAllMapsByOrganisation, ResponseModel<List<GetAllMapsByOrganisationResponseModel>>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
 
         public GetAllMapsByOrganisationHandler(ccmContext context)
         {
@@ -39,8 +39,8 @@ namespace CCM.Application.Map.Query.GetAll
                     MapId = map.Id,
                     MapName = map.Name,
                     Image = map.ImagePath,
-                    Capacity = map.Capacity ?? 0,
-                    AuthorisedCapacity = map.AuthorizedCapacity ?? 0
+                    Capacity = map.Capacity,
+                    AuthorisedCapacity = 0
                 }).ToList(),
                 Description = "Successfully fetched data"
             };

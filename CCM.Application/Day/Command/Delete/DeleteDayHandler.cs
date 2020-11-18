@@ -9,7 +9,7 @@ namespace CCM.Application.Day.Command.Delete
 {
     public class DeleteDayHandler: IRequestHandler<IDeleteDay, ResponseModel<DeleteDayResponseModel>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
 
         public DeleteDayHandler(ccmContext context)
         {

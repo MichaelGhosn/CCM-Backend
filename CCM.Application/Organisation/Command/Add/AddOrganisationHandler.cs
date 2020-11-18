@@ -9,7 +9,7 @@ namespace CCM.Application.Organisation.Command.Add
 {
     public class AddOrganisationHandler: IRequestHandler<IAddOrganisation, ResponseModel<AddOrganisationResponseModel>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
 
         public AddOrganisationHandler(ccmContext context)
         {

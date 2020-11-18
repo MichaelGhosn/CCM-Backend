@@ -11,7 +11,7 @@ namespace CCM.Application.User.Query.GetAll
 {
     public class GetAllUsersHandler: IRequestHandler<IGetAllUsers, ResponseModel<List<GetAllUsersResponseModel>>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
 
         public GetAllUsersHandler(ccmContext context)
         {

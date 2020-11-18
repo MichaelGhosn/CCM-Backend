@@ -9,7 +9,7 @@ namespace CCM.Application.Organisation.Command.Delete
 {
     public class DeleteOrganisationHandler: IRequestHandler<IDeleteOrganisation, ResponseModel<DeleteOrganisationViewModel>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
 
         public DeleteOrganisationHandler(ccmContext context)
         {

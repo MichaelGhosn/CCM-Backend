@@ -10,7 +10,7 @@ namespace CCM.Application.User.Command.Add
 {
     public class AddUserHandler: IRequestHandler<IAddUser, ResponseModel<AddUserResponseModel>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
         private IEncryption _encryption;
 
         public AddUserHandler(ccmContext context, IEncryption encryption)

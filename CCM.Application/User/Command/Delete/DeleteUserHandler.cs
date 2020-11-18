@@ -9,7 +9,7 @@ namespace CCM.Application.User.Command.Delete
 {
     public class DeleteUserHandler: IRequestHandler<IDeleteUser, ResponseModel<DeleteUserResponseModel>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
 
         public DeleteUserHandler(ccmContext context)
         {

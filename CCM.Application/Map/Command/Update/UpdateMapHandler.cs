@@ -11,7 +11,7 @@ namespace CCM.Application.Map.Command.Update
 {
     public class UpdateMapHandler: IRequestHandler<IUpdateMap, ResponseModel<UpdateMapResponseModel>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
 
         public UpdateMapHandler(ccmContext context)
         {

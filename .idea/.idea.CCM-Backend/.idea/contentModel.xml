@@ -99,6 +99,16 @@
             </e>
           </e>
         </e>
+        <e p="Reservation" t="Include">
+          <e p="Command" t="Include">
+            <e p="Add" t="Include">
+              <e p="AddReservationHandler.cs" t="Include" />
+              <e p="AddReservationResponseModel.cs" t="Include" />
+              <e p="IAddReservation.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Query" t="Include" />
+        </e>
         <e p="Role" t="Include">
           <e p="Command" t="Include">
             <e p="Add" t="Include">
@@ -180,6 +190,9 @@
       <e p="CCM.Common" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="CCM.Common.csproj" t="IncludeRecursive" />
+        <e p="extensions" t="Include">
+          <e p="StringExtensions.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -241,6 +254,7 @@
           <e p="DayController.cs" t="Include" />
           <e p="MapController.cs" t="Include" />
           <e p="OrganisationController.cs" t="Include" />
+          <e p="ReservationController.cs" t="Include" />
           <e p="RoleController.cs" t="Include" />
           <e p="SeatController.cs" t="Include" />
           <e p="UserController.cs" t="Include" />

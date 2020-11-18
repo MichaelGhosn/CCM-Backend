@@ -9,7 +9,7 @@ namespace CCM.Application.Organisation.Command.Update
 {
     public class UpdateOrganisationHandler: IRequestHandler<IUpdateOrganisation, ResponseModel<UpdateOrganisationResponseModel>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
 
         public UpdateOrganisationHandler(ccmContext context)
         {

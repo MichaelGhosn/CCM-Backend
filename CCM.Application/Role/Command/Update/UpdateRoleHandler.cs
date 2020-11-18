@@ -9,7 +9,7 @@ namespace CCM.Application.Role.Command.Update
 {
     public class UpdateRoleHandler: IRequestHandler<IUpdateRole, ResponseModel<UpdateRoleResponseModel>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
 
         public UpdateRoleHandler(ccmContext context)
         {

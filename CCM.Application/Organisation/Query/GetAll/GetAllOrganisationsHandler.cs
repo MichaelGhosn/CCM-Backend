@@ -10,7 +10,7 @@ namespace CCM.Application.Organisation.Query.GetAll
 {
     public class GetAllOrganisationsHandler: IRequestHandler<IGetAllOrganisations, ResponseModel<List<GetAllOrganisationsResponseModel>>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
 
         public GetAllOrganisationsHandler(ccmContext context)
         {

@@ -9,7 +9,7 @@ namespace CCM.Application.Role.Command.Delete
 {
     public class DeleteRoleHandler: IRequestHandler<IDeleteRole, ResponseModel<DeleteRoleResponseModel>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
 
         public DeleteRoleHandler(ccmContext context)
         {

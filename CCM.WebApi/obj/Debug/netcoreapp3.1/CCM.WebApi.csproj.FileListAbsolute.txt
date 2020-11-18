@@ -65,3 +65,4 @@ E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNe
 E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\CCM.Common.dll
 E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\CCM.Common.pdb
+E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

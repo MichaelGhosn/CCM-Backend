@@ -9,7 +9,7 @@ namespace CCM.Application.Day.Command.Add
 {
     public class AddDayHandler: IRequestHandler<IAddDay, ResponseModel<AddDayResponseModel>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
 
         public AddDayHandler(ccmContext context)
         {

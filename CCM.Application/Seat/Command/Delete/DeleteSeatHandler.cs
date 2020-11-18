@@ -9,7 +9,7 @@ namespace CCM.Application.Seat.Command.Delete
 {
     public class DeleteSeatHandler: IRequestHandler<IDeleteSeat, ResponseModel<DeleteSeatResponseModel>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
 
         public DeleteSeatHandler(ccmContext context)
         {

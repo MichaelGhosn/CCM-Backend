@@ -10,7 +10,7 @@ namespace CCM.Application.Seat.Query.GetAll
 {
     public class GetAllSeatsByMapIdHandler: IRequestHandler<IGetAllSeatsByMapId, ResponseModel<List<GetAllSeatsByMapIdResponseModel>>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
 
         public GetAllSeatsByMapIdHandler(ccmContext context)
         {

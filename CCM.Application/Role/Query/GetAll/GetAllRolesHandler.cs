@@ -10,7 +10,7 @@ namespace CCM.Application.Role.Query.GetAll
 {
     public class GetAllRolesHandler: IRequestHandler<IGetAllRoles, ResponseModel<List<GetAllRolesResponseModel>>>
     {
-        private ccmContext _context;
+        private readonly ccmContext _context;
 
         public GetAllRolesHandler(ccmContext context)
         {
