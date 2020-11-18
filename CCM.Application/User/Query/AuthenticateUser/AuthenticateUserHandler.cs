@@ -64,7 +64,6 @@ namespace CCM.Application.User.Query.AuthenticateUser
                       UserId = user.Id,
                       OrganisationId = user.OrganisationId,
                       OrganisationName = user.Organisation.Name,
-                      RoleId = user.RoleId,
                       RoleName = user.Role.Name
                   })
                 },

@@ -23,7 +23,6 @@ namespace CCM.Common.Security.Tokenizer
                     new Claim("UserName", model.FirstName),
                     new Claim("LastName", model.LastName),
                     new Claim("Email", model.Email),
-                    new Claim("RoleId", model.RoleId.ToString()),
                     new Claim("RoleName", model.RoleName),
                     new Claim("OrganisationId", model.OrganisationId.ToString()),
                     new Claim("OrganisationName", model.OrganisationName),
