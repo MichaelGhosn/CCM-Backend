@@ -31,6 +31,14 @@ namespace CCM.WebApi
         {
             services.AddControllers();
             
+            services.AddCors(o => o.AddPolicy("CorsPolicy", builder =>
+            {
+                builder
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials()
+                    .WithOrigins("http://localhost:4200");
+            }));
             services.AddSwaggerGen();
 
             services.AddMediatRServices();
@@ -41,6 +49,7 @@ namespace CCM.WebApi
 
             services.AddHelpersServices();
             
+  
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +59,9 @@ namespace CCM.WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
+            
+            app.UseCors("CorsPolicy");
+
             
             app.UseStaticFiles();
 
@@ -65,6 +77,8 @@ namespace CCM.WebApi
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "CCM V1");
             });
+            
+            
             
         }
     }
