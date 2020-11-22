@@ -4,6 +4,7 @@ using CCM.Application.User.Command.Delete;
 using CCM.Application.User.Command.Update;
 using CCM.Application.User.Query.AuthenticateUser;
 using CCM.Application.User.Query.GetAll;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CCM.WebApi.Controllers

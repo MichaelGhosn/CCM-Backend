@@ -6,3 +6,5 @@ https://www.roundthecode.com/dotnet/how-the-mediator-design-pattern-simplifies-a
 
 
 https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-5.0&tabs=windows
+
+https://www.thecodebuzz.com/jwt-authorization-token-swagger-open-api-asp-net-core-3-0/

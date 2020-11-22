@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using CCM.Common.Security.Tokenizer;
 using CCM.WebApi.Extensions;
+using CCM.WebApi.Middlewares;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -40,7 +41,8 @@ namespace CCM.WebApi
                     .AllowCredentials()
                     .WithOrigins("http://localhost:4200");
             }));
-            services.AddSwaggerGen();
+            
+            services.AddSwaggerServices();
 
             services.AddMediatRServices();
             
@@ -61,6 +63,8 @@ namespace CCM.WebApi
                 app.UseDeveloperExceptionPage();
             }
             
+            app.UseAuthorisationMiddleware();
+
             app.UseCors("CorsPolicy");
 
             
@@ -70,15 +74,13 @@ namespace CCM.WebApi
             app.UseRouting();
             
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
-          
-            
+
             app.UseSwagger();
 
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "CCM V1");
             });
-            
             
             
         }

@@ -205,6 +205,9 @@
       <e p="CCM.Common" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="CCM.Common.csproj" t="IncludeRecursive" />
+        <e p="Exceptions" t="Include">
+          <e p="JwtNotFoundException.cs" t="Include" />
+        </e>
         <e p="extensions" t="Include">
           <e p="StringExtensions.cs" t="Include" />
         </e>
@@ -284,6 +287,11 @@
           <e p="DBContextService.cs" t="Include" />
           <e p="HelpersServices.cs" t="Include" />
           <e p="MediatRServices.cs" t="Include" />
+          <e p="SwaggerServices.cs" t="Include" />
+        </e>
+        <e p="Middlewares" t="Include">
+          <e p="AuthorisationMiddleware.cs" t="Include" />
+          <e p="AuthorisationMiddlewareExtensions.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
