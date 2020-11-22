@@ -3,3 +3,6 @@
 https://medium.com/swlh/dependency-injection-v-mediatr-a-simple-c-benchmark-32630ff864ea
 
 https://www.roundthecode.com/dotnet/how-the-mediator-design-pattern-simplifies-an-application
+
+
+https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-5.0&tabs=windows

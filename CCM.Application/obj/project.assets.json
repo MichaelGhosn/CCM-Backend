@@ -1924,6 +1924,7 @@
           "MediatR": "9.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0",
           "Microsoft.AspNetCore.Cryptography.KeyDerivation": "5.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "3.1.1",
           "System.IdentityModel.Tokens.Jwt": "6.8.0"
         },
         "compile": {

@@ -1,6 +1,7 @@
 using CCM.Common.Security;
 using CCM.Common.Security.Encryption;
 using CCM.Common.Security.Tokenizer;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CCM.WebApi.Extensions

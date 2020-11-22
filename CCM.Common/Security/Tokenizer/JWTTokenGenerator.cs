@@ -2,16 +2,23 @@ using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
 namespace CCM.Common.Security.Tokenizer
 {
     public class JWTTokenGenerator: ITokenGenerator
     {
+        public IConfiguration Configuration { get; }
+
+        public JWTTokenGenerator(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+        
         public override string GenerateToken(TokenModel model)
         {
-            var mySecret = "asdv234234^&%&^%&^hjsdfb2%%%";
-            var mySecurityKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(mySecret));
+            var mySecurityKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(Configuration["JwtSecret"]));
             
             var tokenHandler = new JwtSecurityTokenHandler();
             

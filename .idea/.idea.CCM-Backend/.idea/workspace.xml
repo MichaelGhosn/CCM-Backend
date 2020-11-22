@@ -34,85 +34,52 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85ff229f-32fb-4c1e-bd8d-36230b3795a7" name="Default Changelist" comment="Seat operations done">
-      <change afterPath="$PROJECT_DIR$/CCM.Application/Reservation/Command/Add/AddReservationHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CCM.Application/Reservation/Command/Add/AddReservationResponseModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CCM.Application/Reservation/Command/Add/IAddReservation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CCM.Common/Extensions/StringExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CCM.WebApi/Controllers/ReservationController.cs" afterDir="false" />
+    <list default="true" id="85ff229f-32fb-4c1e-bd8d-36230b3795a7" name="Default Changelist" comment="Add CORS">
+      <change afterPath="$PROJECT_DIR$/CCM.Common/Security/Tokenizer/SecretModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/CCM.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/CCM.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/Day/Command/Add/AddDayHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/Day/Command/Add/AddDayHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/Day/Command/Delete/DeleteDayHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/Day/Command/Delete/DeleteDayHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/Day/Command/Update/UpdateDayHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/Day/Command/Update/UpdateDayHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/Day/Query/GetAll/GetAllDaysHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/Day/Query/GetAll/GetAllDaysHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/Map/Command/Add/AddMapHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/Map/Command/Add/AddMapHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/Map/Command/Delete/DeleteMapHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/Map/Command/Delete/DeleteMapHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/Map/Command/Update/UpdateMapHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/Map/Command/Update/UpdateMapHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/Map/Query/GetAll/GetAllMapsByOrganisationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/Map/Query/GetAll/GetAllMapsByOrganisationHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/Organisation/Command/Add/AddOrganisationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/Organisation/Command/Add/AddOrganisationHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/Organisation/Command/Delete/DeleteOrganisationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/Organisation/Command/Delete/DeleteOrganisationHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/Organisation/Command/Update/UpdateOrganisationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/Organisation/Command/Update/UpdateOrganisationHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/Organisation/Query/GetAll/GetAllOrganisationsHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/Organisation/Query/GetAll/GetAllOrganisationsHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/Role/Command/Add/AddRoleHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/Role/Command/Add/AddRoleHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/Role/Command/Delete/DeleteRoleHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/Role/Command/Delete/DeleteRoleHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/Role/Command/Update/UpdateRoleHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/Role/Command/Update/UpdateRoleHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/Role/Query/GetAll/GetAllRolesHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/Role/Query/GetAll/GetAllRolesHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/Seat/Command/Add/AddSeatToMapHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/Seat/Command/Add/AddSeatToMapHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/Seat/Command/Delete/DeleteSeatHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/Seat/Command/Delete/DeleteSeatHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/Seat/Query/GetAll/GetAllSeatsByMapIdHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/Seat/Query/GetAll/GetAllSeatsByMapIdHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/User/Command/Add/AddUserHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/User/Command/Add/AddUserHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/User/Command/Delete/DeleteUserHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/User/Command/Delete/DeleteUserHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/User/Command/Update/UpdateUserHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/User/Command/Update/UpdateUserHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/User/Query/GetAll/GetAllUsersHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/User/Query/GetAll/GetAllUsersHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/bin/Debug/netcoreapp3.1/CCM.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/obj/CCM.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/CCM.Application.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Common/CCM.Common.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Common/CCM.Common.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Common/Security/Tokenizer/JWTTokenGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Common/Security/Tokenizer/JWTTokenGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Common/obj/CCM.Common.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Common/obj/CCM.Common.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Common/obj/Debug/netcoreapp3.1/CCM.Common.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Common/obj/Debug/netcoreapp3.1/CCM.Common.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Common/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Common/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Common/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Common/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Common/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Common/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Common/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Common/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/CCM.Database/Context/ccmContext.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/CCM.Database/Entities/Day.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/CCM.Database/Entities/Map.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/CCM.Database/Entities/Openingtime.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/CCM.Database/Entities/Organisation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/CCM.Database/Entities/Reservation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/CCM.Database/Entities/Role.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/CCM.Database/Entities/Seat.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/CCM.Database/Entities/User.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/bin/Debug/netcoreapp3.1/CCM.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/bin/Debug/netcoreapp3.1/CCM.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/bin/Debug/netcoreapp3.1/CCM.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/bin/Debug/netcoreapp3.1/CCM.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Domain/CCM.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/CCM.Domain.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Domain/obj/Debug/netcoreapp3.1/CCM.Domain.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/obj/Debug/netcoreapp3.1/CCM.Domain.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/obj/Debug/netcoreapp3.1/CCM.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/obj/Debug/netcoreapp3.1/CCM.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/obj/Debug/netcoreapp3.1/CCM.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/obj/Debug/netcoreapp3.1/CCM.Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Infrastructure/obj/Debug/netcoreapp3.1/CCM.Infrastructure.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Infrastructure/obj/Debug/netcoreapp3.1/CCM.Infrastructure.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/Extensions/MediatRServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/Extensions/MediatRServices.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/Extensions/HelpersServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/Extensions/HelpersServices.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/CCM.WebApi.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/CCM.WebApi.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/references.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/references.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,46 +90,30 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/metadata/1D22FF42-A1D2-4006-9C5C-ABB5EBA7CA24/ea/258dff7b/System.IdentityModel.Tokens.Jwt.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AD61CA47-F8B7-4CC6-93A0-BA44CC73B5C7/147/CancellationToken.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AD61CA47-F8B7-4CC6-93A0-BA44CC73B5C7/D0/TimeSpan.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AD61CA47-F8B7-4CC6-93A0-BA44CC73B5C7/a7/d863c7ac/DayOfWeek.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8037C1F7-593B-449F-807E-A6CB626A709C/eb/7e128f92/SecurityKey.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7BF30116-82F1-4B18-A6E0-358914B66C1D/6/IConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4CDD26FA-EFB6-438A-957A-FBF37BD7C736/2/KeyDerivation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/FAF91EAF-0C6A-4596-962E-C1044229D107/2/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/413DB232-287F-45B6-B4A1-61090E1C9EB9/52/d1a082c0/CorsPolicyBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/57B58C23-3412-4F6F-BA7C-254E7EFFB7EB/a4/3b085933/BCrypt.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F680C866-D120-4163-9634-EBD842255BE9/10/ActionResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AD61CA47-F8B7-4CC6-93A0-BA44CC73B5C7/37/String.Comparison.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AD61CA47-F8B7-4CC6-93A0-BA44CC73B5C7/49/DateTime.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8037C1F7-593B-449F-807E-A6CB626A709C/4f/84931730/SigningCredentials.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/dotnetProjects/CCM-Backend/CCM.Common/Security/Tokenizer/JWTTokenGenerator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AD61CA47-F8B7-4CC6-93A0-BA44CC73B5C7/147/CancellationToken.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E3741DF5-E582-492A-B330-EA9E7E3D8C84/1/OptionsServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AD61CA47-F8B7-4CC6-93A0-BA44CC73B5C7/D0/TimeSpan.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/C83C0E82-2F21-48FC-A29F-AB1AE23A0655/A/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/C83C0E82-2F21-48FC-A29F-AB1AE23A0655/12/DbSet.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AD61CA47-F8B7-4CC6-93A0-BA44CC73B5C7/a7/d863c7ac/DayOfWeek.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4CDD26FA-EFB6-438A-957A-FBF37BD7C736/2/KeyDerivation.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/FAF91EAF-0C6A-4596-962E-C1044229D107/2/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1B896B6A-B488-49FD-9A27-47115AF6995D/6C/IActionResult.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CCM.Application/Map/Query/GetAll/GetAllMapsByOrganisationResponseModel.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Map/Command/Delete/DeleteMapResponseModel.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Map/Command/Delete/IDeleteMap.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Map/Query/GetAll/IGetAllMapsByOrganisation.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Map/Command/Update/UpdateMapResponseModel.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Map/Command/Update/IUpdateMap.cs" />
-        <option value="$PROJECT_DIR$/CCM.WebApi/Controllers/MapController.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Seat/Command/Add/AddSeatToMapResponseModel.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Seat/Command/Add/IAddSeatToMap.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Seat/Query/GetAll/IGetAllSeatsByMapId.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Seat/Query/GetAll/GetAllSeatsByMapIdResponseModel.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Seat/Command/Delete/DeleteSeatResponseModel.cs" />
-        <option value="$PROJECT_DIR$/CCM.WebApi/Controllers/SeatController.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Seat/Command/Delete/IDeleteSeat.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/User/Query/GetAll/GetAllUsersHandler.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Day/Command/Add/AddDayHandler.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Day/Command/Delete/DeleteDayHandler.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Day/Command/Update/UpdateDayHandler.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Day/Query/GetAll/GetAllDaysHandler.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Map/Command/Add/AddMapHandler.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Map/Command/Delete/DeleteMapHandler.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Map/Command/Update/UpdateMapHandler.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Organisation/Command/Add/AddOrganisationHandler.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Organisation/Command/Delete/DeleteOrganisationHandler.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/Organisation/Command/Update/UpdateOrganisationHandler.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/Organisation/Query/GetAll/GetAllOrganisationsHandler.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/Role/Command/Add/AddRoleHandler.cs" />
@@ -172,15 +123,9 @@
         <option value="$PROJECT_DIR$/CCM.Application/Seat/Command/Add/AddSeatToMapHandler.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/Seat/Command/Delete/DeleteSeatHandler.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/Seat/Query/GetAll/GetAllSeatsByMapIdHandler.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/User/Command/Add/AddUserHandler.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/User/Command/Delete/DeleteUserHandler.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/User/Command/Update/UpdateUserHandler.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/Reservation/Command/Add/AddReservationResponseModel.cs" />
-        <option value="$PROJECT_DIR$/CCM.WebApi/Extensions/MediatRServices.cs" />
-        <option value="$PROJECT_DIR$/CCM.Domain/CCM.Database/Context/ccmContext.cs" />
-        <option value="$PROJECT_DIR$/CCM.Domain/CCM.Database/Entities/Reservation.cs" />
         <option value="$PROJECT_DIR$/CCM.WebApi/Controllers/ReservationController.cs" />
-        <option value="$PROJECT_DIR$/CCM.Application/Reservation/Command/Add/IAddReservation.cs" />
         <option value="$PROJECT_DIR$/CCM.Domain/CCM.Database/Entities/Openingtime.cs" />
         <option value="$PROJECT_DIR$/CCM.Domain/Reservation.cs" />
         <option value="$PROJECT_DIR$/CCM.Domain/CCM.Database/Entities/Seat.cs" />
@@ -189,7 +134,37 @@
         <option value="$PROJECT_DIR$/CCM.Common/CCM.Common.csproj" />
         <option value="$PROJECT_DIR$/CCM.Common/Extensions/StringExtension.cs" />
         <option value="$PROJECT_DIR$/CCM.Common/Extensions/StringExtensions.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Reservation/Command/Add/IAddReservation.cs" />
+        <option value="$PROJECT_DIR$/CCM.Domain/CCM.Database/Entities/Reservation.cs" />
+        <option value="$PROJECT_DIR$/CCM.Domain/CCM.Database/Context/ccmContext.cs" />
         <option value="$PROJECT_DIR$/CCM.Application/Reservation/Command/Add/AddReservationHandler.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/OpeningTime/Command/Add/AddOpeningTimeToMap.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/OpeningTime/Command/Add/AddOpeningTimeToMapResponseModel.cs" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/Controllers/OpeningTimeController.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/OpeningTime/Command/Add/IAddOpeningTimeToMap.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/OpeningTime/Command/Add/AddOpeningTimeToMapHandler.cs" />
+        <option value="$PROJECT_DIR$/CCM.Common/Security/Hash/Pbkdf2Hash.cs" />
+        <option value="$PROJECT_DIR$/CCM.Common/Security/Hash/IHash.cs" />
+        <option value="$PROJECT_DIR$/CCM.Common/Security/Hash/BCryptHash.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/User/Command/Delete/DeleteUserHandler.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/Map/Command/Delete/DeleteMapHandler.cs" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/Controllers/UserController.cs" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/Extensions/MediatRServices.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/User/Query/AuthenticateUser/AuthenticateUserResponseModel.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/User/Query/AuthenticateUser/IAuthenticateUser.cs" />
+        <option value="$PROJECT_DIR$/CCM.Common/Security/Tokenizer/ITokenGenerator.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/User/Command/Add/AddUserHandler.cs" />
+        <option value="$PROJECT_DIR$/CCM.Common/Security/Tokenizer/TokenModel.cs" />
+        <option value="$PROJECT_DIR$/CCM.Application/User/Query/AuthenticateUser/AuthenticateUserHandler.cs" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/Extensions/HelpersServices.cs" />
+        <option value="$PROJECT_DIR$/CCM.Common/Security/Tokenizer/SecretModel.cs" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/appsettings.json" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/appsettings.Development.json" />
+        <option value="$PROJECT_DIR$/CCM.Domain/CCM.Domain.csproj" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/Program.cs" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/references.txt" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/Startup.cs" />
+        <option value="$PROJECT_DIR$/CCM.Common/Security/Tokenizer/JWTTokenGenerator.cs" />
       </list>
     </option>
   </component>
@@ -201,8 +176,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3502052" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3002736" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
@@ -274,7 +249,8 @@
       <workItem from="1605467565017" duration="20202000" />
       <workItem from="1605566370780" duration="10084000" />
       <workItem from="1605644897383" duration="802000" />
-      <workItem from="1605699543389" duration="10793000" />
+      <workItem from="1605699543389" duration="26775000" />
+      <workItem from="1606001454194" duration="4360000" />
     </task>
     <task id="LOCAL-00001" summary="Setup architecture">
       <created>1605455784726</created>
@@ -388,7 +364,63 @@
       <option name="project" value="LOCAL" />
       <updated>1605576152952</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add Reservation">
+      <created>1605711086772</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1605711086772</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add Reservation adjust response description">
+      <created>1605711232403</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1605711232403</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Add Reservation adjust response description grammar">
+      <created>1605711468385</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1605711468385</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Add opening time to map">
+      <created>1605725253887</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1605725253887</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Adjust map and user deletion">
+      <created>1605727315520</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1605727315520</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Authenticate user via jwt">
+      <created>1605728980150</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1605728980150</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Remove RoleId from token">
+      <created>1605729471970</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1605729471970</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Add CORS">
+      <created>1605741022900</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1605741022900</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,117 +458,130 @@
     <MESSAGE value="Get Map by Organisation Id and Delete map by Map Id" />
     <MESSAGE value="Update Map added" />
     <MESSAGE value="Seat operations done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Seat operations done" />
+    <MESSAGE value="Add Reservation" />
+    <MESSAGE value="Add Reservation adjust response description" />
+    <MESSAGE value="Add Reservation adjust response description grammar" />
+    <MESSAGE value="Add opening time to map" />
+    <MESSAGE value="Adjust map and user deletion" />
+    <MESSAGE value="Authenticate user via jwt" />
+    <MESSAGE value="Remove RoleId from token" />
+    <MESSAGE value="Add CORS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add CORS" />
   </component>
   <component name="WindowStateProjectService">
     <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1605466722557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605466722557" />
-    <state width="1877" height="227" key="GridCell.Tab.0.bottom" timestamp="1605710787925">
+    <state width="447" height="464" key="DebuggerActiveHint" timestamp="1606005249518">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="447" height="464" key="DebuggerActiveHint/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005249518" />
+    <state width="1877" height="227" key="GridCell.Tab.0.bottom" timestamp="1606005798315">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="194" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605485451138" />
-    <state width="1877" height="227" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605710787925" />
-    <state width="1877" height="227" key="GridCell.Tab.0.center" timestamp="1605710787925">
+    <state width="1877" height="227" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005798315" />
+    <state width="1877" height="227" key="GridCell.Tab.0.center" timestamp="1606005798315">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="194" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605485451138" />
-    <state width="1877" height="227" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605710787925" />
-    <state width="1877" height="227" key="GridCell.Tab.0.left" timestamp="1605710787925">
+    <state width="1877" height="227" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005798315" />
+    <state width="1877" height="227" key="GridCell.Tab.0.left" timestamp="1606005798315">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="194" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605485451138" />
-    <state width="1877" height="227" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605710787925" />
-    <state width="1877" height="227" key="GridCell.Tab.0.right" timestamp="1605710787925">
+    <state width="1877" height="227" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005798315" />
+    <state width="1877" height="227" key="GridCell.Tab.0.right" timestamp="1606005798315">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="194" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605485451138" />
-    <state width="1877" height="227" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605710787925" />
-    <state width="1493" height="288" key="GridCell.Tab.1.bottom" timestamp="1605489238818">
+    <state width="1877" height="227" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005798315" />
+    <state width="1877" height="374" key="GridCell.Tab.1.bottom" timestamp="1606005635740">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
-    <state width="1493" height="288" key="GridCell.Tab.1.center" timestamp="1605489238818">
+    <state width="1877" height="374" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005635740" />
+    <state width="1877" height="374" key="GridCell.Tab.1.center" timestamp="1606005635739">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
-    <state width="1493" height="288" key="GridCell.Tab.1.left" timestamp="1605489238818">
+    <state width="1877" height="374" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005635739" />
+    <state width="1877" height="374" key="GridCell.Tab.1.left" timestamp="1606005635739">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
-    <state width="1493" height="288" key="GridCell.Tab.1.right" timestamp="1605489238818">
+    <state width="1877" height="374" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005635739" />
+    <state width="1877" height="374" key="GridCell.Tab.1.right" timestamp="1606005635740">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
-    <state width="1493" height="288" key="GridCell.Tab.2.bottom" timestamp="1605489238818">
+    <state width="1877" height="374" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005635740" />
+    <state width="1877" height="374" key="GridCell.Tab.2.bottom" timestamp="1606005635740">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
-    <state width="1493" height="288" key="GridCell.Tab.2.center" timestamp="1605489238818">
+    <state width="1877" height="374" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005635740" />
+    <state width="1877" height="374" key="GridCell.Tab.2.center" timestamp="1606005635740">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
-    <state width="1493" height="288" key="GridCell.Tab.2.left" timestamp="1605489238818">
+    <state width="1877" height="374" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005635740" />
+    <state width="1877" height="374" key="GridCell.Tab.2.left" timestamp="1606005635740">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
-    <state width="1493" height="288" key="GridCell.Tab.2.right" timestamp="1605489238818">
+    <state width="1877" height="374" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005635740" />
+    <state width="1877" height="374" key="GridCell.Tab.2.right" timestamp="1606005635740">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
-    <state width="1493" height="288" key="GridCell.Tab.3.bottom" timestamp="1605489238818">
+    <state width="1877" height="374" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005635740" />
+    <state width="1877" height="374" key="GridCell.Tab.3.bottom" timestamp="1606005635740">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.3.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.3.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
-    <state width="1493" height="288" key="GridCell.Tab.3.center" timestamp="1605489238818">
+    <state width="1877" height="374" key="GridCell.Tab.3.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005635740" />
+    <state width="1877" height="374" key="GridCell.Tab.3.center" timestamp="1606005635740">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.3.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.3.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
-    <state width="1493" height="288" key="GridCell.Tab.3.left" timestamp="1605489238818">
+    <state width="1877" height="374" key="GridCell.Tab.3.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005635740" />
+    <state width="1877" height="374" key="GridCell.Tab.3.left" timestamp="1606005635740">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.3.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.3.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
-    <state width="1493" height="288" key="GridCell.Tab.3.right" timestamp="1605489238818">
+    <state width="1877" height="374" key="GridCell.Tab.3.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005635740" />
+    <state width="1877" height="374" key="GridCell.Tab.3.right" timestamp="1606005635740">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.3.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.3.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
-    <state width="1493" height="288" key="GridCell.Tab.4.bottom" timestamp="1605489238818">
+    <state width="1877" height="374" key="GridCell.Tab.3.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005635740" />
+    <state width="1877" height="374" key="GridCell.Tab.4.bottom" timestamp="1606005635740">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.4.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.4.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
-    <state width="1493" height="288" key="GridCell.Tab.4.center" timestamp="1605489238818">
+    <state width="1877" height="374" key="GridCell.Tab.4.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005635740" />
+    <state width="1877" height="374" key="GridCell.Tab.4.center" timestamp="1606005635740">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.4.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.4.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
-    <state width="1493" height="288" key="GridCell.Tab.4.left" timestamp="1605489238818">
+    <state width="1877" height="374" key="GridCell.Tab.4.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005635740" />
+    <state width="1877" height="374" key="GridCell.Tab.4.left" timestamp="1606005635740">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.4.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.4.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
-    <state width="1493" height="288" key="GridCell.Tab.4.right" timestamp="1605489238818">
+    <state width="1877" height="374" key="GridCell.Tab.4.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005635740" />
+    <state width="1877" height="374" key="GridCell.Tab.4.right" timestamp="1606005635740">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.4.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1493" height="288" key="GridCell.Tab.4.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605489238818" />
-    <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size" timestamp="1605458002703">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="374" key="GridCell.Tab.4.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005635740" />
+    <state x="2371" y="182" key="Rider.ProjectTemplateDialog.Size" timestamp="1605715411017">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605458002703" />
+    <state x="2371" y="182" key="Rider.ProjectTemplateDialog.Size/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605715411017" />
     <state x="2498" y="210" key="RiderGenerateDialog" timestamp="1605486003305">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -545,15 +590,20 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605457904297" />
-    <state x="2371" y="183" key="Vcs.Push.Dialog.v2" timestamp="1605576157649">
+    <state x="2012" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1606004926344">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606004926344" />
+    <state x="2371" y="183" key="Vcs.Push.Dialog.v2" timestamp="1605741025650">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605485443318" />
-    <state x="2371" y="183" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605576157649" />
-    <state width="776" height="420" key="XDebugger.FullValuePopup" timestamp="1605484472859">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2371" y="183" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605741025650" />
+    <state width="970" height="531" key="XDebugger.FullValuePopup" timestamp="1606005224072">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="776" height="420" key="XDebugger.FullValuePopup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484472859" />
+    <state width="970" height="531" key="XDebugger.FullValuePopup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005224072" />
     <state x="2483" y="183" width="795" height="674" key="find.popup" timestamp="1605699665265">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -563,10 +613,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605479324589" />
-    <state x="2459" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1605699581098">
+    <state x="2459" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1606004669656">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605483698452" />
-    <state x="2459" y="183" width="840" height="856" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605699581098" />
+    <state x="2459" y="183" width="840" height="856" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606004669656" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Frame#CCM.Common.Security.Tokenizer.JWTTokenGenerator.GenerateToken" memberName="token" />
+        <PinnedItemInfo parentTag="Type#Microsoft.Extensions.Configuration.ConfigurationRoot" memberName="Providers" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

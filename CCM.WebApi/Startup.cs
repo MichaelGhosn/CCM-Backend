@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using CCM.Common.Security.Tokenizer;
 using CCM.WebApi.Extensions;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
@@ -30,7 +31,7 @@ namespace CCM.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            
+
             services.AddCors(o => o.AddPolicy("CorsPolicy", builder =>
             {
                 builder
