@@ -34,30 +34,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85ff229f-32fb-4c1e-bd8d-36230b3795a7" name="Default Changelist" comment="Use .net Safe storage  to store jwt secret">
-      <change afterPath="$PROJECT_DIR$/CCM.Common/Exceptions/JwtNotFoundException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CCM.WebApi/Extensions/SwaggerServices.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CCM.WebApi/Middlewares/AuthorisationMiddleware.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CCM.WebApi/Middlewares/AuthorisationMiddlewareExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="85ff229f-32fb-4c1e-bd8d-36230b3795a7" name="Default Changelist" comment="Add jwt authorisation to endpoints">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CCM-Backend/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/CCM.Application.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Application/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Common/obj/Debug/netcoreapp3.1/CCM.Common.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Common/obj/Debug/netcoreapp3.1/CCM.Common.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Common/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Common/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.Domain/obj/Debug/netcoreapp3.1/CCM.Domain.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/obj/Debug/netcoreapp3.1/CCM.Domain.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Domain/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/Controllers/UserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.Infrastructure/obj/Debug/netcoreapp3.1/CCM.Infrastructure.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.Infrastructure/obj/Debug/netcoreapp3.1/CCM.Infrastructure.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CCM.WebApi/Middlewares/AuthorisationMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/Middlewares/AuthorisationMiddleware.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/bin/Debug/netcoreapp3.1/CCM.WebApi.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/Debug/netcoreapp3.1/CCM.WebApi.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CCM.WebApi/references.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CCM.WebApi/references.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,16 +60,14 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2B503979-E64A-4C2B-9FE4-DB11985D8993/2/SwaggerGenServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/metadata/1D22FF42-A1D2-4006-9C5C-ABB5EBA7CA24/ea/258dff7b/System.IdentityModel.Tokens.Jwt.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AD61CA47-F8B7-4CC6-93A0-BA44CC73B5C7/147/CancellationToken.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/dotnetProjects/CCM-Backend/CCM.WebApi/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/413DB232-287F-45B6-B4A1-61090E1C9EB9/C/CorsPolicyBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7BF30116-82F1-4B18-A6E0-358914B66C1D/6/IConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4CDD26FA-EFB6-438A-957A-FBF37BD7C736/2/KeyDerivation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/413DB232-287F-45B6-B4A1-61090E1C9EB9/52/d1a082c0/CorsPolicyBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F680C866-D120-4163-9634-EBD842255BE9/10/ActionResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AD61CA47-F8B7-4CC6-93A0-BA44CC73B5C7/37/String.Comparison.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/dotnetProjects/CCM-Backend/CCM.Common/Security/Tokenizer/JWTTokenGenerator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/C83C0E82-2F21-48FC-A29F-AB1AE23A0655/A/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42F9CCC8-A8E2-4583-8562-AC6B7554193A/ae/93cf09f5/Console.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/dotnetProjects/CCM-Backend/CCM.Common/Security/Tokenizer/JWTTokenGenerator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AD61CA47-F8B7-4CC6-93A0-BA44CC73B5C7/D0/TimeSpan.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AD61CA47-F8B7-4CC6-93A0-BA44CC73B5C7/a7/d863c7ac/DayOfWeek.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8037C1F7-593B-449F-807E-A6CB626A709C/eb/7e128f92/SecurityKey.cs" root0="SKIP_HIGHLIGHTING" />
@@ -91,7 +78,6 @@
     <setting file="file://$PROJECT_DIR$/CCM.WebApi/Middlewares/AuthorisationMiddlewareExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8037C1F7-593B-449F-807E-A6CB626A709C/4f/84931730/SigningCredentials.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CCM.Application/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/dotnetProjects/CCM-Backend/CCM.WebApi/Extensions/HelpersServices.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6FEAE9FB-5F55-45E0-A272-9CACB3EF41A6/A/AuthorizeAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E3741DF5-E582-492A-B330-EA9E7E3D8C84/1/OptionsServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/C83C0E82-2F21-48FC-A29F-AB1AE23A0655/12/DbSet.cs" root0="SKIP_HIGHLIGHTING" />
@@ -140,7 +126,6 @@
         <option value="$PROJECT_DIR$/CCM.WebApi/appsettings.Development.json" />
         <option value="$PROJECT_DIR$/CCM.Domain/CCM.Domain.csproj" />
         <option value="$PROJECT_DIR$/CCM.WebApi/Program.cs" />
-        <option value="$PROJECT_DIR$/CCM.Common/Security/Tokenizer/JWTTokenGenerator.cs" />
         <option value="$PROJECT_DIR$/CCM.WebApi/Extensions/AuthorisationMiddleware.cs" />
         <option value="$PROJECT_DIR$/CCM.WebApi/Controllers/UserController.cs" />
         <option value="$PROJECT_DIR$/CCM.WebApi/Middlewares/RequestCultureMiddlewareExtensions.cs" />
@@ -148,9 +133,10 @@
         <option value="$PROJECT_DIR$/CCM.WebApi/Extensions/SwaggerService.cs" />
         <option value="$PROJECT_DIR$/CCM.WebApi/references.txt" />
         <option value="$PROJECT_DIR$/CCM.WebApi/Extensions/SwaggerServices.cs" />
-        <option value="$PROJECT_DIR$/CCM.WebApi/Startup.cs" />
-        <option value="$PROJECT_DIR$/CCM.WebApi/Middlewares/AuthorisationMiddleware.cs" />
         <option value="$PROJECT_DIR$/CCM.Common/Exceptions/JwtNotFoundException.cs" />
+        <option value="$PROJECT_DIR$/CCM.Common/Security/Tokenizer/JWTTokenGenerator.cs" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/Middlewares/AuthorisationMiddleware.cs" />
+        <option value="$PROJECT_DIR$/CCM.WebApi/Startup.cs" />
       </list>
     </option>
   </component>
@@ -236,7 +222,8 @@
       <workItem from="1605566370780" duration="10084000" />
       <workItem from="1605644897383" duration="802000" />
       <workItem from="1605699543389" duration="26775000" />
-      <workItem from="1606001454194" duration="9614000" />
+      <workItem from="1606001454194" duration="9961000" />
+      <workItem from="1606260517652" duration="1900000" />
     </task>
     <task id="LOCAL-00001" summary="Setup architecture">
       <created>1605455784726</created>
@@ -413,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606005924746</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Add jwt authorisation to endpoints">
+      <created>1606011466609</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1606011466609</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,7 +429,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Setup architecture" />
     <MESSAGE value="Add swagger" />
     <MESSAGE value="Add MediatR service" />
     <MESSAGE value="Scaffold Database" />
@@ -460,7 +453,8 @@
     <MESSAGE value="Remove RoleId from token" />
     <MESSAGE value="Add CORS" />
     <MESSAGE value="Use .net Safe storage  to store jwt secret" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use .net Safe storage  to store jwt secret" />
+    <MESSAGE value="Add jwt authorisation to endpoints" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add jwt authorisation to endpoints" />
   </component>
   <component name="WindowStateProjectService">
     <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1605466722557">
@@ -471,106 +465,106 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="485" height="464" key="DebuggerActiveHint/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606010790216" />
-    <state width="1877" height="227" key="GridCell.Tab.0.bottom" timestamp="1606011133084">
+    <state width="1877" height="231" key="GridCell.Tab.0.bottom" timestamp="1606267273563">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="194" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605485451138" />
-    <state width="1877" height="227" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606011133084" />
-    <state width="1877" height="227" key="GridCell.Tab.0.center" timestamp="1606011133084">
+    <state width="1877" height="231" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606267273563" />
+    <state width="1877" height="231" key="GridCell.Tab.0.center" timestamp="1606267273563">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="194" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605485451138" />
-    <state width="1877" height="227" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606011133084" />
-    <state width="1877" height="227" key="GridCell.Tab.0.left" timestamp="1606011133083">
+    <state width="1877" height="231" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606267273563" />
+    <state width="1877" height="231" key="GridCell.Tab.0.left" timestamp="1606267273563">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="194" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605485451138" />
-    <state width="1877" height="227" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606011133083" />
-    <state width="1877" height="227" key="GridCell.Tab.0.right" timestamp="1606011133084">
+    <state width="1877" height="231" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606267273563" />
+    <state width="1877" height="231" key="GridCell.Tab.0.right" timestamp="1606267273563">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="194" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605485451138" />
-    <state width="1877" height="227" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606011133084" />
-    <state width="1877" height="374" key="GridCell.Tab.1.bottom" timestamp="1606010865408">
+    <state width="1877" height="231" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606267273563" />
+    <state width="1877" height="374" key="GridCell.Tab.1.bottom" timestamp="1606011588509">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1877" height="374" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606010865408" />
-    <state width="1877" height="374" key="GridCell.Tab.1.center" timestamp="1606010865408">
+    <state width="1877" height="374" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606011588509" />
+    <state width="1877" height="374" key="GridCell.Tab.1.center" timestamp="1606011588509">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1877" height="374" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606010865408" />
-    <state width="1877" height="374" key="GridCell.Tab.1.left" timestamp="1606010865408">
+    <state width="1877" height="374" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606011588509" />
+    <state width="1877" height="374" key="GridCell.Tab.1.left" timestamp="1606011588509">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1877" height="374" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606010865408" />
-    <state width="1877" height="374" key="GridCell.Tab.1.right" timestamp="1606010865408">
+    <state width="1877" height="374" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606011588509" />
+    <state width="1877" height="374" key="GridCell.Tab.1.right" timestamp="1606011588509">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1877" height="374" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606010865408" />
-    <state width="1877" height="374" key="GridCell.Tab.2.bottom" timestamp="1606010865408">
+    <state width="1877" height="374" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606011588509" />
+    <state width="1877" height="374" key="GridCell.Tab.2.bottom" timestamp="1606011588509">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1877" height="374" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606010865408" />
-    <state width="1877" height="374" key="GridCell.Tab.2.center" timestamp="1606010865408">
+    <state width="1877" height="374" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606011588509" />
+    <state width="1877" height="374" key="GridCell.Tab.2.center" timestamp="1606011588509">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1877" height="374" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606010865408" />
-    <state width="1877" height="374" key="GridCell.Tab.2.left" timestamp="1606010865408">
+    <state width="1877" height="374" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606011588509" />
+    <state width="1877" height="374" key="GridCell.Tab.2.left" timestamp="1606011588509">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1877" height="374" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606010865408" />
-    <state width="1877" height="374" key="GridCell.Tab.2.right" timestamp="1606010865408">
+    <state width="1877" height="374" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606011588509" />
+    <state width="1877" height="374" key="GridCell.Tab.2.right" timestamp="1606011588509">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1877" height="374" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606010865408" />
-    <state width="1877" height="374" key="GridCell.Tab.3.bottom" timestamp="1606010865408">
+    <state width="1877" height="374" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606011588509" />
+    <state width="1877" height="374" key="GridCell.Tab.3.bottom" timestamp="1606011588509">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.3.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1877" height="374" key="GridCell.Tab.3.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606010865408" />
-    <state width="1877" height="374" key="GridCell.Tab.3.center" timestamp="1606010865408">
+    <state width="1877" height="374" key="GridCell.Tab.3.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606011588509" />
+    <state width="1877" height="374" key="GridCell.Tab.3.center" timestamp="1606011588509">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.3.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1877" height="374" key="GridCell.Tab.3.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606010865408" />
-    <state width="1877" height="374" key="GridCell.Tab.3.left" timestamp="1606010865408">
+    <state width="1877" height="374" key="GridCell.Tab.3.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606011588509" />
+    <state width="1877" height="374" key="GridCell.Tab.3.left" timestamp="1606011588509">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.3.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1877" height="374" key="GridCell.Tab.3.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606010865408" />
-    <state width="1877" height="374" key="GridCell.Tab.3.right" timestamp="1606010865408">
+    <state width="1877" height="374" key="GridCell.Tab.3.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606011588509" />
+    <state width="1877" height="374" key="GridCell.Tab.3.right" timestamp="1606011588509">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.3.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1877" height="374" key="GridCell.Tab.3.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606010865408" />
-    <state width="1877" height="374" key="GridCell.Tab.4.bottom" timestamp="1606010865409">
+    <state width="1877" height="374" key="GridCell.Tab.3.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606011588509" />
+    <state width="1877" height="374" key="GridCell.Tab.4.bottom" timestamp="1606011588509">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.4.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1877" height="374" key="GridCell.Tab.4.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606010865409" />
-    <state width="1877" height="374" key="GridCell.Tab.4.center" timestamp="1606010865409">
+    <state width="1877" height="374" key="GridCell.Tab.4.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606011588509" />
+    <state width="1877" height="374" key="GridCell.Tab.4.center" timestamp="1606011588509">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.4.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1877" height="374" key="GridCell.Tab.4.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606010865409" />
-    <state width="1877" height="374" key="GridCell.Tab.4.left" timestamp="1606010865408">
+    <state width="1877" height="374" key="GridCell.Tab.4.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606011588509" />
+    <state width="1877" height="374" key="GridCell.Tab.4.left" timestamp="1606011588509">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.4.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1877" height="374" key="GridCell.Tab.4.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606010865408" />
-    <state width="1877" height="374" key="GridCell.Tab.4.right" timestamp="1606010865409">
+    <state width="1877" height="374" key="GridCell.Tab.4.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606011588509" />
+    <state width="1877" height="374" key="GridCell.Tab.4.right" timestamp="1606011588509">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.4.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605484500872" />
-    <state width="1877" height="374" key="GridCell.Tab.4.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606010865409" />
+    <state width="1877" height="374" key="GridCell.Tab.4.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606011588509" />
     <state x="2371" y="182" key="Rider.ProjectTemplateDialog.Size" timestamp="1605715411017">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -588,11 +582,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2012" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606004926344" />
-    <state x="2371" y="183" key="Vcs.Push.Dialog.v2" timestamp="1606005930382">
+    <state x="2371" y="183" key="Vcs.Push.Dialog.v2" timestamp="1606011471023">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605485443318" />
-    <state x="2371" y="183" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606005930382" />
+    <state x="2371" y="183" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606011471023" />
     <state width="970" height="531" key="XDebugger.FullValuePopup" timestamp="1606009355952">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

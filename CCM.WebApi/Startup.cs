@@ -63,8 +63,6 @@ namespace CCM.WebApi
                 app.UseDeveloperExceptionPage();
             }
             
-            app.UseAuthorisationMiddleware();
-
             app.UseCors("CorsPolicy");
 
             
@@ -82,7 +80,8 @@ namespace CCM.WebApi
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "CCM V1");
             });
             
-            
+            app.UseAuthorisationMiddleware();
+
         }
     }
 }

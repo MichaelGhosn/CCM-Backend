@@ -23,6 +23,8 @@ namespace CCM.WebApi.Middlewares
             {
                 throw new JwtNotFoundException();
             }
+            
+            // TODO: check that I am the issuer of the token and that it is valid
 
             //pass request further if correct
             await _next(context);
