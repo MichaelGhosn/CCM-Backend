@@ -7,7 +7,7 @@ using MediatR;
 
 namespace CCM.Application.Organisation.Command.Delete
 {
-    public class DeleteOrganisationHandler: IRequestHandler<IDeleteOrganisation, ResponseModel<DeleteOrganisationViewModel>>
+    public class DeleteOrganisationHandler: IRequestHandler<DeleteOrganisation, ResponseModel<DeleteOrganisationViewModel>>
     {
         private readonly ccmContext _context;
 
@@ -16,7 +16,7 @@ namespace CCM.Application.Organisation.Command.Delete
             _context = context;
         }
         
-        public async Task<ResponseModel<DeleteOrganisationViewModel>> Handle(IDeleteOrganisation request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<DeleteOrganisationViewModel>> Handle(DeleteOrganisation request, CancellationToken cancellationToken)
         {
             Domain.Organisation organisation =
                 _context.Organisation.FirstOrDefault(organisation => organisation.Id == request.Id);
@@ -32,7 +32,7 @@ namespace CCM.Application.Organisation.Command.Delete
 
             _context.Organisation.Remove(organisation);
 
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             
             return new ResponseModel<DeleteOrganisationViewModel>()
             {

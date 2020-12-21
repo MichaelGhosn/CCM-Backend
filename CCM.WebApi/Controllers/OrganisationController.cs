@@ -16,20 +16,20 @@ namespace CCM.WebApi.Controllers
         [HttpGet]
         public async Task<ActionResult> GetAll()
         {
-            return Ok(await Mediator.Send(new IGetAllOrganisations()));
+            return Ok(await Mediator.Send(new GetAllOrganisations()));
         }
         
         
         // ADD
         [HttpPost]
-        public async Task<ActionResult> Add([FromBody] IAddOrganisation request)
+        public async Task<ActionResult> Add([FromBody] AddOrganisation request)
         {
             return Ok(await Mediator.Send(request));
         }
         
         // UPDATE
         [HttpPut]
-        public async Task<ActionResult> Update([FromBody] IUpdateOrganisation request)
+        public async Task<ActionResult> Update([FromBody] UpdateOrganisation request)
         {
             return Ok(await Mediator.Send(request));
         }
@@ -38,7 +38,7 @@ namespace CCM.WebApi.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete([FromRoute] int id)
         {
-            return Ok(await Mediator.Send(new IDeleteOrganisation()
+            return Ok(await Mediator.Send(new DeleteOrganisation()
             {
                 Id = id
             }));

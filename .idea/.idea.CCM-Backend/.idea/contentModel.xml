@@ -14,57 +14,54 @@
         <e p="Day" t="Include">
           <e p="Command" t="Include">
             <e p="Add" t="Include">
+              <e p="AddDay.cs" t="Include" />
               <e p="AddDayHandler.cs" t="Include" />
               <e p="AddDayResponseModel.cs" t="Include" />
-              <e p="IAddDay.cs" t="Include" />
             </e>
             <e p="Delete" t="Include">
+              <e p="DeleteDay.cs" t="Include" />
               <e p="DeleteDayHandler.cs" t="Include" />
               <e p="DeleteDayResponseModel.cs" t="Include" />
-              <e p="IDeleteDay.cs" t="Include" />
             </e>
             <e p="Update" t="Include">
-              <e p="IUpdateDay.cs" t="Include" />
+              <e p="UpdateDay.cs" t="Include" />
               <e p="UpdateDayHandler.cs" t="Include" />
               <e p="UpdateDayResponseModel.cs" t="Include" />
             </e>
           </e>
           <e p="Query" t="Include">
             <e p="GetAll" t="Include">
+              <e p="GetAllDays.cs" t="Include" />
               <e p="GetAllDaysHandler.cs" t="Include" />
               <e p="GetAllDaysResponseModel.cs" t="Include" />
-              <e p="IGetAllDays.cs" t="Include" />
             </e>
           </e>
         </e>
         <e p="Map" t="Include">
           <e p="Command" t="Include">
             <e p="Add" t="Include">
+              <e p="AddMap.cs" t="Include" />
               <e p="AddMapHandler.cs" t="Include" />
               <e p="AddMapResponseModel.cs" t="Include" />
-              <e p="IAddMap.cs" t="Include" />
             </e>
             <e p="Delete" t="Include">
+              <e p="DeleteMap.cs" t="Include" />
               <e p="DeleteMapHandler.cs" t="Include" />
               <e p="DeleteMapResponseModel.cs" t="Include" />
-              <e p="IDeleteMap.cs" t="Include" />
             </e>
             <e p="Update" t="Include">
-              <e p="IUpdateMap.cs" t="Include" />
+              <e p="UpdateMap.cs" t="Include" />
               <e p="UpdateMapHandler.cs" t="Include" />
               <e p="UpdateMapResponseModel.cs" t="Include" />
             </e>
           </e>
           <e p="Query" t="Include">
             <e p="GetAll" t="Include">
+              <e p="GetAllMapsByOrganisation.cs" t="Include" />
               <e p="GetAllMapsByOrganisationHandler.cs" t="Include" />
               <e p="GetAllMapsByOrganisationResponseModel.cs" t="Include" />
-              <e p="IGetAllMapsByOrganisation.cs" t="Include" />
             </e>
           </e>
-        </e>
-        <e p="Models" t="Include">
-          <e p="ResponseModel.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -76,45 +73,51 @@
         <e p="OpeningTime" t="Include">
           <e p="Command" t="Include">
             <e p="Add" t="Include">
+              <e p="AddOpeningTimeToMap.cs" t="Include" />
               <e p="AddOpeningTimeToMapHandler.cs" t="Include" />
               <e p="AddOpeningTimeToMapResponseModel.cs" t="Include" />
-              <e p="IAddOpeningTimeToMap.cs" t="Include" />
             </e>
           </e>
-          <e p="Query" t="Include" />
+          <e p="Query" t="Include">
+            <e p="GetAllByOrganisation" t="Include">
+              <e p="GetAllOpeningTimeByOrganisation.cs" t="Include" />
+              <e p="GetAllOpeningTimeByOrganisationHandler.cs" t="Include" />
+              <e p="GetAllOpeningTimeByOrganisationResponseModel.cs" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="Organisation" t="Include">
           <e p="Command" t="Include">
             <e p="Add" t="Include">
+              <e p="AddOrganisation.cs" t="Include" />
               <e p="AddOrganisationHandler.cs" t="Include" />
               <e p="AddOrganisationResponseModel.cs" t="Include" />
-              <e p="IAddOrganisation.cs" t="Include" />
             </e>
             <e p="Delete" t="Include">
+              <e p="DeleteOrganisation.cs" t="Include" />
               <e p="DeleteOrganisationHandler.cs" t="Include" />
               <e p="DeleteOrganisationViewModel.cs" t="Include" />
-              <e p="IDeleteOrganisation.cs" t="Include" />
             </e>
             <e p="Update" t="Include">
-              <e p="IUpdateOrganisation.cs" t="Include" />
+              <e p="UpdateOrganisation.cs" t="Include" />
               <e p="UpdateOrganisationHandler.cs" t="Include" />
               <e p="UpdateOrganisationResponseModel.cs" t="Include" />
             </e>
           </e>
           <e p="Query" t="Include">
             <e p="GetAll" t="Include">
+              <e p="GetAllOrganisations.cs" t="Include" />
               <e p="GetAllOrganisationsHandler.cs" t="Include" />
               <e p="GetAllOrganisationsResponseModel.cs" t="Include" />
-              <e p="IGetAllOrganisations.cs" t="Include" />
             </e>
           </e>
         </e>
         <e p="Reservation" t="Include">
           <e p="Command" t="Include">
             <e p="Add" t="Include">
+              <e p="AddReservation.cs" t="Include" />
               <e p="AddReservationHandler.cs" t="Include" />
               <e p="AddReservationResponseModel.cs" t="Include" />
-              <e p="IAddReservation.cs" t="Include" />
             </e>
           </e>
           <e p="Query" t="Include" />
@@ -122,78 +125,78 @@
         <e p="Role" t="Include">
           <e p="Command" t="Include">
             <e p="Add" t="Include">
+              <e p="AddRole.cs" t="Include" />
               <e p="AddRoleHandler.cs" t="Include" />
               <e p="AddRoleResponseModel.cs" t="Include" />
-              <e p="IAddRole.cs" t="Include" />
             </e>
             <e p="Delete" t="Include">
+              <e p="DeleteRole.cs" t="Include" />
               <e p="DeleteRoleHandler.cs" t="Include" />
               <e p="DeleteRoleResponseModel.cs" t="Include" />
-              <e p="IDeleteRole.cs" t="Include" />
             </e>
             <e p="Update" t="Include">
-              <e p="IUpdateRole.cs" t="Include" />
+              <e p="UpdateRole.cs" t="Include" />
               <e p="UpdateRoleHandler.cs" t="Include" />
               <e p="UpdateRoleResponseModel.cs" t="Include" />
             </e>
           </e>
           <e p="Query" t="Include">
             <e p="GetAll" t="Include">
+              <e p="GetAllRoles.cs" t="Include" />
               <e p="GetAllRolesHandler.cs" t="Include" />
               <e p="GetAllRolesResponseModel.cs" t="Include" />
-              <e p="IGetAllRoles.cs" t="Include" />
             </e>
           </e>
         </e>
         <e p="Seat" t="Include">
           <e p="Command" t="Include">
             <e p="Add" t="Include">
+              <e p="AddSeatToMap.cs" t="Include" />
               <e p="AddSeatToMapHandler.cs" t="Include" />
               <e p="AddSeatToMapResponseModel.cs" t="Include" />
-              <e p="IAddSeatToMap.cs" t="Include" />
             </e>
             <e p="Delete" t="Include">
+              <e p="DeleteSeat.cs" t="Include" />
               <e p="DeleteSeatHandler.cs" t="Include" />
               <e p="DeleteSeatResponseModel.cs" t="Include" />
-              <e p="IDeleteSeat.cs" t="Include" />
             </e>
           </e>
           <e p="Query" t="Include">
             <e p="GetAll" t="Include">
+              <e p="GetAllSeatsByMapId.cs" t="Include" />
               <e p="GetAllSeatsByMapIdHandler.cs" t="Include" />
               <e p="GetAllSeatsByMapIdResponseModel.cs" t="Include" />
-              <e p="IGetAllSeatsByMapId.cs" t="Include" />
             </e>
           </e>
         </e>
         <e p="User" t="Include">
           <e p="Command" t="Include">
             <e p="Add" t="Include">
+              <e p="AddUser.cs" t="Include" />
               <e p="AddUserHandler.cs" t="Include" />
               <e p="AddUserResponseModel.cs" t="Include" />
-              <e p="IAddUser.cs" t="Include" />
             </e>
             <e p="Delete" t="Include">
+              <e p="DeleteUser.cs" t="Include" />
               <e p="DeleteUserHandler.cs" t="Include" />
               <e p="DeleteUserResponseModel.cs" t="Include" />
-              <e p="IDeleteUser.cs" t="Include" />
             </e>
             <e p="Update" t="Include">
-              <e p="IUpdateUser.cs" t="Include" />
+              <e p="UpdateUser.cs" t="Include" />
               <e p="UpdateUserHandler.cs" t="Include" />
               <e p="UpdateUserResponseModel.cs" t="Include" />
             </e>
           </e>
           <e p="Query" t="Include">
             <e p="AuthenticateUser" t="Include">
+              <e p="AuthenticateUser.cs" t="Include" />
               <e p="AuthenticateUserHandler.cs" t="Include" />
               <e p="AuthenticateUserResponseModel.cs" t="Include" />
-              <e p="IAuthenticateUser.cs" t="Include" />
             </e>
             <e p="GetAll" t="Include">
+              <e p="GetAllUsers.cs" t="Include" />
               <e p="GetAllUsersHandler.cs" t="Include" />
               <e p="GetAllUsersResponseModel.cs" t="Include" />
-              <e p="IGetAllUsers.cs" t="Include" />
               <e p="Models" t="Include">
                 <e p="UserOrganisationResponseModel.cs" t="Include" />
                 <e p="UserRoleResponseModel.cs" t="Include" />
@@ -211,6 +214,9 @@
         <e p="extensions" t="Include">
           <e p="StringExtensions.cs" t="Include" />
         </e>
+        <e p="Models" t="Include">
+          <e p="ResponseModel.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -224,8 +230,8 @@
             <e p="IHash.cs" t="Include" />
           </e>
           <e p="Tokenizer" t="Include">
-            <e p="ITokenGenerator.cs" t="Include" />
             <e p="JWTTokenGenerator.cs" t="Include" />
+            <e p="TokenGenerator.cs" t="Include" />
             <e p="TokenModel.cs" t="Include" />
           </e>
         </e>
@@ -248,6 +254,11 @@
           </e>
         </e>
         <e p="CCM.Domain.csproj" t="IncludeRecursive" />
+        <e p="Migrations" t="Include">
+          <e p="20201221161544_DatabaseInit.cs" t="Include" />
+          <e p="20201221161544_DatabaseInit.Designer.cs" t="Include" />
+          <e p="ccmContextModelSnapshot.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -314,6 +325,7 @@
               <e p="MapTest_1_dolly.png" t="Include" />
               <e p="sddasdasdas_1_dummy_map.png" t="Include" />
               <e p="Test Map_1_dummy_map.png" t="Include" />
+              <e p="Test_1_csrfcode.PNG" t="Include" />
               <e p="TestMap_1_dummy_map.png" t="Include" />
             </e>
           </e>

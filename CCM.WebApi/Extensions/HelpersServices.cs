@@ -11,7 +11,7 @@ namespace CCM.WebApi.Extensions
         internal static void AddHelpersServices(this IServiceCollection services)
         {
             services.AddTransient<IHash, BCryptHash>();
-            services.AddSingleton<ITokenGenerator, JWTTokenGenerator>();
+            services.AddSingleton<TokenGenerator, JWTTokenGenerator>();
         }
     }
 }

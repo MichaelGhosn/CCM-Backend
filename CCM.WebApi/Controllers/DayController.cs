@@ -15,19 +15,19 @@ namespace CCM.WebApi.Controllers
         [HttpGet]
         public async Task<ActionResult> GetAll()
         {
-            return Ok(await Mediator.Send(new IGetAllDays()));
+            return Ok(await Mediator.Send(new GetAllDays()));
         }
         
         // ADD
         [HttpPost]
-        public async Task<ActionResult> Add([FromBody] IAddDay request)
+        public async Task<ActionResult> Add([FromBody] AddDay request)
         {
             return Ok(await Mediator.Send(request));
         }
         
         // UPDATE
         [HttpPut]
-        public async Task<ActionResult> Update([FromBody] IUpdateDay request)
+        public async Task<ActionResult> Update([FromBody] UpdateDay request)
         {
             return Ok(await Mediator.Send(request));
         }
@@ -36,7 +36,7 @@ namespace CCM.WebApi.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete([FromRoute] int id)
         {
-            return Ok(await Mediator.Send(new IDeleteDay()
+            return Ok(await Mediator.Send(new DeleteDay()
             {
                 Id = id 
             }));

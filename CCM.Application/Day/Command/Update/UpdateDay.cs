@@ -3,13 +3,14 @@ using System.ComponentModel.DataAnnotations;
 using CCM.Application.Models;
 using MediatR;
 
-namespace CCM.Application.Role.Command.Update
+namespace CCM.Application.Day.Command.Update
 {
-    public class IUpdateRole: IRequest<ResponseModel<UpdateRoleResponseModel>>
+    public class UpdateDay: IRequest<ResponseModel<UpdateDayResponseModel>>
     {
-        [Required]
+        [Required] 
         public int Id { get; set; }
-        [Required]
+        
+        [Required] 
         public String Name { get; set; }
     }
 }

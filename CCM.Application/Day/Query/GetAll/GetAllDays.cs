@@ -4,7 +4,7 @@ using MediatR;
 
 namespace CCM.Application.Day.Query.GetAll
 {
-    public class IGetAllDays: IRequest<ResponseModel<List<GetAllDaysResponseModel>>>
+    public class GetAllDays: IRequest<ResponseModel<List<GetAllDaysResponseModel>>>
     {
         
     }

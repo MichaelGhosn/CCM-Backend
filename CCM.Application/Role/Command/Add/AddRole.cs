@@ -4,7 +4,7 @@ using MediatR;
 
 namespace CCM.Application.Role.Command.Add
 {
-    public class IAddRole: IRequest<ResponseModel<AddRoleResponseModel>>
+    public class AddRole: IRequest<ResponseModel<AddRoleResponseModel>>
     {
         public String Name { get; set; }
     }

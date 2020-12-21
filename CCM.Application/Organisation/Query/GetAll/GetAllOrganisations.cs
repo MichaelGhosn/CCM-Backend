@@ -5,7 +5,7 @@ using MediatR;
 
 namespace CCM.Application.Organisation.Query.GetAll
 {
-    public class IGetAllOrganisations: IRequest<ResponseModel<List<GetAllOrganisationsResponseModel>>>
+    public class GetAllOrganisations: IRequest<ResponseModel<List<GetAllOrganisationsResponseModel>>>
     {
         
     }

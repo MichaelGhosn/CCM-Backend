@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CCM.Application.User.Command.Delete
 {
-    public class DeleteUserHandler: IRequestHandler<IDeleteUser, ResponseModel<DeleteUserResponseModel>>
+    public class DeleteUserHandler: IRequestHandler<DeleteUser, ResponseModel<DeleteUserResponseModel>>
     {
         private readonly ccmContext _context;
 
@@ -17,7 +17,7 @@ namespace CCM.Application.User.Command.Delete
             _context = context;
         }
         
-        public async Task<ResponseModel<DeleteUserResponseModel>> Handle(IDeleteUser request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<DeleteUserResponseModel>> Handle(DeleteUser request, CancellationToken cancellationToken)
         {
             Domain.User user = _context.User.Include(user => user.Reservation).FirstOrDefault(user => user.Id == request.Id);
 
@@ -34,7 +34,7 @@ namespace CCM.Application.User.Command.Delete
             _context.Reservation.RemoveRange(user.Reservation);
             
             _context.User.Remove(user);
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             
            return new ResponseModel<DeleteUserResponseModel>()
            {

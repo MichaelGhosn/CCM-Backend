@@ -8,7 +8,7 @@ using MediatR;
 
 namespace CCM.Application.Seat.Query.GetAll
 {
-    public class GetAllSeatsByMapIdHandler: IRequestHandler<IGetAllSeatsByMapId, ResponseModel<List<GetAllSeatsByMapIdResponseModel>>>
+    public class GetAllSeatsByMapIdHandler: IRequestHandler<GetAllSeatsByMapId, ResponseModel<List<GetAllSeatsByMapIdResponseModel>>>
     {
         private readonly ccmContext _context;
 
@@ -17,7 +17,7 @@ namespace CCM.Application.Seat.Query.GetAll
             _context = context;
         }
         
-        public async Task<ResponseModel<List<GetAllSeatsByMapIdResponseModel>>> Handle(IGetAllSeatsByMapId request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<List<GetAllSeatsByMapIdResponseModel>>> Handle(GetAllSeatsByMapId request, CancellationToken cancellationToken)
         {
             bool mapDoesExists = _context.Map.Any(map => map.Id == request.MapId);
 

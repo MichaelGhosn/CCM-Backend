@@ -5,7 +5,7 @@ using MediatR;
 
 namespace CCM.Application.User.Command.Update
 {
-    public class IUpdateUser: IRequest<ResponseModel<UpdateUserResponseModel>>
+    public class UpdateUser: IRequest<ResponseModel<UpdateUserResponseModel>>
     {
         [Required]
         public int Id { get; set; }

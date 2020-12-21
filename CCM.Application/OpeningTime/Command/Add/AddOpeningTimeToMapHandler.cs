@@ -8,7 +8,7 @@ using MediatR;
 
 namespace CCM.Application.OpeningTime.Command.Add
 {
-    public class AddOpeningTimeToMapHandler: IRequestHandler<IAddOpeningTimeToMap , ResponseModel<AddOpeningTimeToMapResponseModel>>
+    public class AddOpeningTimeToMapHandler: IRequestHandler<AddOpeningTimeToMap , ResponseModel<AddOpeningTimeToMapResponseModel>>
     {
         private readonly ccmContext _context;
 
@@ -17,7 +17,7 @@ namespace CCM.Application.OpeningTime.Command.Add
             _context = context;
         }
         
-        public async Task<ResponseModel<AddOpeningTimeToMapResponseModel>> Handle(IAddOpeningTimeToMap request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<AddOpeningTimeToMapResponseModel>> Handle(AddOpeningTimeToMap request, CancellationToken cancellationToken)
         {
 
             if (request.OpeningHour.CompareTo(request.ClosingHour) >= 0)
@@ -71,7 +71,7 @@ namespace CCM.Application.OpeningTime.Command.Add
                 DayId = request.DayId,
                 MapId = request.MapId
             });
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             
             
             return new ResponseModel<AddOpeningTimeToMapResponseModel>()

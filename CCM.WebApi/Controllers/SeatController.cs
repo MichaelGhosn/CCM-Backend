@@ -14,7 +14,7 @@ namespace CCM.WebApi.Controllers
         [HttpGet("{mapId}")]
         public async Task<IActionResult> GetAllByMapId([FromRoute] int mapId)
         {
-            return Ok(await Mediator.Send(new IGetAllSeatsByMapId()
+            return Ok(await Mediator.Send(new GetAllSeatsByMapId()
             {
                 MapId = mapId
             }));
@@ -22,7 +22,7 @@ namespace CCM.WebApi.Controllers
        
         // ADD
         [HttpPost]
-        public async Task<IActionResult> Add([FromBody] IAddSeatToMap request)
+        public async Task<IActionResult> Add([FromBody] AddSeatToMap request)
         {
             return Ok(await Mediator.Send(request));
         }
@@ -31,7 +31,7 @@ namespace CCM.WebApi.Controllers
         [HttpDelete("{seatId}")]
         public async Task<IActionResult> Delete([FromRoute] int seatId)
         {
-            return Ok(await Mediator.Send(new IDeleteSeat()
+            return Ok(await Mediator.Send(new DeleteSeat()
             {
                 SeatId = seatId
             }));

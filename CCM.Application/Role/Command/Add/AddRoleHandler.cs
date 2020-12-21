@@ -7,7 +7,7 @@ using MediatR;
 
 namespace CCM.Application.Role.Command.Add
 {
-    public class AddRoleHandler: IRequestHandler<IAddRole, ResponseModel<AddRoleResponseModel>>
+    public class AddRoleHandler: IRequestHandler<AddRole, ResponseModel<AddRoleResponseModel>>
     {
         private readonly ccmContext _context;
 
@@ -16,7 +16,7 @@ namespace CCM.Application.Role.Command.Add
             _context = context;
         }
         
-        public async Task<ResponseModel<AddRoleResponseModel>> Handle(IAddRole request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<AddRoleResponseModel>> Handle(AddRole request, CancellationToken cancellationToken)
         {
             bool doesExist = _context.Role.Any(role => role.Name.ToLower() == request.Name.ToLower());
 
@@ -33,7 +33,7 @@ namespace CCM.Application.Role.Command.Add
             {
                 Name = request.Name
             });
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             
             
             return new ResponseModel<AddRoleResponseModel>()

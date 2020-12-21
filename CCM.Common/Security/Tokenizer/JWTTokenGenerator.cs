@@ -7,7 +7,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace CCM.Common.Security.Tokenizer
 {
-    public class JWTTokenGenerator: ITokenGenerator
+    public class JWTTokenGenerator: TokenGenerator
     {
         public IConfiguration Configuration { get; }
 

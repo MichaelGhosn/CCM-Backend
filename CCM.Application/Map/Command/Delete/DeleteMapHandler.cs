@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CCM.Application.Map.Command.Delete
 {
-    public class DeleteMapHandler: IRequestHandler<IDeleteMap, ResponseModel<DeleteMapResponseModel>>
+    public class DeleteMapHandler: IRequestHandler<DeleteMap, ResponseModel<DeleteMapResponseModel>>
     {
         private readonly ccmContext _context;
 
@@ -17,7 +17,7 @@ namespace CCM.Application.Map.Command.Delete
             _context = context;
         }
         
-        public async Task<ResponseModel<DeleteMapResponseModel>> Handle(IDeleteMap request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<DeleteMapResponseModel>> Handle(DeleteMap request, CancellationToken cancellationToken)
         {
             Domain.Map map = _context.Map.Include(map => map.Seat).ThenInclude(seat => seat.Reservation).Include(map => map.Openingtime).FirstOrDefault(m => m.Id == request.MapId);
 
@@ -38,7 +38,7 @@ namespace CCM.Application.Map.Command.Delete
             
             
             _context.Map.Remove(map);
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             
             return new ResponseModel<DeleteMapResponseModel>()
             {

@@ -7,7 +7,7 @@ using MediatR;
 
 namespace CCM.Application.Seat.Command.Delete
 {
-    public class DeleteSeatHandler: IRequestHandler<IDeleteSeat, ResponseModel<DeleteSeatResponseModel>>
+    public class DeleteSeatHandler: IRequestHandler<DeleteSeat, ResponseModel<DeleteSeatResponseModel>>
     {
         private readonly ccmContext _context;
 
@@ -16,7 +16,7 @@ namespace CCM.Application.Seat.Command.Delete
             _context = context;
         }
         
-        public async Task<ResponseModel<DeleteSeatResponseModel>> Handle(IDeleteSeat request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<DeleteSeatResponseModel>> Handle(DeleteSeat request, CancellationToken cancellationToken)
         {
             Domain.Seat seat = _context.Seat.FirstOrDefault(s => s.Id == request.SeatId);
 
@@ -30,7 +30,7 @@ namespace CCM.Application.Seat.Command.Delete
             }
 
             _context.Seat.Remove(seat);
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             
             return new ResponseModel<DeleteSeatResponseModel>()
             {

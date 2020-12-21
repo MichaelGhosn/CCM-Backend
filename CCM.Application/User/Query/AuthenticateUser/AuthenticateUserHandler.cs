@@ -11,20 +11,20 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CCM.Application.User.Query.AuthenticateUser
 {
-    public class AuthenticateUserHandler: IRequestHandler<IAuthenticateUser, ResponseModel<AuthenticateUserResponseModel>>
+    public class AuthenticateUserHandler: IRequestHandler<AuthenticateUser, ResponseModel<AuthenticateUserResponseModel>>
     {
         private readonly ccmContext _context;
         private readonly IHash _hash;
-        private readonly ITokenGenerator _tokenGenerator;
+        private readonly TokenGenerator _tokenGenerator;
 
-        public AuthenticateUserHandler(ccmContext context, IHash hash, ITokenGenerator tokenGenerator)
+        public AuthenticateUserHandler(ccmContext context, IHash hash, TokenGenerator tokenGenerator)
         {
             _context = context;
             _hash = hash;
             _tokenGenerator = tokenGenerator;
         }
         
-        public async Task<ResponseModel<AuthenticateUserResponseModel>> Handle(IAuthenticateUser request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<AuthenticateUserResponseModel>> Handle(AuthenticateUser request, CancellationToken cancellationToken)
         {
             Domain.User user = _context.User
                 .Include(u => u.Role)

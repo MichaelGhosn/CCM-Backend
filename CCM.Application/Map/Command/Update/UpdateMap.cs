@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace CCM.Application.Map.Command.Update
 {
-    public class IUpdateMap: IRequest<ResponseModel<UpdateMapResponseModel>>
+    public class UpdateMap: IRequest<ResponseModel<UpdateMapResponseModel>>
     {
         [Required] 
         public int MapId { get; set; }

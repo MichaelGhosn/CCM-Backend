@@ -4,7 +4,7 @@ using MediatR;
 
 namespace CCM.Application.User.Query.GetAll
 {
-    public class IGetAllUsers: IRequest<ResponseModel<List<GetAllUsersResponseModel>>>
+    public class GetAllUsers: IRequest<ResponseModel<List<GetAllUsersResponseModel>>>
     {
         
     }

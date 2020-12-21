@@ -4,7 +4,7 @@ using MediatR;
 
 namespace CCM.Application.Role.Query.GetAll
 {
-    public class IGetAllRoles: IRequest<ResponseModel<List<GetAllRolesResponseModel>>>, IRequest<List<GetAllRolesResponseModel>>
+    public class GetAllRoles: IRequest<ResponseModel<List<GetAllRolesResponseModel>>>, IRequest<List<GetAllRolesResponseModel>>
     {
         
     }

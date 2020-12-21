@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace CCM.Application.Map.Command.Add
 {
-    public class IAddMap: IRequest<ResponseModel<AddMapResponseModel>>
+    public class AddMap: IRequest<ResponseModel<AddMapResponseModel>>
     {
         [Required]
         public String Name { get; set; }

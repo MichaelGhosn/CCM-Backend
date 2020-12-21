@@ -3,9 +3,9 @@ using System.ComponentModel.DataAnnotations;
 using CCM.Application.Models;
 using MediatR;
 
-namespace CCM.Application.Day.Command.Add
+namespace CCM.Application.Organisation.Command.Add
 {
-    public class IAddDay: IRequest<ResponseModel<AddDayResponseModel>>
+    public class AddOrganisation: IRequest<ResponseModel<AddOrganisationResponseModel>>
     {
         [Required]
         public String Name { get; set; }

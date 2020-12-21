@@ -9,6 +9,7 @@ using CCM.Application.Map.Command.Delete;
 using CCM.Application.Map.Command.Update;
 using CCM.Application.Map.Query.GetAll;
 using CCM.Application.OpeningTime.Command.Add;
+using CCM.Application.OpeningTime.Query.GetAllByOrganisation;
 using CCM.Application.Organisation.Command.Add;
 using CCM.Application.Organisation.Command.Delete;
 using CCM.Application.Organisation.Command.Update;
@@ -36,47 +37,48 @@ namespace CCM.WebApi.Extensions
     {
         internal static void AddMediatRServices(this IServiceCollection services)
         {
-            services.AddMediatR(typeof(IGetAllRoles).GetTypeInfo().Assembly);
-            services.AddMediatR(typeof(IAddRole).GetTypeInfo().Assembly);
-            services.AddMediatR(typeof(IDeleteRole).GetTypeInfo().Assembly);
-            services.AddMediatR(typeof(IUpdateRole).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(GetAllRoles).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(AddRole).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(DeleteRole).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(UpdateRole).GetTypeInfo().Assembly);
 
-            services.AddMediatR(typeof(IGetAllOrganisations).GetTypeInfo().Assembly);
-            services.AddMediatR(typeof(IAddOrganisation).GetTypeInfo().Assembly);
-            services.AddMediatR(typeof(IDeleteOrganisation).GetTypeInfo().Assembly);
-            services.AddMediatR(typeof(IUpdateOrganisation).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(GetAllOrganisations).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(AddOrganisation).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(DeleteOrganisation).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(UpdateOrganisation).GetTypeInfo().Assembly);
             
-            services.AddMediatR(typeof(IAddUser).GetTypeInfo().Assembly);
-            services.AddMediatR(typeof(IGetAllUsers).GetTypeInfo().Assembly);
-            services.AddMediatR(typeof(IDeleteUser).GetTypeInfo().Assembly);
-            services.AddMediatR(typeof(IUpdateUser).GetTypeInfo().Assembly);
-            
-            
-            services.AddMediatR(typeof(IGetAllDays).GetTypeInfo().Assembly);
-            services.AddMediatR(typeof(IAddDay).GetTypeInfo().Assembly);
-            services.AddMediatR(typeof(IDeleteDay).GetTypeInfo().Assembly);
-            services.AddMediatR(typeof(IUpdateDay).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(AddUser).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(GetAllUsers).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(DeleteUser).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(UpdateUser).GetTypeInfo().Assembly);
             
             
-            services.AddMediatR(typeof(IAddMap).GetTypeInfo().Assembly);
-            services.AddMediatR(typeof(IGetAllMapsByOrganisation).GetTypeInfo().Assembly);
-            services.AddMediatR(typeof(IDeleteMap).GetTypeInfo().Assembly);
-            services.AddMediatR(typeof(IUpdateMap).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(GetAllDays).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(AddDay).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(DeleteDay).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(UpdateDay).GetTypeInfo().Assembly);
             
             
-            services.AddMediatR(typeof(IAddSeatToMap).GetTypeInfo().Assembly);
-            services.AddMediatR(typeof(IGetAllSeatsByMapId).GetTypeInfo().Assembly);
-            services.AddMediatR(typeof(IDeleteSeat).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(AddMap).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(GetAllMapsByOrganisation).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(DeleteMap).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(UpdateMap).GetTypeInfo().Assembly);
             
             
-            services.AddMediatR(typeof(IAddReservation).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(AddSeatToMap).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(GetAllSeatsByMapId).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(DeleteSeat).GetTypeInfo().Assembly);
             
             
-            services.AddMediatR(typeof(IAddOpeningTimeToMap).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(AddReservation).GetTypeInfo().Assembly);
+            
+            
+            services.AddMediatR(typeof(AddOpeningTimeToMap).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(GetAllOpeningTimeByOrganisation).GetTypeInfo().Assembly);
             
             
             
-            services.AddMediatR(typeof(IAuthenticateUser).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(AuthenticateUser).GetTypeInfo().Assembly);
 
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
             // services.AddMediatR(Assembly.GetExecutingAssembly());

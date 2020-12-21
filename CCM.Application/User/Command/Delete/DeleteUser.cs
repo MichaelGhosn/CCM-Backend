@@ -2,9 +2,9 @@ using System.ComponentModel.DataAnnotations;
 using CCM.Application.Models;
 using MediatR;
 
-namespace CCM.Application.Organisation.Command.Delete
+namespace CCM.Application.User.Command.Delete
 {
-    public class IDeleteOrganisation: IRequest<ResponseModel<DeleteOrganisationViewModel>>
+    public class DeleteUser: IRequest<ResponseModel<DeleteUserResponseModel>>
     {
         [Required]
         public int Id { get; set; }

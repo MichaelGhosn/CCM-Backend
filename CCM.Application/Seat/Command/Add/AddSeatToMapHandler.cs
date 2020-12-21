@@ -7,7 +7,7 @@ using MediatR;
 
 namespace CCM.Application.Seat.Command.Add
 {
-    public class AddSeatToMapHandler: IRequestHandler<IAddSeatToMap, ResponseModel<AddSeatToMapResponseModel>>
+    public class AddSeatToMapHandler: IRequestHandler<AddSeatToMap, ResponseModel<AddSeatToMapResponseModel>>
     {
         private readonly ccmContext _context;
 
@@ -16,7 +16,7 @@ namespace CCM.Application.Seat.Command.Add
             _context = context;
         }
         
-        public async Task<ResponseModel<AddSeatToMapResponseModel>> Handle(IAddSeatToMap request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<AddSeatToMapResponseModel>> Handle(AddSeatToMap request, CancellationToken cancellationToken)
         {
             bool doesMapExists = _context.Map.Any(map => map.Id == request.MapId);
 
@@ -41,6 +41,18 @@ namespace CCM.Application.Seat.Command.Add
                 };
             }
 
+            int numberOfSeatsExisting = _context.Seat.Where(seat => seat.MapId == request.MapId).Count();
+            int numberOfMaxSeats = _context.Map.Where(map => map.Id == request.MapId).Select(map => map.Capacity).FirstOrDefault();
+
+            if (numberOfSeatsExisting >= numberOfMaxSeats)
+            {
+                return new ResponseModel<AddSeatToMapResponseModel>()
+                {
+                    Success = false,
+                    Description = "Maximum available seats reached its limit"
+                };
+            }
+            
             _context.Seat.Add(new Domain.Seat()
             {
                 X = request.x,
@@ -48,7 +60,7 @@ namespace CCM.Application.Seat.Command.Add
                 MapId = request.MapId
             });
 
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             
             return new ResponseModel<AddSeatToMapResponseModel>()
             {

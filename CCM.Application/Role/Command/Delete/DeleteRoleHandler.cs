@@ -7,7 +7,7 @@ using MediatR;
 
 namespace CCM.Application.Role.Command.Delete
 {
-    public class DeleteRoleHandler: IRequestHandler<IDeleteRole, ResponseModel<DeleteRoleResponseModel>>
+    public class DeleteRoleHandler: IRequestHandler<DeleteRole, ResponseModel<DeleteRoleResponseModel>>
     {
         private readonly ccmContext _context;
 
@@ -16,7 +16,7 @@ namespace CCM.Application.Role.Command.Delete
             _context = context;
         }
         
-        public async Task<ResponseModel<DeleteRoleResponseModel>> Handle(IDeleteRole request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<DeleteRoleResponseModel>> Handle(DeleteRole request, CancellationToken cancellationToken)
         {
             Domain.Role role = _context.Role.FirstOrDefault(role => role.Id == request.Id);
 
@@ -30,7 +30,7 @@ namespace CCM.Application.Role.Command.Delete
             }
 
             _context.Role.Remove(role);
-            _context.SaveChangesAsync(cancellationToken);
+            await _context.SaveChangesAsync(cancellationToken);
             
             return new ResponseModel<DeleteRoleResponseModel>()
             {

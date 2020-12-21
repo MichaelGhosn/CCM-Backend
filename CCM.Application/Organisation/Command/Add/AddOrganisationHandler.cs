@@ -7,7 +7,7 @@ using MediatR;
 
 namespace CCM.Application.Organisation.Command.Add
 {
-    public class AddOrganisationHandler: IRequestHandler<IAddOrganisation, ResponseModel<AddOrganisationResponseModel>>
+    public class AddOrganisationHandler: IRequestHandler<AddOrganisation, ResponseModel<AddOrganisationResponseModel>>
     {
         private readonly ccmContext _context;
 
@@ -16,7 +16,7 @@ namespace CCM.Application.Organisation.Command.Add
             _context = context;
         }
         
-        public async Task<ResponseModel<AddOrganisationResponseModel>> Handle(IAddOrganisation request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<AddOrganisationResponseModel>> Handle(AddOrganisation request, CancellationToken cancellationToken)
         {
             var doesExist =
                 _context.Organisation.Any(organisation => organisation.Name.ToLower() == request.Name.ToLower());
@@ -30,12 +30,12 @@ namespace CCM.Application.Organisation.Command.Add
                 };
             }
 
-            _context.Organisation.AddAsync(new Domain.Organisation()
+            await _context.Organisation.AddAsync(new Domain.Organisation()
             {
                 Name = request.Name
             });
 
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             
             return new ResponseModel<AddOrganisationResponseModel>()
             {

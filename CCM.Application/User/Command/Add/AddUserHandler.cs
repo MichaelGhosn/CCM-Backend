@@ -8,7 +8,7 @@ using MediatR;
 
 namespace CCM.Application.User.Command.Add
 {
-    public class AddUserHandler: IRequestHandler<IAddUser, ResponseModel<AddUserResponseModel>>
+    public class AddUserHandler: IRequestHandler<AddUser, ResponseModel<AddUserResponseModel>>
     {
         private readonly ccmContext _context;
         private readonly IHash _hash;
@@ -19,7 +19,7 @@ namespace CCM.Application.User.Command.Add
             _hash = hash;
         }
         
-        public async Task<ResponseModel<AddUserResponseModel>> Handle(IAddUser request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<AddUserResponseModel>> Handle(AddUser request, CancellationToken cancellationToken)
         {
             bool doesRoleExists = _context.Role.Any(role => role.Id == request.RoleId);
 
@@ -65,7 +65,7 @@ namespace CCM.Application.User.Command.Add
                 OrganisationId = request.OrganisationId
             });
 
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             
             return new ResponseModel<AddUserResponseModel>()
             {

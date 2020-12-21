@@ -8,7 +8,7 @@ using MediatR;
 
 namespace CCM.Application.Map.Query.GetAll
 {
-    public class GetAllMapsByOrganisationHandler: IRequestHandler<IGetAllMapsByOrganisation, ResponseModel<List<GetAllMapsByOrganisationResponseModel>>>
+    public class GetAllMapsByOrganisationHandler: IRequestHandler<GetAllMapsByOrganisation, ResponseModel<List<GetAllMapsByOrganisationResponseModel>>>
     {
         private readonly ccmContext _context;
 
@@ -17,7 +17,7 @@ namespace CCM.Application.Map.Query.GetAll
             _context = context;
         }
         
-        public async Task<ResponseModel<List<GetAllMapsByOrganisationResponseModel>>> Handle(IGetAllMapsByOrganisation request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<List<GetAllMapsByOrganisationResponseModel>>> Handle(GetAllMapsByOrganisation request, CancellationToken cancellationToken)
         {
             bool doesOrganisationExists =
                 _context.Organisation.Any(organisation => organisation.Id == request.OrganisationId);
@@ -42,7 +42,7 @@ namespace CCM.Application.Map.Query.GetAll
                     Capacity = map.Capacity,
                     AuthorisedCapacity = 0
                 }).ToList(),
-                Description = "Successfully fetched data"
+                Description = "Successfully fetched organisation maps"
             };
         }
     }

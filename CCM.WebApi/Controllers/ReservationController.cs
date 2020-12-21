@@ -10,7 +10,7 @@ namespace CCM.WebApi.Controllers
     {
         // Add
         [HttpPost]
-        public async Task<IActionResult> Add([FromBody] IAddReservation request)
+        public async Task<IActionResult> Add([FromBody] AddReservation request)
         {
             return Ok(await Mediator.Send(request));
         }

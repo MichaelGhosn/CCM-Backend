@@ -9,7 +9,7 @@ using MediatR;
 
 namespace CCM.Application.Map.Command.Add
 {
-    public class AddMapHandler: IRequestHandler<IAddMap, ResponseModel<AddMapResponseModel>>
+    public class AddMapHandler: IRequestHandler<AddMap, ResponseModel<AddMapResponseModel>>
     {
         private readonly ccmContext _context;
 
@@ -18,7 +18,7 @@ namespace CCM.Application.Map.Command.Add
             _context = context;
         }
         
-        public async Task<ResponseModel<AddMapResponseModel>> Handle(IAddMap request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<AddMapResponseModel>> Handle(AddMap request, CancellationToken cancellationToken)
         {
             bool doesOrganisationExists =
                 _context.Organisation.Any(organisation => organisation.Id == request.OrganisationId);
@@ -61,7 +61,7 @@ namespace CCM.Application.Map.Command.Add
                 AuthorizedCapacity = request.AuthorizedCapacity,
                 OrganisationId = request.OrganisationId
             });
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             
             
             return new ResponseModel<AddMapResponseModel>()

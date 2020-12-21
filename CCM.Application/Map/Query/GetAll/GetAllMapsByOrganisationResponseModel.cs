@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using CCM.Domain;
 
 namespace CCM.Application.Map.Query.GetAll
 {
@@ -9,5 +11,6 @@ namespace CCM.Application.Map.Query.GetAll
         public String Image { get; set; }
         public int Capacity { get; set; }
         public int AuthorisedCapacity { get; set; }
+ 
     }
 }

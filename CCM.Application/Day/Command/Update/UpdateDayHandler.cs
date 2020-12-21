@@ -7,7 +7,7 @@ using MediatR;
 
 namespace CCM.Application.Day.Command.Update
 {
-    public class UpdateDayHandler: IRequestHandler<IUpdateDay, ResponseModel<UpdateDayResponseModel>>
+    public class UpdateDayHandler: IRequestHandler<UpdateDay, ResponseModel<UpdateDayResponseModel>>
     {
         private readonly ccmContext _context;
 
@@ -16,7 +16,7 @@ namespace CCM.Application.Day.Command.Update
             _context = context;
         }
         
-        public async Task<ResponseModel<UpdateDayResponseModel>> Handle(IUpdateDay request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<UpdateDayResponseModel>> Handle(UpdateDay request, CancellationToken cancellationToken)
         {
             Domain.Day day = _context.Day.FirstOrDefault(d => d.Id == request.Id);
 
@@ -32,7 +32,7 @@ namespace CCM.Application.Day.Command.Update
             day.Name = request.Name;
 
             _context.Day.Update(day);
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             
             
             return new ResponseModel<UpdateDayResponseModel>()

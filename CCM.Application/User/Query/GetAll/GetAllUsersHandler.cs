@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CCM.Application.User.Query.GetAll
 {
-    public class GetAllUsersHandler: IRequestHandler<IGetAllUsers, ResponseModel<List<GetAllUsersResponseModel>>>
+    public class GetAllUsersHandler: IRequestHandler<GetAllUsers, ResponseModel<List<GetAllUsersResponseModel>>>
     {
         private readonly ccmContext _context;
 
@@ -18,7 +18,7 @@ namespace CCM.Application.User.Query.GetAll
             _context = context;
         }
         
-        public async Task<ResponseModel<List<GetAllUsersResponseModel>>> Handle(IGetAllUsers request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<List<GetAllUsersResponseModel>>> Handle(GetAllUsers request, CancellationToken cancellationToken)
         {
            return new ResponseModel<List<GetAllUsersResponseModel>>()
            {

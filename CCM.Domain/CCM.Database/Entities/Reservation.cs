@@ -9,8 +9,9 @@ namespace CCM.Domain
         public DateTime? Date { get; set; }
         public string StartHour { get; set; }
         public string EndHour { get; set; }
-        public int? SeatId { get; set; }
-        public int? UserId { get; set; }
+        public string Link { get; set; }
+        public int SeatId { get; set; }
+        public int UserId { get; set; }
 
         public virtual Seat Seat { get; set; }
         public virtual User User { get; set; }

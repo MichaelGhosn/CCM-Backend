@@ -7,7 +7,7 @@ using MediatR;
 
 namespace CCM.Application.Day.Command.Add
 {
-    public class AddDayHandler: IRequestHandler<IAddDay, ResponseModel<AddDayResponseModel>>
+    public class AddDayHandler: IRequestHandler<AddDay, ResponseModel<AddDayResponseModel>>
     {
         private readonly ccmContext _context;
 
@@ -16,7 +16,7 @@ namespace CCM.Application.Day.Command.Add
             _context = context;
         }
         
-        public async Task<ResponseModel<AddDayResponseModel>> Handle(IAddDay request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<AddDayResponseModel>> Handle(AddDay request, CancellationToken cancellationToken)
         {
             bool doesExists = _context.Day.Any(day => day.Name.ToLower() == request.Name.ToLower());
 
@@ -34,7 +34,7 @@ namespace CCM.Application.Day.Command.Add
                 Name = request.Name
             });
 
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             
             return new ResponseModel<AddDayResponseModel>()
             {

@@ -17,12 +17,12 @@ namespace CCM.WebApi.Controllers
         [HttpGet]
         public async Task<ActionResult> GetAll()
         {
-            return Ok(await Mediator.Send(new IGetAllUsers()));
+            return Ok(await Mediator.Send(new GetAllUsers()));
         }
        
         // ADD
         [HttpPost]
-        public async Task<ActionResult> Add([FromBody] IAddUser request)
+        public async Task<ActionResult> Add([FromBody] AddUser request)
         {
             return Ok(await Mediator.Send(request));
         }
@@ -31,7 +31,7 @@ namespace CCM.WebApi.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete([FromRoute] int id)
         {
-            return Ok(await Mediator.Send(new IDeleteUser()
+            return Ok(await Mediator.Send(new DeleteUser()
             {
                 Id = id
             }));
@@ -39,7 +39,7 @@ namespace CCM.WebApi.Controllers
         
         // UPDATE
         [HttpPut]
-        public async Task<ActionResult> Update([FromBody] IUpdateUser request)
+        public async Task<ActionResult> Update([FromBody] UpdateUser request)
         {
             return Ok(await Mediator.Send(request));
         }
@@ -47,7 +47,7 @@ namespace CCM.WebApi.Controllers
         
         // Authenticate
         [HttpPost("authenticate")]
-        public async Task<IActionResult> Authenticate([FromBody] IAuthenticateUser request)
+        public async Task<IActionResult> Authenticate([FromBody] AuthenticateUser request)
         {
             return Ok(await Mediator.Send(request));
         }

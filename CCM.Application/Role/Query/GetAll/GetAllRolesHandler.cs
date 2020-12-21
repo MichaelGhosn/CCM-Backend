@@ -8,7 +8,7 @@ using MediatR;
 
 namespace CCM.Application.Role.Query.GetAll
 {
-    public class GetAllRolesHandler: IRequestHandler<IGetAllRoles, ResponseModel<List<GetAllRolesResponseModel>>>
+    public class GetAllRolesHandler: IRequestHandler<GetAllRoles, ResponseModel<List<GetAllRolesResponseModel>>>
     {
         private readonly ccmContext _context;
 
@@ -17,7 +17,7 @@ namespace CCM.Application.Role.Query.GetAll
             _context = context;
         }
         
-        public async Task<ResponseModel<List<GetAllRolesResponseModel>>> Handle(IGetAllRoles request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<List<GetAllRolesResponseModel>>> Handle(GetAllRoles request, CancellationToken cancellationToken)
         {
             return new ResponseModel<List<GetAllRolesResponseModel>>()
             {

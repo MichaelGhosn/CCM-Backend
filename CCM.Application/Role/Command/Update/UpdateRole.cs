@@ -3,9 +3,9 @@ using System.ComponentModel.DataAnnotations;
 using CCM.Application.Models;
 using MediatR;
 
-namespace CCM.Application.Organisation.Command.Update
+namespace CCM.Application.Role.Command.Update
 {
-    public class IUpdateOrganisation: IRequest<ResponseModel<UpdateOrganisationResponseModel>>
+    public class UpdateRole: IRequest<ResponseModel<UpdateRoleResponseModel>>
     {
         [Required]
         public int Id { get; set; }

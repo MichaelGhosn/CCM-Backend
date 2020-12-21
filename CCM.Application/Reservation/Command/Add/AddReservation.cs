@@ -4,7 +4,7 @@ using MediatR;
 
 namespace CCM.Application.Reservation.Command.Add
 {
-    public class IAddReservation: IRequest<ResponseModel<AddReservationResponseModel>>
+    public class AddReservation: IRequest<ResponseModel<AddReservationResponseModel>>
     {
         public int UserId { get; set; }
         public int SeatId { get; set; }

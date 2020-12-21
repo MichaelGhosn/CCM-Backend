@@ -4,7 +4,7 @@ using MediatR;
 
 namespace CCM.Application.OpeningTime.Command.Add
 {
-    public class IAddOpeningTimeToMap: IRequest<ResponseModel<AddOpeningTimeToMapResponseModel>>
+    public class AddOpeningTimeToMap: IRequest<ResponseModel<AddOpeningTimeToMapResponseModel>>
     {
         public String OpeningHour { get; set; }
         public String ClosingHour { get; set; }

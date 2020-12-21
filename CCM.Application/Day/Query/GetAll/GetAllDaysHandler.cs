@@ -8,7 +8,7 @@ using MediatR;
 
 namespace CCM.Application.Day.Query.GetAll
 {
-    public class GetAllDaysHandler: IRequestHandler<IGetAllDays, ResponseModel<List<GetAllDaysResponseModel>>>
+    public class GetAllDaysHandler: IRequestHandler<GetAllDays, ResponseModel<List<GetAllDaysResponseModel>>>
     {
         private readonly ccmContext _context;
 
@@ -17,7 +17,7 @@ namespace CCM.Application.Day.Query.GetAll
             _context = context;
         }
         
-        public async Task<ResponseModel<List<GetAllDaysResponseModel>>> Handle(IGetAllDays request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<List<GetAllDaysResponseModel>>> Handle(GetAllDays request, CancellationToken cancellationToken)
         {
             return new ResponseModel<List<GetAllDaysResponseModel>>()
             {

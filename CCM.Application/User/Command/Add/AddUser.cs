@@ -5,7 +5,7 @@ using MediatR;
 
 namespace CCM.Application.User.Command.Add
 {
-    public class IAddUser: IRequest<ResponseModel<AddUserResponseModel>>
+    public class AddUser: IRequest<ResponseModel<AddUserResponseModel>>
     {
         public String FirstName { get; set; }
         public String LastName { get; set; }

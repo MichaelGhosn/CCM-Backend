@@ -12,7 +12,7 @@ using Newtonsoft.Json;
 
 namespace CCM.Application.Reservation.Command.Add
 {
-    public class AddReservationHandler: IRequestHandler<IAddReservation, ResponseModel<AddReservationResponseModel>>
+    public class AddReservationHandler: IRequestHandler<AddReservation, ResponseModel<AddReservationResponseModel>>
     {
         private readonly ccmContext _context;
 
@@ -21,7 +21,7 @@ namespace CCM.Application.Reservation.Command.Add
             _context = context;
         }
         
-        public async Task<ResponseModel<AddReservationResponseModel>> Handle(IAddReservation request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<AddReservationResponseModel>> Handle(AddReservation request, CancellationToken cancellationToken)
         {
             bool doesUserExists = _context.User.Any(user => user.Id == request.UserId);
             
@@ -128,7 +128,7 @@ namespace CCM.Application.Reservation.Command.Add
                 UserId = request.UserId
             });
 
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
 
             return new ResponseModel<AddReservationResponseModel>()
             {

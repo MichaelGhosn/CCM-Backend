@@ -9,7 +9,7 @@ using MediatR;
 
 namespace CCM.Application.User.Command.Update
 {
-    public class UpdateUserHandler: IRequestHandler<IUpdateUser, ResponseModel<UpdateUserResponseModel>>
+    public class UpdateUserHandler: IRequestHandler<UpdateUser, ResponseModel<UpdateUserResponseModel>>
     {
         private readonly ccmContext _context;
         private IHash _hash;
@@ -20,7 +20,7 @@ namespace CCM.Application.User.Command.Update
             _hash = hash;
         }
 
-        public async Task<ResponseModel<UpdateUserResponseModel>> Handle(IUpdateUser request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<UpdateUserResponseModel>> Handle(UpdateUser request, CancellationToken cancellationToken)
         {
             Domain.User user = _context.User.FirstOrDefault(u => u.Id == request.Id);
 
@@ -74,7 +74,7 @@ namespace CCM.Application.User.Command.Update
             
             _context.User.Update(user);
 
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             
             return new ResponseModel<UpdateUserResponseModel>()
             {

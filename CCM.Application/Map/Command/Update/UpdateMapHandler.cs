@@ -9,7 +9,7 @@ using MediatR;
 
 namespace CCM.Application.Map.Command.Update
 {
-    public class UpdateMapHandler: IRequestHandler<IUpdateMap, ResponseModel<UpdateMapResponseModel>>
+    public class UpdateMapHandler: IRequestHandler<UpdateMap, ResponseModel<UpdateMapResponseModel>>
     {
         private readonly ccmContext _context;
 
@@ -18,7 +18,7 @@ namespace CCM.Application.Map.Command.Update
             _context = context;
         }
         
-        public async Task<ResponseModel<UpdateMapResponseModel>> Handle(IUpdateMap request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<UpdateMapResponseModel>> Handle(UpdateMap request, CancellationToken cancellationToken)
         {
             Domain.Map map = _context.Map.FirstOrDefault(m => m.Id == request.MapId);
 
@@ -52,7 +52,7 @@ namespace CCM.Application.Map.Command.Update
 
             _context.Map.Update(map);
 
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
      
             
             return new ResponseModel<UpdateMapResponseModel>()

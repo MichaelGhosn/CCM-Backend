@@ -7,7 +7,7 @@ using MediatR;
 
 namespace CCM.Application.Day.Command.Delete
 {
-    public class DeleteDayHandler: IRequestHandler<IDeleteDay, ResponseModel<DeleteDayResponseModel>>
+    public class DeleteDayHandler: IRequestHandler<DeleteDay, ResponseModel<DeleteDayResponseModel>>
     {
         private readonly ccmContext _context;
 
@@ -16,7 +16,7 @@ namespace CCM.Application.Day.Command.Delete
             _context = context;
         }
         
-        public async Task<ResponseModel<DeleteDayResponseModel>> Handle(IDeleteDay request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<DeleteDayResponseModel>> Handle(DeleteDay request, CancellationToken cancellationToken)
         {
             Domain.Day day = _context.Day.FirstOrDefault(d => d.Id == request.Id);
 
@@ -30,7 +30,7 @@ namespace CCM.Application.Day.Command.Delete
             }
 
             _context.Day.Remove(day);
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             
             return new ResponseModel<DeleteDayResponseModel>()
             {

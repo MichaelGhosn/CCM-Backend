@@ -7,7 +7,7 @@ using MediatR;
 
 namespace CCM.Application.Role.Command.Update
 {
-    public class UpdateRoleHandler: IRequestHandler<IUpdateRole, ResponseModel<UpdateRoleResponseModel>>
+    public class UpdateRoleHandler: IRequestHandler<UpdateRole, ResponseModel<UpdateRoleResponseModel>>
     {
         private readonly ccmContext _context;
 
@@ -16,7 +16,7 @@ namespace CCM.Application.Role.Command.Update
             _context = context;
         }
         
-        public async Task<ResponseModel<UpdateRoleResponseModel>> Handle(IUpdateRole request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<UpdateRoleResponseModel>> Handle(UpdateRole request, CancellationToken cancellationToken)
         {
             Domain.Role role = _context.Role.FirstOrDefault(role => role.Id == request.Id);
 
@@ -32,7 +32,7 @@ namespace CCM.Application.Role.Command.Update
             role.Name = request.Name;
             
             _context.Role.Update(role);
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             
             return new ResponseModel<UpdateRoleResponseModel>()
             {

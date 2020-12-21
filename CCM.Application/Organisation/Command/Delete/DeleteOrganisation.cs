@@ -2,9 +2,9 @@ using System.ComponentModel.DataAnnotations;
 using CCM.Application.Models;
 using MediatR;
 
-namespace CCM.Application.Day.Command.Delete
+namespace CCM.Application.Organisation.Command.Delete
 {
-    public class IDeleteDay: IRequest<ResponseModel<DeleteDayResponseModel>>
+    public class DeleteOrganisation: IRequest<ResponseModel<DeleteOrganisationViewModel>>
     {
         [Required]
         public int Id { get; set; }

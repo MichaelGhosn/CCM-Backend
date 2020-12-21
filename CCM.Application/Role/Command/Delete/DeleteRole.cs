@@ -1,10 +1,11 @@
+using System;
 using System.ComponentModel.DataAnnotations;
 using CCM.Application.Models;
 using MediatR;
 
-namespace CCM.Application.User.Command.Delete
+namespace CCM.Application.Role.Command.Delete
 {
-    public class IDeleteUser: IRequest<ResponseModel<DeleteUserResponseModel>>
+    public class DeleteRole: IRequest<ResponseModel<DeleteRoleResponseModel>>
     {
         [Required]
         public int Id { get; set; }

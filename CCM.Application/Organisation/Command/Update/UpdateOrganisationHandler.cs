@@ -7,7 +7,7 @@ using MediatR;
 
 namespace CCM.Application.Organisation.Command.Update
 {
-    public class UpdateOrganisationHandler: IRequestHandler<IUpdateOrganisation, ResponseModel<UpdateOrganisationResponseModel>>
+    public class UpdateOrganisationHandler: IRequestHandler<UpdateOrganisation, ResponseModel<UpdateOrganisationResponseModel>>
     {
         private readonly ccmContext _context;
 
@@ -16,7 +16,7 @@ namespace CCM.Application.Organisation.Command.Update
             _context = context;
         }
         
-        public async Task<ResponseModel<UpdateOrganisationResponseModel>> Handle(IUpdateOrganisation request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<UpdateOrganisationResponseModel>> Handle(UpdateOrganisation request, CancellationToken cancellationToken)
         {
 
             Domain.Organisation organisation =
@@ -34,7 +34,7 @@ namespace CCM.Application.Organisation.Command.Update
             organisation.Name = request.Name;
 
             _context.Organisation.Update(organisation);
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             
             return new ResponseModel<UpdateOrganisationResponseModel>()
             {
