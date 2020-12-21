@@ -93,8 +93,7 @@ namespace CCM.Application.Reservation.Command.Add
 
             var  alreadyBookedReservationsInThatTime = _context.Reservation
                 .Include(reservation => reservation.Seat).ThenInclude(seat => seat.Map)
-                .Where(reservation => reservation.SeatId == request.SeatId);
-
+                .Where(reservation => reservation.SeatId == request.SeatId && reservation.Date.Value == request.ReservationDate.Date);
 
 
             int alreadyBookedSeatsDuringThatTime = 0;

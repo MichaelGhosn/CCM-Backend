@@ -134,9 +134,10 @@ namespace CCM.Domain.Migrations
                 {
                     Id = table.Column<int>(type: "int(11)", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    x = table.Column<int>(type: "int(11)", nullable: false),
-                    y = table.Column<int>(type: "int(11)", nullable: false),
-                    MapId = table.Column<int>(type: "int(11)", nullable: false)
+                    x = table.Column<int>(type: "int(11)", nullable: true),
+                    y = table.Column<int>(type: "int(11)", nullable: true),
+                    MapId = table.Column<int>(type: "int(11)", nullable: false),
+                    Name = table.Column<string>(maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {

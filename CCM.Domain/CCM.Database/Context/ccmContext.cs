@@ -206,6 +206,12 @@ namespace CCM.Domain
                     .HasColumnName("y")
                     .HasColumnType("int(11)");
 
+                entity.Property(e => e.Name)
+                    .HasColumnName("Name")
+                    .IsRequired()
+                    .HasColumnType("varchar(100)")
+                    .HasMaxLength(100);
+                
                 entity.HasOne(d => d.Map)
                     .WithMany(p => p.Seat)
                     .HasForeignKey(d => d.MapId)

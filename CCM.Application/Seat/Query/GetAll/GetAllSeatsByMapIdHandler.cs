@@ -37,7 +37,8 @@ namespace CCM.Application.Seat.Query.GetAll
                 {
                     SeatId = seat.Id,
                     x = seat.X,
-                    y = seat.Y
+                    y = seat.Y,
+                    Name = seat.Name
                 }).ToList(),
                 Description = "Fetched data successfully"
             };

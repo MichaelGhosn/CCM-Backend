@@ -207,6 +207,11 @@ namespace CCM.Domain.Migrations
                     b.Property<int>("Y")
                         .HasColumnName("y")
                         .HasColumnType("int(11)");
+                   
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("varchar(100)")
+                        .HasMaxLength(100);
 
                     b.HasKey("Id");
 

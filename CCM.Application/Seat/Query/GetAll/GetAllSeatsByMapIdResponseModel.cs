@@ -1,3 +1,5 @@
+using System;
+
 namespace CCM.Application.Seat.Query.GetAll
 {
     public class GetAllSeatsByMapIdResponseModel
@@ -5,5 +7,6 @@ namespace CCM.Application.Seat.Query.GetAll
         public int SeatId { get; set; }
         public int x { get; set; }
         public int y { get; set; }
+        public String Name { get; set; }
     }
 }

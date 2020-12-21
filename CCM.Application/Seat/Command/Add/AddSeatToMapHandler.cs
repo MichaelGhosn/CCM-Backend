@@ -29,15 +29,18 @@ namespace CCM.Application.Seat.Command.Add
                 };
             }
 
-            bool doesCoordinatesExists = _context.Seat.Any(seat =>
-                seat.X == request.x && seat.Y == request.y && seat.MapId == request.MapId);
+            // bool doesCoordinatesExists = _context.Seat.Any(seat =>
+            //     seat.X == request.x && seat.Y == request.y && seat.MapId == request.MapId);
 
+            bool doesCoordinatesExists = _context.Seat.Any(seat =>
+                seat.Name.ToLower() == request.Name.ToLower() && seat.MapId == request.MapId);
+            
             if (doesCoordinatesExists)
             {
                 return new ResponseModel<AddSeatToMapResponseModel>()
                 {
                     Success = false,
-                    Description = "Coordinates already exist on map"
+                    Description = "Seat already exist on map"
                 };
             }
 
@@ -57,6 +60,7 @@ namespace CCM.Application.Seat.Command.Add
             {
                 X = request.x,
                 Y = request.y,
+                Name = request.Name,
                 MapId = request.MapId
             });
 

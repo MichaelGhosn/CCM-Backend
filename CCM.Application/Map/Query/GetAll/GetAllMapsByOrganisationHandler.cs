@@ -40,7 +40,7 @@ namespace CCM.Application.Map.Query.GetAll
                     MapName = map.Name,
                     Image = map.ImagePath,
                     Capacity = map.Capacity,
-                    AuthorisedCapacity = 0
+                    AuthorisedCapacity = map.AuthorizedCapacity
                 }).ToList(),
                 Description = "Successfully fetched organisation maps"
             };
