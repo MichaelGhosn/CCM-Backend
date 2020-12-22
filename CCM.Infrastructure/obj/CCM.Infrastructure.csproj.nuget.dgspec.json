@@ -41,6 +41,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Google.Apis.Calendar.v3": {
+              "target": "Package",
+              "version": "[1.49.0.2161, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[9.0.0, )"

@@ -1,12 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "jADwaf7QeCy/6Q/tDG6bODDrpFKl0swKs+tv4E+5t4mKgMlA/ovbvVaQ4YEde720TKuhBfLGpJL85NpEwvCgqQ==",
+  "dgSpecHash": "Xlz18VH8biCXBMYFcFrHJcn8SsduHwzeDAlEBxmAjSJfoG3kPrgDcmfYzA1NP7TrKpsm+RNkYP65ygmW7kFUMg==",
   "success": true,
   "projectFilePath": "E:\\dotnetProjects\\CCM-Backend\\CCM.Infrastructure\\CCM.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\michael\\.nuget\\packages\\google.apis\\1.49.0\\google.apis.1.49.0.nupkg.sha512",
+    "C:\\Users\\michael\\.nuget\\packages\\google.apis.auth\\1.49.0\\google.apis.auth.1.49.0.nupkg.sha512",
+    "C:\\Users\\michael\\.nuget\\packages\\google.apis.calendar.v3\\1.49.0.2161\\google.apis.calendar.v3.1.49.0.2161.nupkg.sha512",
+    "C:\\Users\\michael\\.nuget\\packages\\google.apis.core\\1.49.0\\google.apis.core.1.49.0.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
-    "C:\\Users\\michael\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512"
+    "C:\\Users\\michael\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\michael\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []
 }

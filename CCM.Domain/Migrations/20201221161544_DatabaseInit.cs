@@ -161,7 +161,8 @@ namespace CCM.Domain.Migrations
                     EndHour = table.Column<string>(maxLength: 100, nullable: true, defaultValueSql: "'NULL'"),
                     Link = table.Column<string>(nullable: true),
                     SeatId = table.Column<int>(type: "int(11)", nullable: false),
-                    UserId = table.Column<int>(type: "int(11)", nullable: false)
+                    UserId = table.Column<int>(type: "int(11)", nullable: false),
+                    EventId = table.Column<int>(maxLength: 250, nullable: false)
                 },
                 constraints: table =>
                 {

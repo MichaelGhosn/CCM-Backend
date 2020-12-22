@@ -24,6 +24,9 @@
           },
           "E:\\dotnetProjects\\CCM-Backend\\CCM.Domain\\CCM.Domain.csproj": {
             "projectPath": "E:\\dotnetProjects\\CCM-Backend\\CCM.Domain\\CCM.Domain.csproj"
+          },
+          "E:\\dotnetProjects\\CCM-Backend\\CCM.Infrastructure\\CCM.Infrastructure.csproj": {
+            "projectPath": "E:\\dotnetProjects\\CCM-Backend\\CCM.Infrastructure\\CCM.Infrastructure.csproj"
           }
         }
       }

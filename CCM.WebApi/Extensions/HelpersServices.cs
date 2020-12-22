@@ -1,6 +1,7 @@
 using CCM.Common.Security;
 using CCM.Common.Security.Encryption;
 using CCM.Common.Security.Tokenizer;
+using CCM.Infrastructure.Calendar;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -12,6 +13,7 @@ namespace CCM.WebApi.Extensions
         {
             services.AddTransient<IHash, BCryptHash>();
             services.AddSingleton<TokenGenerator, JWTTokenGenerator>();
+            services.AddScoped<ICalendar, GoogleCalendar>();
         }
     }
 }

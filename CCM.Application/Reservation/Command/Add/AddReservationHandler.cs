@@ -6,28 +6,31 @@ using System.Threading.Tasks;
 using CCM.Application.Models;
 using CCM.Common.Extensions;
 using CCM.Domain;
+using CCM.Infrastructure.Calendar;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 
 namespace CCM.Application.Reservation.Command.Add
 {
-    public class AddReservationHandler: IRequestHandler<AddReservation, ResponseModel<AddReservationResponseModel>>
+    public class AddReservationHandler: IRequestHandler<AddReservation, ResponseModel<AddEventToReservationResponseModelModel>>
     {
         private readonly ccmContext _context;
-
-        public AddReservationHandler(ccmContext context)
+        private ICalendar _calendar;
+        
+        public AddReservationHandler(ccmContext context, ICalendar calendar)
         {
             _context = context;
+            _calendar = calendar;
         }
         
-        public async Task<ResponseModel<AddReservationResponseModel>> Handle(AddReservation request, CancellationToken cancellationToken)
+        public async Task<ResponseModel<AddEventToReservationResponseModelModel>> Handle(AddReservation request, CancellationToken cancellationToken)
         {
             bool doesUserExists = _context.User.Any(user => user.Id == request.UserId);
             
             if (!doesUserExists)
             {
-                return new ResponseModel<AddReservationResponseModel>()
+                return new ResponseModel<AddEventToReservationResponseModelModel>()
                 {
                     Success = false,
                     Description = "No user found"
@@ -38,7 +41,7 @@ namespace CCM.Application.Reservation.Command.Add
 
             if (!doesSeatExists)
             {
-                return new ResponseModel<AddReservationResponseModel>()
+                return new ResponseModel<AddEventToReservationResponseModelModel>()
                 {
                     Success = false,
                     Description = "No seat found"
@@ -49,13 +52,22 @@ namespace CCM.Application.Reservation.Command.Add
             // int mapId = _context.Seat.Where(seat => seat.Id == request.SeatId).Select(seat => seat.MapId).FirstOrDefault();
             // int dayId = _context.Day.Where(day => day.Name == request.ReservationDate.DayOfWeek.ToString())
             //     .Select(day => day.Id).FirstOrDefault();
-            
+
 
             Openingtime openingtime = _context.Openingtime
                 .Where(ot => 
                     ot.Day.Name == request.ReservationDate.DayOfWeek.ToString()
                     && ot.MapId == ot.Map.Seat.Where(seat => seat.Id == request.SeatId && seat.MapId == ot.MapId).Select(seat =>  seat.MapId).FirstOrDefault() )
                 .FirstOrDefault();
+
+            if (openingtime == null)
+            {
+                return new ResponseModel<AddEventToReservationResponseModelModel>()
+                {
+                    Success = false,
+                    Description = "No opening times for chosen date"
+                };
+            }
 
 
             DateTime openingHour = DateTime.Parse(openingtime.OpeningHour);
@@ -64,7 +76,7 @@ namespace CCM.Application.Reservation.Command.Add
 
             if (request.StartHour >= request.EndHour)
             {
-                return new ResponseModel<AddReservationResponseModel>()
+                return new ResponseModel<AddEventToReservationResponseModelModel>()
                 {
                     Success = false,
                     Description = "Meeting has to start before ending"
@@ -77,7 +89,7 @@ namespace CCM.Application.Reservation.Command.Add
                 || request.EndHour.Hour >= closingHour.Hour 
                 || request.EndHour.Hour < openingHour.Hour)
             {
-                return new ResponseModel<AddReservationResponseModel>()
+                return new ResponseModel<AddEventToReservationResponseModelModel>()
                 {
                     Success = false,
                     Description = "Time chosen outside of opening time"
@@ -109,13 +121,28 @@ namespace CCM.Application.Reservation.Command.Add
 
             if (alreadyBookedSeatsDuringThatTime >= mapTotalCapacity)
             {
-                return new ResponseModel<AddReservationResponseModel>()
+                return new ResponseModel<AddEventToReservationResponseModelModel>()
                 {
                     Success = false,
                     Description = "Couldn't reserve, no places left during that time"
                 
                 };
             }
+
+            String userIdentifier = _context.User.Where(user => user.Id == request.UserId).Select(user => user.Email).FirstOrDefault();
+            var location = _context.Seat.Include(seat => seat.Map).ThenInclude(map => map.Organisation)
+                .Where(seat => seat.Id == request.SeatId)
+                .FirstOrDefault();
+            
+            var calendarData = _calendar.AddEventToCalendar(new AddEventToCalendarRequestModel()
+            {
+                userUniqueIdentifier = userIdentifier,
+                location = location.Name + " | " + location.Map.Name + " | " + location.Map.Organisation.Name,
+                summary = "Seat reservation",
+                Description = "You have booked you place at the specific location with specific hours",
+                startTime = request.StartHour,
+                endTime = request.EndHour
+            });
 
 
             _context.Reservation.Add(new Domain.Reservation()
@@ -124,14 +151,23 @@ namespace CCM.Application.Reservation.Command.Add
                 StartHour = request.StartHour.ToString("HH:mm:ss"),
                 EndHour = request.EndHour.ToString("HH:mm:ss"),
                 SeatId = request.SeatId,
-                UserId = request.UserId
+                UserId = request.UserId,
+                Link = calendarData.Link,
+                EventId = calendarData.EventId
             });
 
             await _context.SaveChangesAsync();
 
-            return new ResponseModel<AddReservationResponseModel>()
+
+       
+            return new ResponseModel<AddEventToReservationResponseModelModel>()
             {
                 Success = true,
+                Data = new AddEventToReservationResponseModelModel()
+                {
+                    Link = calendarData.Link,
+                    EventId = calendarData.EventId
+                },
                 Description = "Reservation was successful , " + (alreadyBookedSeatsDuringThatTime + 1) + " booked of " + mapTotalCapacity + " available during that time"
                 
             };

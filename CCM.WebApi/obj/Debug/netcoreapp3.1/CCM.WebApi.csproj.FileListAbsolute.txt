@@ -71,3 +71,10 @@ E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\Microsoft.Ident
 E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
 E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\Google.Apis.dll
+E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\Google.Apis.Auth.PlatformServices.dll
+E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\Google.Apis.Auth.dll
+E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\Google.Apis.Calendar.v3.dll
+E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\Google.Apis.Core.dll
+E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\CCM.Infrastructure.dll
+E:\dotnetProjects\CCM-Backend\CCM.WebApi\bin\Debug\netcoreapp3.1\CCM.Infrastructure.pdb

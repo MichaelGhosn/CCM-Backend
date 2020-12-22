@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "Hx4RNb0LwrghZYkRdbZVbz4miGrxI2ddWRI3H3seK102ys53KzVdifEflhJdyrRbUDPJIz5XH2JScd8AsoXjOQ==",
+  "dgSpecHash": "ptd6c+GUBnqH52F1iXpyPIsH8GaDxx9VdZWMzYxIqFWHhrpu2g+wegvnc3sRf8vnzpP1vMFcUAgyluJcgXFOtg==",
   "success": true,
   "projectFilePath": "E:\\dotnetProjects\\CCM-Backend\\CCM.WebApi\\CCM.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\michael\\.nuget\\packages\\bcrypt.net-next\\4.0.0\\bcrypt.net-next.4.0.0.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
+    "C:\\Users\\michael\\.nuget\\packages\\google.apis\\1.49.0\\google.apis.1.49.0.nupkg.sha512",
+    "C:\\Users\\michael\\.nuget\\packages\\google.apis.auth\\1.49.0\\google.apis.auth.1.49.0.nupkg.sha512",
+    "C:\\Users\\michael\\.nuget\\packages\\google.apis.calendar.v3\\1.49.0.2161\\google.apis.calendar.v3.1.49.0.2161.nupkg.sha512",
+    "C:\\Users\\michael\\.nuget\\packages\\google.apis.core\\1.49.0\\google.apis.core.1.49.0.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\k4os.compression.lz4\\1.1.11\\k4os.compression.lz4.1.1.11.nupkg.sha512",
     "C:\\Users\\michael\\.nuget\\packages\\k4os.compression.lz4.streams\\1.1.11\\k4os.compression.lz4.streams.1.1.11.nupkg.sha512",

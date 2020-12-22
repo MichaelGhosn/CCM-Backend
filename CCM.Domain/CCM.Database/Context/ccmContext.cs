@@ -162,6 +162,10 @@ namespace CCM.Domain
                 entity.Property(e => e.UserId)
                     .HasColumnType("int(11)")
                     .HasDefaultValueSql("'NULL'");
+                
+                entity.Property(e => e.EventId)
+                    .HasMaxLength(250)
+                    .HasDefaultValueSql("'NULL'");
 
                 entity.HasOne(d => d.Seat)
                     .WithMany(p => p.Reservation)

@@ -163,6 +163,11 @@ namespace CCM.Domain.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int(11)")
                         .HasDefaultValueSql("'NULL'");
+                    
+                    b.Property<int>("EventId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("varchar(250)")
+                        .HasDefaultValueSql("'NULL'");
 
                     b.HasKey("Id");
 
