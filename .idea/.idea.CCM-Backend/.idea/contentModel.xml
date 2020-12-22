@@ -288,6 +288,9 @@
           <e p="token_michaelghosn1999@hotmail.com.json" t="Include">
             <e p="Google.Apis.Auth.OAuth2.Responses.TokenResponse-user" t="Include" />
           </e>
+          <e p="token_michaelghosn@recruitment.lb.json" t="Include">
+            <e p="Google.Apis.Auth.OAuth2.Responses.TokenResponse-user" t="Include" />
+          </e>
         </e>
       </e>
       <e p="CCM.WebApi" t="IncludeRecursive">

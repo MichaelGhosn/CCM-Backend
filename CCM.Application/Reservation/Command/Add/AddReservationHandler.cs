@@ -105,10 +105,11 @@ namespace CCM.Application.Reservation.Command.Add
 
             var  alreadyBookedReservationsInThatTime = _context.Reservation
                 .Include(reservation => reservation.Seat).ThenInclude(seat => seat.Map)
-                .Where(reservation => reservation.SeatId == request.SeatId && reservation.Date.Value == request.ReservationDate.Date);
+                .Where(reservation => reservation.Date.Value == request.ReservationDate.Date); //  reservation.SeatId == request.SeatId &&
 
 
             int alreadyBookedSeatsDuringThatTime = 0;
+            bool chosenSeatAlreadyBooked = false;
             foreach (var reservation in alreadyBookedReservationsInThatTime)
             {
                 if (request.StartHour.ToString("HH:mm:ss").Between(DateTime.Parse(reservation.StartHour).ToString("HH:mm:ss"),DateTime.Parse(reservation.EndHour).ToString("HH:mm:ss"))
@@ -116,7 +117,21 @@ namespace CCM.Application.Reservation.Command.Add
                     || (request.StartHour.ToString("HH:mm:ss").CompareTo(DateTime.Parse(reservation.StartHour).ToString("HH:mm:ss")) < 0 && request.EndHour.ToString("HH:mm:ss").CompareTo(DateTime.Parse(reservation.EndHour).ToString("HH:mm:ss")) >=0 ))
                 {                      
                    alreadyBookedSeatsDuringThatTime++;
+                   
+                   if (request.SeatId == reservation.SeatId)
+                   {
+                       chosenSeatAlreadyBooked = true;
+                   }
                 }
+            }
+            
+            if (chosenSeatAlreadyBooked)
+            {
+                return new ResponseModel<AddEventToReservationResponseModelModel>()
+                {
+                    Success = false,
+                    Description = "Couldn't reserve, chosen seat already booked during that time"
+                };
             }
 
             if (alreadyBookedSeatsDuringThatTime >= mapTotalCapacity)
@@ -125,10 +140,12 @@ namespace CCM.Application.Reservation.Command.Add
                 {
                     Success = false,
                     Description = "Couldn't reserve, no places left during that time"
-                
                 };
             }
 
+            
+            
+            
             String userIdentifier = _context.User.Where(user => user.Id == request.UserId).Select(user => user.Email).FirstOrDefault();
             var location = _context.Seat.Include(seat => seat.Map).ThenInclude(map => map.Organisation)
                 .Where(seat => seat.Id == request.SeatId)
