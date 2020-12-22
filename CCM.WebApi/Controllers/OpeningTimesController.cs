@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using CCM.Application.OpeningTime.Command.Add;
+using CCM.Application.OpeningTime.Command.Update;
 using CCM.Application.OpeningTime.Query.GetAllByOrganisation;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,7 +8,7 @@ namespace CCM.WebApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class OpeningTimeController : BaseController
+    public class OpeningTimesController : BaseController
     {
         // GET
         [HttpGet("{mapId}")]
@@ -27,6 +28,11 @@ namespace CCM.WebApi.Controllers
         }
         
         // UPDATE
+        [HttpPut]
+        public async Task<IActionResult> Update([FromBody] UpdateOpeningTimeToMap request)
+        {
+            return Ok(await Mediator.Send(request));
+        }
         
         // DELETE
     }

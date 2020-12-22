@@ -11,7 +11,7 @@ namespace CCM.WebApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class MapController : BaseController
+    public class MapsController : BaseController
     {
         // GET
         [HttpGet("{organisationId}")]

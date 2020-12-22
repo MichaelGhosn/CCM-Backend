@@ -13,16 +13,17 @@ namespace CCM.Infrastructure.Calendar
     {
         static string[] Scopes = {CalendarService.Scope.Calendar};
         private static string ApplicationName = "Google Calendar Integration";
+        private String calendarId = "primary";
 
-        public AddEventToCalendarResponseModel AddEventToCalendar(AddEventToCalendarRequestModel configuration)
+
+        private CalendarService GetCalendarService(String userUniqueIdentifier)
         {
             UserCredential credential;
-            String calendarId = "primary";
            
             using (var stream = new FileStream("../CCM.Infrastructure/credentials.json", FileMode.Open, FileAccess.Read))
             {
                 
-                string credPath = "../CCM.Infrastructure/Tokens/token_" + configuration.userUniqueIdentifier +".json"; // if this file doesn't exist, a new tab will open in his browser prompting him to accept the connection with the app
+                string credPath = "../CCM.Infrastructure/Tokens/token_" + userUniqueIdentifier +".json"; // if this file doesn't exist, a new tab will open in his browser prompting him to accept the connection with the app
 
                 credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
                         GoogleClientSecrets.Load(stream).Secrets,
@@ -38,42 +39,74 @@ namespace CCM.Infrastructure.Calendar
                 HttpClientInitializer = credential,
                 ApplicationName = ApplicationName,
             });
-            
-            
-            Event newEvent = new Event();
-            
-            EventDateTime start = new EventDateTime();
-            start.DateTime = new DateTime(configuration.startTime.Year, configuration.startTime.Month, configuration.startTime.Day,
-                configuration.startTime.Hour, configuration.startTime.Minute, configuration.startTime.Second);
-            
-            EventDateTime end = new EventDateTime();
-            end.DateTime = new DateTime(configuration.endTime.Year, configuration.endTime.Month, configuration.endTime.Day,
-                configuration.endTime.Hour, configuration.endTime.Minute, configuration.endTime.Second);
 
-            newEvent.Start = start;
-            newEvent.End = end;
-            
+            return service;
+        }
+        public AddEventToCalendarResponseModel AddEventToCalendar(AddEventToCalendarRequestModel configuration)
+        {
 
-            newEvent.Summary = configuration.summary;
-            newEvent.Description = configuration.Description;
-            
-            newEvent.Creator = new Event.CreatorData()
+            try
             {
-                DisplayName = "Michael Ghosn",
-                Email = "michaelghosn1999@hotmail.com",
-                Self = false
-            };
-            
-            newEvent.Location = configuration.location;
-            
 
-            newEvent = service.Events.Insert(newEvent, calendarId).Execute();
+                var service = this.GetCalendarService(configuration.userUniqueIdentifier);
 
-            return new AddEventToCalendarResponseModel()
+                Event newEvent = new Event();
+
+                EventDateTime start = new EventDateTime();
+                start.DateTime = new DateTime(configuration.startTime.Year, configuration.startTime.Month,
+                    configuration.startTime.Day,
+                    configuration.startTime.Hour, configuration.startTime.Minute, configuration.startTime.Second);
+
+                EventDateTime end = new EventDateTime();
+                end.DateTime = new DateTime(configuration.endTime.Year, configuration.endTime.Month,
+                    configuration.endTime.Day,
+                    configuration.endTime.Hour, configuration.endTime.Minute, configuration.endTime.Second);
+
+                newEvent.Start = start;
+                newEvent.End = end;
+
+
+                newEvent.Summary = configuration.summary;
+                newEvent.Description = configuration.Description;
+
+                newEvent.Creator = new Event.CreatorData()
+                {
+                    DisplayName = "Michael Ghosn",
+                    Email = "michaelghosn1999@hotmail.com",
+                    Self = false
+                };
+
+                newEvent.Location = configuration.location;
+
+
+                newEvent = service.Events.Insert(newEvent, calendarId).Execute();
+
+                return new AddEventToCalendarResponseModel()
+                {
+                    Link = newEvent.HtmlLink,
+                    EventId = newEvent.Id
+                };
+            }
+            catch (Exception e)
             {
-                Link = newEvent.HtmlLink,
-                EventId = newEvent.Id
-            };
+                return null;
+            }
+
+
+        }
+
+        public bool DeleteEventFromCalendar(String userUniqueIdentifier, string eventId)
+        {
+            try
+            {
+                var service = this.GetCalendarService(userUniqueIdentifier);
+                service.Events.Delete(calendarId, eventId).Execute();
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
 
         }
     }

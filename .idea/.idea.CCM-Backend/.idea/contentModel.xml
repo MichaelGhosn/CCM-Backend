@@ -77,6 +77,11 @@
               <e p="AddOpeningTimeToMapHandler.cs" t="Include" />
               <e p="AddOpeningTimeToMapResponseModel.cs" t="Include" />
             </e>
+            <e p="Update" t="Include">
+              <e p="UpdateOpeningTimeToMap.cs" t="Include" />
+              <e p="UpdateOpeningTimeToMapHandler.cs" t="Include" />
+              <e p="UpdateOpeningTimeToMapResponseModel.cs" t="Include" />
+            </e>
           </e>
           <e p="Query" t="Include">
             <e p="GetAllByOrganisation" t="Include">
@@ -119,8 +124,21 @@
               <e p="AddReservation.cs" t="Include" />
               <e p="AddReservationHandler.cs" t="Include" />
             </e>
+            <e p="Delete" t="Include">
+              <e p="DeleteReservation.cs" t="Include" />
+              <e p="DeleteReservationHandler.cs" t="Include" />
+              <e p="DeleteReservationResponseModel.cs" t="Include" />
+            </e>
           </e>
-          <e p="Query" t="Include" />
+          <e p="Query" t="Include">
+            <e p="Get" t="Include">
+              <e p="GetReservationByUserId.cs" t="Include" />
+              <e p="GetReservationByUserIdHandler.cs" t="Include" />
+              <e p="GetReservationByUserIdModel.cs" t="Include" />
+              <e p="GetReservationByUserIdRequestModel.cs" t="Include" />
+              <e p="GetReservationByUserIdResponseModel.cs" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="Role" t="Include">
           <e p="Command" t="Include">
@@ -154,6 +172,11 @@
               <e p="AddSeatToMap.cs" t="Include" />
               <e p="AddSeatToMapHandler.cs" t="Include" />
               <e p="AddSeatToMapResponseModel.cs" t="Include" />
+            </e>
+            <e p="AddMultiple" t="Include">
+              <e p="AddMultipleSeatToMap.cs" t="Include" />
+              <e p="AddMultipleSeatToMapHandler.cs" t="Include" />
+              <e p="AddMultipleSeatToMapResponseModel.cs" t="Include" />
             </e>
             <e p="Delete" t="Include">
               <e p="DeleteSeat.cs" t="Include" />
@@ -300,14 +323,14 @@
         <e p="CCM.WebApi.csproj" t="IncludeRecursive" />
         <e p="Controllers" t="Include">
           <e p="BaseController.cs" t="Include" />
-          <e p="DayController.cs" t="Include" />
-          <e p="MapController.cs" t="Include" />
-          <e p="OpeningTimeController.cs" t="Include" />
-          <e p="OrganisationController.cs" t="Include" />
-          <e p="ReservationController.cs" t="Include" />
-          <e p="RoleController.cs" t="Include" />
-          <e p="SeatController.cs" t="Include" />
-          <e p="UserController.cs" t="Include" />
+          <e p="DaysController.cs" t="Include" />
+          <e p="MapsController.cs" t="Include" />
+          <e p="OpeningTimesController.cs" t="Include" />
+          <e p="OrganisationsController.cs" t="Include" />
+          <e p="ReservationsController.cs" t="Include" />
+          <e p="RolesController.cs" t="Include" />
+          <e p="SeatsController.cs" t="Include" />
+          <e p="UsersController.cs" t="Include" />
         </e>
         <e p="extensions" t="Include">
           <e p="DBContextService.cs" t="Include" />
@@ -340,6 +363,9 @@
               <e p="MapTest_1_dolly.png" t="Include" />
               <e p="sddasdasdas_1_dummy_map.png" t="Include" />
               <e p="Test Map_1_dummy_map.png" t="Include" />
+              <e p="Test2_1_domxss.PNG" t="Include" />
+              <e p="Test3_1_laravel.jpeg" t="Include" />
+              <e p="Test4_1_descriptors_features.PNG" t="Include" />
               <e p="Test_1_csrfcode.PNG" t="Include" />
               <e p="TestMap_1_dummy_map.png" t="Include" />
             </e>

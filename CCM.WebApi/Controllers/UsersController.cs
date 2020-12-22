@@ -11,7 +11,7 @@ namespace CCM.WebApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class UserController : BaseController
+    public class UsersController : BaseController
     {
         // GET
         [HttpGet]

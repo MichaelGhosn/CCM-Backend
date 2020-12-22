@@ -9,17 +9,21 @@ using CCM.Application.Map.Command.Delete;
 using CCM.Application.Map.Command.Update;
 using CCM.Application.Map.Query.GetAll;
 using CCM.Application.OpeningTime.Command.Add;
+using CCM.Application.OpeningTime.Command.Update;
 using CCM.Application.OpeningTime.Query.GetAllByOrganisation;
 using CCM.Application.Organisation.Command.Add;
 using CCM.Application.Organisation.Command.Delete;
 using CCM.Application.Organisation.Command.Update;
 using CCM.Application.Organisation.Query.GetAll;
 using CCM.Application.Reservation.Command.Add;
+using CCM.Application.Reservation.Command.Delete;
+using CCM.Application.Reservation.Query.Get;
 using CCM.Application.Role.Command.Add;
 using CCM.Application.Role.Command.Delete;
 using CCM.Application.Role.Command.Update;
 using CCM.Application.Role.Query.GetAll;
 using CCM.Application.Seat.Command.Add;
+using CCM.Application.Seat.Command.AddMultiple;
 using CCM.Application.Seat.Command.Delete;
 using CCM.Application.Seat.Query.GetAll;
 using CCM.Application.User.Command.Add;
@@ -66,14 +70,18 @@ namespace CCM.WebApi.Extensions
             
             
             services.AddMediatR(typeof(AddSeatToMap).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(AddMultipleSeatToMap).GetTypeInfo().Assembly);
             services.AddMediatR(typeof(GetAllSeatsByMapId).GetTypeInfo().Assembly);
             services.AddMediatR(typeof(DeleteSeat).GetTypeInfo().Assembly);
             
             
             services.AddMediatR(typeof(AddReservation).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(GetReservationByUserId).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(DeleteReservation).GetTypeInfo().Assembly);
             
             
             services.AddMediatR(typeof(AddOpeningTimeToMap).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(UpdateOpeningTimeToMap).GetTypeInfo().Assembly);
             services.AddMediatR(typeof(GetAllOpeningTimeByOrganisation).GetTypeInfo().Assembly);
             
             

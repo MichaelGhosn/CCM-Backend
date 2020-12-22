@@ -10,7 +10,7 @@ namespace CCM.WebApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class RoleController : BaseController
+    public class RolesController : BaseController
     {
 
         // GET

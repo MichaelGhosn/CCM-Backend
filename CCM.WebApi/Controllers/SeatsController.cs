@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using CCM.Application.Seat.Command.Add;
+using CCM.Application.Seat.Command.AddMultiple;
 using CCM.Application.Seat.Command.Delete;
 using CCM.Application.Seat.Query.GetAll;
 using Microsoft.AspNetCore.Mvc;
@@ -8,7 +9,7 @@ namespace CCM.WebApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class SeatController : BaseController
+    public class SeatsController : BaseController
     {
         // GET
         [HttpGet("{mapId}")]
@@ -23,6 +24,12 @@ namespace CCM.WebApi.Controllers
         // ADD
         [HttpPost]
         public async Task<IActionResult> Add([FromBody] AddSeatToMap request)
+        {
+            return Ok(await Mediator.Send(request));
+        }
+
+        [HttpPost("multiple")]
+        public async Task<IActionResult> AddMultiple([FromBody] AddMultipleSeatToMap request)
         {
             return Ok(await Mediator.Send(request));
         }

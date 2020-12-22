@@ -124,16 +124,6 @@ namespace CCM.Application.Reservation.Command.Add
                    }
                 }
             }
-            
-            if (chosenSeatAlreadyBooked)
-            {
-                return new ResponseModel<AddEventToReservationResponseModelModel>()
-                {
-                    Success = false,
-                    Description = "Couldn't reserve, chosen seat already booked during that time"
-                };
-            }
-
             if (alreadyBookedSeatsDuringThatTime >= mapTotalCapacity)
             {
                 return new ResponseModel<AddEventToReservationResponseModelModel>()
@@ -143,6 +133,16 @@ namespace CCM.Application.Reservation.Command.Add
                 };
             }
 
+            if (chosenSeatAlreadyBooked)
+            {
+                return new ResponseModel<AddEventToReservationResponseModelModel>()
+                {
+                    Success = false,
+                    Description = "Couldn't reserve, chosen seat already booked during that time"
+                };
+            }
+
+          
             
             
             
@@ -161,6 +161,14 @@ namespace CCM.Application.Reservation.Command.Add
                 endTime = request.EndHour
             });
 
+            if (calendarData == null)
+            {
+                return new ResponseModel<AddEventToReservationResponseModelModel>()
+                {
+                    Success = false,
+                    Description = "Some error occured while connecting to your calendar"
+                };
+            }
 
             _context.Reservation.Add(new Domain.Reservation()
             {

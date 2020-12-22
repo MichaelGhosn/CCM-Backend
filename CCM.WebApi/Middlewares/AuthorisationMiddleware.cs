@@ -19,7 +19,7 @@ namespace CCM.WebApi.Middlewares
             string token = context.Request.Headers["Authorization"];
 
             //do the checking
-            if (token == null && !context.Request.Path.Value.Contains("swagger") && context.Request.Path.Value != "/api/User/authenticate" )
+            if (token == null && !context.Request.Path.Value.Contains("swagger") && context.Request.Path.Value != "/api/Users/authenticate" )
             {
                 throw new JwtNotFoundException();
             }

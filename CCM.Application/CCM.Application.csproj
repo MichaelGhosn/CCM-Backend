@@ -17,8 +17,4 @@
       <ProjectReference Include="..\CCM.Infrastructure\CCM.Infrastructure.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Reservation\Query" />
-    </ItemGroup>
-
 </Project>

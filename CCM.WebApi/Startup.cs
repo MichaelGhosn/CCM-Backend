@@ -71,6 +71,8 @@ namespace CCM.WebApi
             
             app.UseRouting();
             
+            app.UseAuthorisationMiddleware();
+
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
 
             app.UseSwagger();
@@ -80,7 +82,6 @@ namespace CCM.WebApi
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "CCM V1");
             });
             
-            app.UseAuthorisationMiddleware();
 
         }
     }

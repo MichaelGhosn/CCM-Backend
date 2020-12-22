@@ -52,21 +52,27 @@ namespace CCM.Application.Map.Command.Add
             {
                 await request.Image.CopyToAsync(fileStream);
             }
-         
-            _context.Map.Add(new Domain.Map()
+
+            Domain.Map newMap = new Domain.Map()
             {
                 Name = request.Name,
                 ImagePath = fileName,
                 Capacity = request.Capacity,
                 AuthorizedCapacity = request.AuthorizedCapacity,
                 OrganisationId = request.OrganisationId
-            });
+            };
+         
+            _context.Map.Add(newMap);
             await _context.SaveChangesAsync();
             
             
             return new ResponseModel<AddMapResponseModel>()
             {
                 Success = true,
+                Data = new AddMapResponseModel()
+                {
+                    MapId = newMap.Id
+                },
                 Description = "Added map successfully"
             };
         }

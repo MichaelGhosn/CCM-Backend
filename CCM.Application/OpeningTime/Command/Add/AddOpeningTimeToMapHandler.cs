@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using CCM.Application.Models;
+using CCM.Application.OpeningTime.Command.Update;
 using CCM.Domain;
 using MediatR;
 
@@ -11,10 +12,12 @@ namespace CCM.Application.OpeningTime.Command.Add
     public class AddOpeningTimeToMapHandler: IRequestHandler<AddOpeningTimeToMap , ResponseModel<AddOpeningTimeToMapResponseModel>>
     {
         private readonly ccmContext _context;
+        private IMediator _mediator;
 
-        public AddOpeningTimeToMapHandler(ccmContext context)
+        public AddOpeningTimeToMapHandler(ccmContext context, IMediator mediator)
         {
             _context = context;
+            _mediator = mediator;
         }
         
         public async Task<ResponseModel<AddOpeningTimeToMapResponseModel>> Handle(AddOpeningTimeToMap request, CancellationToken cancellationToken)
@@ -56,11 +59,17 @@ namespace CCM.Application.OpeningTime.Command.Add
 
             if (doesMapAlreadyHaveOpeningTime)
             {
-                // TODO: We can redirect to the UpdateOpeningTimeHandler
+                await _mediator.Send(new UpdateOpeningTimeToMap()
+                {
+                    OpeningTimeId = _context.Openingtime.Where(openingtime =>
+                        openingtime.MapId == request.MapId && openingtime.DayId == request.DayId).Select(ot => ot.Id).FirstOrDefault(),
+                    OpeningHour = request.OpeningHour,
+                    ClosingHour = request.ClosingHour
+                }, cancellationToken);
                 return new ResponseModel<AddOpeningTimeToMapResponseModel>()
                 {
                     Success = false,
-                    Description = "Opening time already scheduled for this day on this map"
+                    Description = "Opening time already scheduled for this day on this map, so it has been updated"
                 };
             }
 

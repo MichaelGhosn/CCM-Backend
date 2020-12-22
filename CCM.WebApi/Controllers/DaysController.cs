@@ -1,35 +1,33 @@
 using System.Threading.Tasks;
-using CCM.Application.Organisation.Command.Add;
-using CCM.Application.Organisation.Command.Delete;
-using CCM.Application.Organisation.Command.Update;
-using CCM.Application.Organisation.Query.GetAll;
-using CCM.Application.Role.Command.Delete;
+using CCM.Application.Day.Command.Add;
+using CCM.Application.Day.Command.Delete;
+using CCM.Application.Day.Command.Update;
+using CCM.Application.Day.Query.GetAll;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CCM.WebApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class OrganisationController : BaseController
+    public class DaysController : BaseController
     {
         // GET
         [HttpGet]
         public async Task<ActionResult> GetAll()
         {
-            return Ok(await Mediator.Send(new GetAllOrganisations()));
+            return Ok(await Mediator.Send(new GetAllDays()));
         }
-        
         
         // ADD
         [HttpPost]
-        public async Task<ActionResult> Add([FromBody] AddOrganisation request)
+        public async Task<ActionResult> Add([FromBody] AddDay request)
         {
             return Ok(await Mediator.Send(request));
         }
         
         // UPDATE
         [HttpPut]
-        public async Task<ActionResult> Update([FromBody] UpdateOrganisation request)
+        public async Task<ActionResult> Update([FromBody] UpdateDay request)
         {
             return Ok(await Mediator.Send(request));
         }
@@ -38,12 +36,10 @@ namespace CCM.WebApi.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete([FromRoute] int id)
         {
-            return Ok(await Mediator.Send(new DeleteOrganisation()
+            return Ok(await Mediator.Send(new DeleteDay()
             {
-                Id = id
+                Id = id 
             }));
         }
-        
-        
     }
 }
