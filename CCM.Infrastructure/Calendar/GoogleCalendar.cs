@@ -42,7 +42,7 @@ namespace CCM.Infrastructure.Calendar
 
             return service;
         }
-        public AddEventToCalendarResponseModel AddEventToCalendar(AddEventToCalendarRequestModel configuration)
+        public AddEventToCalendarResponseModel AddEventToCalendar(AddUpdateEventToCalendarRequestModel configuration)
         {
 
             try
@@ -108,6 +108,59 @@ namespace CCM.Infrastructure.Calendar
                 return false;
             }
 
+        }
+
+        public bool UpdateEventFromCalendar(AddUpdateEventToCalendarRequestModel configuration, string eventId)
+        {
+            var service = this.GetCalendarService(configuration.userUniqueIdentifier);
+            
+            EventsResource.ListRequest request = service.Events.List("primary");
+            request.TimeMin = DateTime.Now;
+            request.ShowDeleted = false;
+            request.SingleEvents = true;
+            // request.MaxResults = 10;
+            request.OrderBy = EventsResource.ListRequest.OrderByEnum.StartTime;
+            Events events = request.Execute();
+          
+            if (events.Items != null && events.Items.Count > 0)
+            {
+                foreach (var eventItem in events.Items)
+                {
+
+                    if (eventItem.RecurringEventId == eventId)
+                    {
+                        // update events based on their id
+                        EventDateTime start = new EventDateTime();
+                        start.DateTime = new DateTime(configuration.startTime.Year, configuration.startTime.Month,
+                            configuration.startTime.Day,
+                            configuration.startTime.Hour, configuration.startTime.Minute, configuration.startTime.Second);
+
+                        EventDateTime end = new EventDateTime();
+                        end.DateTime = new DateTime(configuration.endTime.Year, configuration.endTime.Month,
+                            configuration.endTime.Day,
+                            configuration.endTime.Hour, configuration.endTime.Minute, configuration.endTime.Second);
+
+                        
+                        eventItem.Start = start;
+                        eventItem.End = end;
+
+                        eventItem.Summary = configuration.summary;
+                        eventItem.Description = configuration.Description;
+                        eventItem.Location = configuration.location;
+
+                        
+                        service.Events.Update(eventItem, calendarId, eventItem.Id).Execute();
+
+                        return true;
+                    }
+
+                }
+
+                return true;
+            }
+          
+            return false;
+           
         }
     }
 }

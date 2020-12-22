@@ -2,7 +2,7 @@ using System;
 
 namespace CCM.Infrastructure.Calendar
 {
-    public class AddEventToCalendarRequestModel
+    public class AddUpdateEventToCalendarRequestModel
     {
         public string userUniqueIdentifier { get; set; }
         public string location { get; set; }

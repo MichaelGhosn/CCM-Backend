@@ -151,7 +151,7 @@ namespace CCM.Application.Reservation.Command.Add
                 .Where(seat => seat.Id == request.SeatId)
                 .FirstOrDefault();
             
-            var calendarData = _calendar.AddEventToCalendar(new AddEventToCalendarRequestModel()
+            var calendarData = _calendar.AddEventToCalendar(new AddUpdateEventToCalendarRequestModel()
             {
                 userUniqueIdentifier = userIdentifier,
                 location = location.Name + " | " + location.Map.Name + " | " + location.Map.Organisation.Name,

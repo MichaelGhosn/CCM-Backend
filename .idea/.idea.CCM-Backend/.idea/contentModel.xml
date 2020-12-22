@@ -293,8 +293,8 @@
       <e p="CCM.Infrastructure" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Calendar" t="Include">
-          <e p="AddEventToCalendarRequestModel.cs" t="Include" />
           <e p="AddEventToCalendarResponseModel.cs" t="Include" />
+          <e p="AddUpdateEventToCalendarRequestModel.cs" t="Include" />
           <e p="GoogleCalendar.cs" t="Include" />
           <e p="ICalendar.cs" t="Include" />
         </e>
@@ -366,6 +366,7 @@
               <e p="Test2_1_domxss.PNG" t="Include" />
               <e p="Test3_1_laravel.jpeg" t="Include" />
               <e p="Test4_1_descriptors_features.PNG" t="Include" />
+              <e p="Test5_1_ds_description_tools.PNG" t="Include" />
               <e p="Test_1_csrfcode.PNG" t="Include" />
               <e p="TestMap_1_dummy_map.png" t="Include" />
             </e>
